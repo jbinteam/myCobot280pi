@@ -39,6 +39,7 @@ an external detector; follow the handover before using it.
 | --- | --- |
 | Transfer, setup, hands-on exercise, next work | [Handover](docs/HANDOVER.md) |
 | GitHub inclusion and transfer checks | [GitHub preparation](docs/GITHUB.md) |
+| WebUI setup, launch, operation and troubleshooting | [WebUI running manual](docs/WEBUI_MANUAL.md) |
 | WebUI and planner selection | [WebUI](webui/README.md) |
 | ROS interfaces, frames, lifecycle, camera policy | [ROS controller](object_tracking_ros2/README.md) |
 | Serial bridge and hardware incident | [Hardware](hardware/README.md) |

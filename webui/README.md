@@ -1,5 +1,8 @@
 # myCobot 280 Pi simulation and web control
 
+For setup, launch commands, everyday operation and troubleshooting, start with
+the [WebUI running manual](../docs/WEBUI_MANUAL.md).
+
 A local URDF viewer and pose controller. Five-constraint XYZ + flange Z direction
 control is the default target mode; local flange-Z spin is free. See
 [five-constraint controller](../simulation/POSE5.md) for the orientation convention. Phase 1 runs eight classical/neural
