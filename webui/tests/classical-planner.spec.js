@@ -1,0 +1,30 @@
+import {test,expect} from '@playwright/test';
+
+test('default learned IK + RRT* produces an actual checked simulation preview without hardware writes',async({page})=>{
+  const writes=[],errors=[];
+  page.on('pageerror',error=>errors.push(error.message));
+  page.on('request',request=>{if(request.method()==='POST')writes.push(new URL(request.url()).pathname);});
+  await page.goto('/?view=lab');
+  await expect(page.locator('#model-status')).toHaveText('Model ready',{timeout:45000});
+  await expect(page.locator('#fixed-target-planner')).toHaveValue('learned_rrt');
+  await expect(page.locator('#recommended-model')).toHaveText('Learned IK + classical RRT*');
+  await expect(page.locator('#mouse-aim-planner')).toHaveValue('learned_rrt');
+  await expect(page.locator('#plan-classical')).toBeEnabled();
+  writes.length=0;
+  const responsePromise=page.waitForResponse(r=>new URL(r.url()).pathname==='/api/sim/classical');
+  await page.locator('#plan-classical').click();
+  const response=await responsePromise;
+  expect(response.ok()).toBe(true);
+  const result=await response.json();
+  expect(result.method).toBe('learned_rrt');
+  expect(result.converged).toBe(true);
+  expect(result.validation).toBe('joint_limits_self_table_block');
+  expect(result.final_error_mm).toBeLessThanOrEqual(1);
+  expect(result.final_orientation_error_deg).toBeLessThanOrEqual(1);
+  await expect(page.locator('#ik-feedback')).toContainText('Validated learned IK + RRT* path');
+  await expect(page.locator('#play-ik')).toBeEnabled();
+  await expect(page.locator('#velocity-chart svg')).toHaveCount(1);
+  expect(writes.filter(path=>path!=='/api/sim/solve')).toEqual(['/api/sim/classical']);
+  expect(writes.every(path=>path.startsWith('/api/sim/'))).toBe(true);
+  expect(errors).toEqual([]);
+});

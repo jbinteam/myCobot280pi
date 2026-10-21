@@ -1,0 +1,1196 @@
+{
+  "kind": "rrt_star_expert_demonstrations",
+  "seed": 20261005,
+  "requested_episodes": 100000,
+  "completed_episodes": 100000,
+  "environment": {
+    "robot": {
+      "schema": 1,
+      "robot": "myCobot 280 Pi",
+      "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+      "geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+      "joint_names": [
+        "joint2_to_joint1",
+        "joint3_to_joint2",
+        "joint4_to_joint3",
+        "joint5_to_joint4",
+        "joint6_to_joint5",
+        "joint6output_to_joint6"
+      ],
+      "limits_rad": {
+        "min": [
+          -2.895501229058593,
+          -2.321287905152458,
+          -2.5813419636996136,
+          -2.4958208303518914,
+          -2.66860842629933,
+          -3.1049407392979123
+        ],
+        "max": [
+          2.895501229058593,
+          2.321287905152458,
+          2.5813419636996136,
+          2.4958208303518914,
+          2.7558748888990463,
+          3.1049407392979123
+        ]
+      },
+      "base_frame": "g_base",
+      "tcp": "joint6_flange",
+      "units": "meters/radians/seconds",
+      "goal": "selected joint goal from XYZ + directed flange Z; local Z spin free",
+      "observation": [
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "box_x_scaled",
+        "box_y_scaled",
+        "box_z_scaled",
+        "box_half_x_scaled",
+        "box_half_y_scaled",
+        "box_half_z_scaled",
+        "box_present"
+      ],
+      "action": "absolute operating-box-normalized joint positions",
+      "horizon": 16,
+      "observation_dim": 19
+    },
+    "self_collision": {
+      "schema": 1,
+      "robot": "myCobot 280 Pi",
+      "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+      "geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+      "joint_names": [
+        "joint2_to_joint1",
+        "joint3_to_joint2",
+        "joint4_to_joint3",
+        "joint5_to_joint4",
+        "joint6_to_joint5",
+        "joint6output_to_joint6"
+      ],
+      "joint_types": [
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute"
+      ],
+      "limits_rad": {
+        "min": [
+          -2.895501229058593,
+          -2.321287905152458,
+          -2.5813419636996136,
+          -2.4958208303518914,
+          -2.66860842629933,
+          -3.1049407392979123
+        ],
+        "max": [
+          2.895501229058593,
+          2.321287905152458,
+          2.5813419636996136,
+          2.4958208303518914,
+          2.7558748888990463,
+          3.1049407392979123
+        ]
+      },
+      "units": {
+        "joints": "radians",
+        "position": "meters"
+      },
+      "base_frame": "g_base",
+      "base_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tcp": "joint6_flange",
+      "tool_offset_m": [
+        0,
+        0,
+        0
+      ],
+      "validation": "joint_limits_and_self_collision",
+      "assumptions": {
+        "checker": "urdf_convex_fcl_v1",
+        "environment": "self_only_no_external_obstacles",
+        "representation": "convex_hull_per_URDF_collision_mesh",
+        "clearance_mm": 1.0,
+        "excluded_pairs": [
+          [
+            "g_base",
+            "joint1"
+          ],
+          [
+            "joint1",
+            "joint2"
+          ],
+          [
+            "joint2",
+            "joint3"
+          ],
+          [
+            "joint3",
+            "joint4"
+          ],
+          [
+            "joint4",
+            "joint5"
+          ],
+          [
+            "joint5",
+            "joint6"
+          ],
+          [
+            "joint6",
+            "joint6_flange"
+          ]
+        ],
+        "exclusion_policy": "direct_URDF_parent_child_pairs_only",
+        "checked_link_pairs": [
+          [
+            "g_base",
+            "joint2"
+          ],
+          [
+            "g_base",
+            "joint3"
+          ],
+          [
+            "g_base",
+            "joint4"
+          ],
+          [
+            "g_base",
+            "joint5"
+          ],
+          [
+            "g_base",
+            "joint6"
+          ],
+          [
+            "g_base",
+            "joint6_flange"
+          ],
+          [
+            "joint1",
+            "joint3"
+          ],
+          [
+            "joint1",
+            "joint4"
+          ],
+          [
+            "joint1",
+            "joint5"
+          ],
+          [
+            "joint1",
+            "joint6"
+          ],
+          [
+            "joint1",
+            "joint6_flange"
+          ],
+          [
+            "joint2",
+            "joint4"
+          ],
+          [
+            "joint2",
+            "joint5"
+          ],
+          [
+            "joint2",
+            "joint6"
+          ],
+          [
+            "joint2",
+            "joint6_flange"
+          ],
+          [
+            "joint3",
+            "joint5"
+          ],
+          [
+            "joint3",
+            "joint6"
+          ],
+          [
+            "joint3",
+            "joint6_flange"
+          ],
+          [
+            "joint4",
+            "joint6"
+          ],
+          [
+            "joint4",
+            "joint6_flange"
+          ],
+          [
+            "joint5",
+            "joint6_flange"
+          ]
+        ],
+        "mesh_info": [
+          {
+            "link": "g_base",
+            "file": "G_base.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 45372,
+            "hull_triangles": 1180,
+            "local_bounds_m": [
+              [
+                -0.07499998474121095,
+                -0.05499998474121094,
+                0.0
+              ],
+              [
+                0.07499998474121095,
+                0.054987457275390624,
+                0.032
+              ]
+            ]
+          },
+          {
+            "link": "joint1",
+            "file": "joint1_pi.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 95700,
+            "hull_triangles": 3836,
+            "local_bounds_m": [
+              [
+                -0.050517555236816405,
+                -0.04631658935546875,
+                0.0
+              ],
+              [
+                0.04795552825927735,
+                0.046318634033203125,
+                0.08090007019042969
+              ]
+            ]
+          },
+          {
+            "link": "joint2",
+            "file": "joint2.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 14246,
+            "hull_triangles": 3340,
+            "local_bounds_m": [
+              [
+                -0.023964159190654755,
+                -0.02400003932416439,
+                -0.003181695006787777
+              ],
+              [
+                0.036575790494680405,
+                0.02400003932416439,
+                0.08387827128171921
+              ]
+            ]
+          },
+          {
+            "link": "joint3",
+            "file": "joint3.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 22976,
+            "hull_triangles": 7100,
+            "local_bounds_m": [
+              [
+                -0.0027239909395575523,
+                -0.023999979719519615,
+                -0.023999979719519615
+              ],
+              [
+                0.05271594971418381,
+                0.023999979719519615,
+                0.13199999928474426
+              ]
+            ]
+          },
+          {
+            "link": "joint4",
+            "file": "joint4.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 6149,
+            "hull_triangles": 2722,
+            "local_bounds_m": [
+              [
+                -0.052963968366384506,
+                -0.021599939092993736,
+                -0.021640000864863396
+              ],
+              [
+                0.004835962783545256,
+                0.021599939092993736,
+                0.1151600033044815
+              ]
+            ]
+          },
+          {
+            "link": "joint5",
+            "file": "joint5.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 22907,
+            "hull_triangles": 4668,
+            "local_bounds_m": [
+              [
+                1.6202032566070558e-07,
+                -0.01943772812187672,
+                -0.019706802368164064
+              ],
+              [
+                0.05278763569891453,
+                0.01914904861152172,
+                0.03663734436035156
+              ]
+            ]
+          },
+          {
+            "link": "joint6",
+            "file": "joint6.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 9810,
+            "hull_triangles": 2666,
+            "local_bounds_m": [
+              [
+                -0.019200001674890554,
+                -0.021600001407414693,
+                0.0
+              ],
+              [
+                0.019200041729213746,
+                0.03510000014128156,
+                0.05712000164493913
+              ]
+            ]
+          },
+          {
+            "link": "joint6_flange",
+            "file": "joint7.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 9652,
+            "hull_triangles": 3464,
+            "local_bounds_m": [
+              [
+                -0.019200001674890554,
+                -0.019200001674890554,
+                0.0
+              ],
+              [
+                0.019200001674890554,
+                0.019200001674890554,
+                0.01370000045998021
+              ]
+            ]
+          }
+        ],
+        "derived_bounds_sha256": "a645169bb31088d0a7ea125fd844d5a32b3aaf550d79098d9ccc1b90dfb2967a",
+        "versions": {
+          "python-fcl": "0.7.0.11",
+          "trimesh": "5.1.0",
+          "pycollada": "0.9.3",
+          "scipy": "1.18.1"
+        }
+      },
+      "metric": "Euclidean displacement / operating joint range"
+    },
+    "scene_checker": "PyBullet convex URDF hulls versus table and one axis-aligned box",
+    "clearance_mm": 1.0,
+    "path_sample_rad": 0.04,
+    "table_top_m": -0.034999999999999996,
+    "pybullet_version": "3.2.7",
+    "execution": "kinematic reference interpolation; no calibrated dynamics or physical IO"
+  },
+  "planner": {
+    "iterations": 800,
+    "step": 0.08,
+    "radius": 0.2,
+    "goal_bias": 0.18,
+    "post_solution": 40,
+    "neighbors": 20,
+    "max_step_rad": 0.04
+  },
+  "dt": 0.1,
+  "speed_rad_s": 1.0,
+  "acceleration_rad_s2": 3.0,
+  "blocked_fraction_requested": 0.2,
+  "split": "global episode-level stratified train/validation/test 80/10/10; never window-level",
+  "counts": {
+    "direct_blocked": 20012,
+    "nearby": 58810,
+    "frames": 5328757
+  },
+  "split_counts": {
+    "train": 79998,
+    "validation": 9998,
+    "test": 10004
+  },
+  "failures": {
+    "timed_trajectory_rejected": 291,
+    "iteration_limit": 793
+  },
+  "shards": [
+    {
+      "file": "shard-0000.h5",
+      "seed": 1503053992,
+      "episodes": 1000,
+      "sha256": "4b5a16342f6c3f8c7a6781df87a98ab57d85705fd4b1f863a48f11123cadee9b"
+    },
+    {
+      "file": "shard-0001.h5",
+      "seed": 1823121556,
+      "episodes": 1000,
+      "sha256": "cfbd06c4fad595c97d04e1fe111393e4ac4efc8b28bd6228abf46973e6d54d13"
+    },
+    {
+      "file": "shard-0002.h5",
+      "seed": 1227411969,
+      "episodes": 1000,
+      "sha256": "dc6399b344a163df3e885ca0de37f503047913ea1f4dd2cf9d08653274dc26ba"
+    },
+    {
+      "file": "shard-0003.h5",
+      "seed": 748422397,
+      "episodes": 1000,
+      "sha256": "0320c192ffdc958951c5eeede7d2a756b447d4acef566668cd8c810678d574d1"
+    },
+    {
+      "file": "shard-0004.h5",
+      "seed": 2219307273,
+      "episodes": 1000,
+      "sha256": "741290c9e461456bf180a749f68ffb17189f92945b8aa724031f04dd95ae31d9"
+    },
+    {
+      "file": "shard-0005.h5",
+      "seed": 3537707411,
+      "episodes": 1000,
+      "sha256": "dd56b2ed7ea609c0c256ace28dd133c79e0bc26437c259816ae7047677ab76eb"
+    },
+    {
+      "file": "shard-0006.h5",
+      "seed": 2604497844,
+      "episodes": 1000,
+      "sha256": "9f7d23cc8a76524d89ffaa33bbe6340eb49fb18df9fc42928aa212c0bb2f6614"
+    },
+    {
+      "file": "shard-0007.h5",
+      "seed": 1360570713,
+      "episodes": 1000,
+      "sha256": "f522aa53128ab5f6ff46e6bb9c739707dd8bab91472632b7a9c150dcd8b8ccb7"
+    },
+    {
+      "file": "shard-0008.h5",
+      "seed": 2131817806,
+      "episodes": 1000,
+      "sha256": "dfabfeecd2b56ec86e595de89cd0e43f625bfdc11fcd8996bea67f791313ba1f"
+    },
+    {
+      "file": "shard-0009.h5",
+      "seed": 1301666507,
+      "episodes": 1000,
+      "sha256": "0011e4af508969935eff139adbc8c9035ea852e093425bb24fcb5654abe1a54a"
+    },
+    {
+      "file": "shard-0010.h5",
+      "seed": 2090194940,
+      "episodes": 1000,
+      "sha256": "f835f33258ee35568fb7cb64c16b4a3dd802bdfa4f1509f78c6af13e30bfe0d5"
+    },
+    {
+      "file": "shard-0011.h5",
+      "seed": 1946631206,
+      "episodes": 1000,
+      "sha256": "244b3b57cd7bbfd62c3e894cb437cba7d6765a9bf4403a3a0ec280648b4b124b"
+    },
+    {
+      "file": "shard-0012.h5",
+      "seed": 2709427600,
+      "episodes": 1000,
+      "sha256": "d66a20a2f641a1ab30ac43b4daad1e1df8285087b9e36f3a38efdfd261cce73b"
+    },
+    {
+      "file": "shard-0013.h5",
+      "seed": 1389276832,
+      "episodes": 1000,
+      "sha256": "af81647ced94becbfeca6c6f92cb2e52fa908e511eb13d059cc6e9951a6c4892"
+    },
+    {
+      "file": "shard-0014.h5",
+      "seed": 147796998,
+      "episodes": 1000,
+      "sha256": "11d681e8a3049116d1d432d4ff40a6f87146ee0bc94df1fd3178c5dcaf1342ba"
+    },
+    {
+      "file": "shard-0015.h5",
+      "seed": 657436462,
+      "episodes": 1000,
+      "sha256": "31710c0bbc07f27a3ce353eb910571c47b9630bbc50b8a4559b55916f04e90c0"
+    },
+    {
+      "file": "shard-0016.h5",
+      "seed": 1353092952,
+      "episodes": 1000,
+      "sha256": "466b613e1e0d1d1dda425bec3e67ff341690ad2f8486921d418f7ff6879635e5"
+    },
+    {
+      "file": "shard-0017.h5",
+      "seed": 3445789468,
+      "episodes": 1000,
+      "sha256": "146bba3916a2c6f373cf91ade1ebf3e9a46c9782929d632c400707268e5f72a2"
+    },
+    {
+      "file": "shard-0018.h5",
+      "seed": 2019986511,
+      "episodes": 1000,
+      "sha256": "b1d197c2d35cd5f02378b7dc6b12a91086fa5b91b91ab2269f0a727d80b375e1"
+    },
+    {
+      "file": "shard-0019.h5",
+      "seed": 3395913992,
+      "episodes": 1000,
+      "sha256": "d5fd9f1dfc00166f79c03653e6f01e9fd63ab7c4fee52c139b0a2768cf593f90"
+    },
+    {
+      "file": "shard-0020.h5",
+      "seed": 3413821300,
+      "episodes": 1000,
+      "sha256": "b05c1ea8f63e1d980fa41974b02497f77d3344d515cb876eb7ab4f6c8f016129"
+    },
+    {
+      "file": "shard-0021.h5",
+      "seed": 896703740,
+      "episodes": 1000,
+      "sha256": "ec4359d31862e5f0b3ca90273c00ac408523b75fbb1b7fa41a7ca61cb6f62dc7"
+    },
+    {
+      "file": "shard-0022.h5",
+      "seed": 4245316739,
+      "episodes": 1000,
+      "sha256": "cb2e3b6c7a7a3fd956bb67c19dbb24d5154233a3d312fabd2b696b80cac0bba6"
+    },
+    {
+      "file": "shard-0023.h5",
+      "seed": 2058566130,
+      "episodes": 1000,
+      "sha256": "52c95994ad55c1794434a2fbcc25014fac502b1027e2d9777d390805b0093cf3"
+    },
+    {
+      "file": "shard-0024.h5",
+      "seed": 381174694,
+      "episodes": 1000,
+      "sha256": "818d6a25693b8741dae7450b8204a3c57d6c0ac8a77452cbcd982536d3ca28f7"
+    },
+    {
+      "file": "shard-0025.h5",
+      "seed": 801623641,
+      "episodes": 1000,
+      "sha256": "3d19d31f45f8d6e19687f807e1a6dfbd72619e3fe110e05fbda56c4a710dafee"
+    },
+    {
+      "file": "shard-0026.h5",
+      "seed": 781245177,
+      "episodes": 1000,
+      "sha256": "d307da0127a76ffc3b325eb239c5a2a40c710825207b2aad0f59ae1deec788cc"
+    },
+    {
+      "file": "shard-0027.h5",
+      "seed": 897703584,
+      "episodes": 1000,
+      "sha256": "b8270e494923ec2881f98fa919339293054e02e3c0ed0c7e695b8278086477f2"
+    },
+    {
+      "file": "shard-0028.h5",
+      "seed": 1129680123,
+      "episodes": 1000,
+      "sha256": "56031186969e95bb3092a4c4bbe126ab4bdab7b3689659943b449c03e6ecad8a"
+    },
+    {
+      "file": "shard-0029.h5",
+      "seed": 1587085623,
+      "episodes": 1000,
+      "sha256": "726fc1d53e15a643b9f08522b67072470e4b400933013f49e1a99bbe90313db7"
+    },
+    {
+      "file": "shard-0030.h5",
+      "seed": 3126845334,
+      "episodes": 1000,
+      "sha256": "24b0e719d6732647664c388c1c88f9cf811099b20887095b3ecbd8421d049c62"
+    },
+    {
+      "file": "shard-0031.h5",
+      "seed": 3482451088,
+      "episodes": 1000,
+      "sha256": "e519f1374960b41ab8cd083f0e0812d5f60f6f6c058311a100e27ba720fd2b06"
+    },
+    {
+      "file": "shard-0032.h5",
+      "seed": 2329244779,
+      "episodes": 1000,
+      "sha256": "d5440c03f692d893b3ca263345415328b5fc8114a6e15aa398f5cbeeeff05c02"
+    },
+    {
+      "file": "shard-0033.h5",
+      "seed": 955555146,
+      "episodes": 1000,
+      "sha256": "fce6a9f1683892ae3867ff794e4cbc6eb26a3cde7a3c8defd79bd32e2b30eea2"
+    },
+    {
+      "file": "shard-0034.h5",
+      "seed": 2847882390,
+      "episodes": 1000,
+      "sha256": "4728d111938a15cff64b2fca4ba9c980f98273b59c997b25a15e1f69462c8eda"
+    },
+    {
+      "file": "shard-0035.h5",
+      "seed": 142738659,
+      "episodes": 1000,
+      "sha256": "3fe6b04c9360099648b91f6abe27e1c5de984e4a592c327bc888707e1f0054f0"
+    },
+    {
+      "file": "shard-0036.h5",
+      "seed": 1809831185,
+      "episodes": 1000,
+      "sha256": "af7dbe038947beda1933b978f79adc31f9463635c889c65d1fe94ef7a63d1bf8"
+    },
+    {
+      "file": "shard-0037.h5",
+      "seed": 3722037527,
+      "episodes": 1000,
+      "sha256": "99101418bad4e2470a253ead7d2dbdbdbc6eeb6b9c376dc2bea2db16a7ede8d7"
+    },
+    {
+      "file": "shard-0038.h5",
+      "seed": 2224354845,
+      "episodes": 1000,
+      "sha256": "cb68a8843077438835efcd7ba375a487459a5e8b3dde4e1a68d006be836cdf34"
+    },
+    {
+      "file": "shard-0039.h5",
+      "seed": 1301877208,
+      "episodes": 1000,
+      "sha256": "29a420f9950195db2bfb867a2f3f719cf9bb70ceb17fd488a0764ff4c3899170"
+    },
+    {
+      "file": "shard-0040.h5",
+      "seed": 2819539920,
+      "episodes": 1000,
+      "sha256": "dd9dbb5e2ec9eebe9432c9d4cdebc4fd62315a12cce3f476373edbf03d5ca641"
+    },
+    {
+      "file": "shard-0041.h5",
+      "seed": 389396459,
+      "episodes": 1000,
+      "sha256": "4515a805a450e9065f4ba7b818bcff7e15af1bf17b8a4215ae65ddd7cffeaead"
+    },
+    {
+      "file": "shard-0042.h5",
+      "seed": 224667661,
+      "episodes": 1000,
+      "sha256": "7e115db0042dd3c7790866970ce86466354e161d618c735442742753567ef514"
+    },
+    {
+      "file": "shard-0043.h5",
+      "seed": 1253189267,
+      "episodes": 1000,
+      "sha256": "973721135eeeabac0548e3196448a06f68cb9f40a347002a6735702b557254c3"
+    },
+    {
+      "file": "shard-0044.h5",
+      "seed": 2067510613,
+      "episodes": 1000,
+      "sha256": "9c44408610c41c402ec8065653683adeb826c51393ee9ec1b09897c24053e902"
+    },
+    {
+      "file": "shard-0045.h5",
+      "seed": 3514186904,
+      "episodes": 1000,
+      "sha256": "f2faad3a8fff6cbb359f1de8f5f8371e9fd5b54762877b7ea812afeda58edccd"
+    },
+    {
+      "file": "shard-0046.h5",
+      "seed": 1730243048,
+      "episodes": 1000,
+      "sha256": "3e182bb4d80481dd8899024c998de4274a811dd0c91f5e6a56dfa68451331b09"
+    },
+    {
+      "file": "shard-0047.h5",
+      "seed": 82624749,
+      "episodes": 1000,
+      "sha256": "78468a4ea80eb335589e568c26940ac850d93be2b1deeb32d292b59406b91aeb"
+    },
+    {
+      "file": "shard-0048.h5",
+      "seed": 1883726137,
+      "episodes": 1000,
+      "sha256": "5d4ef9ae19ee476482719447436de2998f7167e39f5eb1e883a16d49b65a7424"
+    },
+    {
+      "file": "shard-0049.h5",
+      "seed": 737852420,
+      "episodes": 1000,
+      "sha256": "80aef589765dc0c013306824e40aeacacf8ae42084177ff9e0e720e7bf17caea"
+    },
+    {
+      "file": "shard-0050.h5",
+      "seed": 904438721,
+      "episodes": 1000,
+      "sha256": "1dc1a8999a34b3284f3c208229e431ed60fc64c1c64389b6a3cbcb4b72b12267"
+    },
+    {
+      "file": "shard-0051.h5",
+      "seed": 3689928334,
+      "episodes": 1000,
+      "sha256": "ff2b186c8ed5ad8624599d5b4504e05784e7dba46371767c2e9482a582830de4"
+    },
+    {
+      "file": "shard-0052.h5",
+      "seed": 3455675511,
+      "episodes": 1000,
+      "sha256": "c5dcb96ff0e9bc92d4e448adabbe31da244dedf434ea7b5ee52c2fa594d0e3e0"
+    },
+    {
+      "file": "shard-0053.h5",
+      "seed": 1875068109,
+      "episodes": 1000,
+      "sha256": "6288e5f72fdda0e815dd3138f5f74fce5cdb70a7a22ecd75e0e364530e4c2218"
+    },
+    {
+      "file": "shard-0054.h5",
+      "seed": 3131642144,
+      "episodes": 1000,
+      "sha256": "b5f7e9c09b9eb70a6f006cdd0eceb73ea6ef420bf805a657d815283c3c8f3ec7"
+    },
+    {
+      "file": "shard-0055.h5",
+      "seed": 3769535983,
+      "episodes": 1000,
+      "sha256": "fce85f7181141e56bec854b2c12f23728ab3239796d0bfafe286505830c2b9fe"
+    },
+    {
+      "file": "shard-0056.h5",
+      "seed": 63848784,
+      "episodes": 1000,
+      "sha256": "6f88983da7b10b3430579a2eaa302227d80d91e5e9344d88dc6e1f4d5d900634"
+    },
+    {
+      "file": "shard-0057.h5",
+      "seed": 1540853961,
+      "episodes": 1000,
+      "sha256": "fceb9573d01584ef64e39c2739754430a77f1dc6c694b0d87e1cb11e9de04648"
+    },
+    {
+      "file": "shard-0058.h5",
+      "seed": 2659657966,
+      "episodes": 1000,
+      "sha256": "a8e640e5dd584dbe09040bbf2cdcb6b21b9f80654f2fdb2b868c41e37b073f26"
+    },
+    {
+      "file": "shard-0059.h5",
+      "seed": 1771461815,
+      "episodes": 1000,
+      "sha256": "613eda18b7ac4439b3936795d9a3bf3ceea9bd561ebb47a765576a32623e7ede"
+    },
+    {
+      "file": "shard-0060.h5",
+      "seed": 2847293592,
+      "episodes": 1000,
+      "sha256": "67bd84d2dbe5a571c59b5a73eca58087e993ca8916cd713a3dd5a448c517df18"
+    },
+    {
+      "file": "shard-0061.h5",
+      "seed": 3906557431,
+      "episodes": 1000,
+      "sha256": "e77895ae545c84b571697fd6249e1c128a528c5ae63cb9faa4c29b264093f9a7"
+    },
+    {
+      "file": "shard-0062.h5",
+      "seed": 1907121765,
+      "episodes": 1000,
+      "sha256": "7e81826c00940fa11216cc70513d9f36fd1a51fa12680a00d62e18914201166b"
+    },
+    {
+      "file": "shard-0063.h5",
+      "seed": 3918099592,
+      "episodes": 1000,
+      "sha256": "bd78cc920728639b33b0a84ac4e17d09c9010ef35d350c5459f994de70bb29a4"
+    },
+    {
+      "file": "shard-0064.h5",
+      "seed": 4249775472,
+      "episodes": 1000,
+      "sha256": "1658d32711c6f9b2c56d719f54e3b9b9d3d5e1699bce703c38cc8b11f6d57384"
+    },
+    {
+      "file": "shard-0065.h5",
+      "seed": 3292429056,
+      "episodes": 1000,
+      "sha256": "5fa9ffc596b2a9e7dba6e1c6aeeacbedebbc3093f045965354be2f6fee92febb"
+    },
+    {
+      "file": "shard-0066.h5",
+      "seed": 1655559556,
+      "episodes": 1000,
+      "sha256": "3bb5c06e74c811d5e8fc7f6b8aee40fd83756e99f5a2337cac9661287f5ad6a2"
+    },
+    {
+      "file": "shard-0067.h5",
+      "seed": 1426588521,
+      "episodes": 1000,
+      "sha256": "e067d768e0e7179773a0e90611711a69700595818b443f8d889740a6cf84304f"
+    },
+    {
+      "file": "shard-0068.h5",
+      "seed": 2814857097,
+      "episodes": 1000,
+      "sha256": "e92a0b0a1c89cb4557f6c5aa23314d667ea0f9140f6d079f39b0485c5f39e64f"
+    },
+    {
+      "file": "shard-0069.h5",
+      "seed": 941849197,
+      "episodes": 1000,
+      "sha256": "6121511326ead683c6f2635116128f0c1a906801123265d024e52a5417229380"
+    },
+    {
+      "file": "shard-0070.h5",
+      "seed": 3782518269,
+      "episodes": 1000,
+      "sha256": "c089fc98932205128eb9acce600c5f380123d2a52d62307c119f0f1103504b46"
+    },
+    {
+      "file": "shard-0071.h5",
+      "seed": 384635052,
+      "episodes": 1000,
+      "sha256": "2836623189d6b98d1868cf9085680b5098806447fb64408c62fae444d2134395"
+    },
+    {
+      "file": "shard-0072.h5",
+      "seed": 3744186997,
+      "episodes": 1000,
+      "sha256": "40fb22132115364ebe6ef193816a765d73baaee9289ddb5078e3919a8a6028c5"
+    },
+    {
+      "file": "shard-0073.h5",
+      "seed": 797984206,
+      "episodes": 1000,
+      "sha256": "0a10c237ae258c7529bec044da6c5e5d55953540524638dbf6cfa565763d8d5b"
+    },
+    {
+      "file": "shard-0074.h5",
+      "seed": 438566218,
+      "episodes": 1000,
+      "sha256": "421b65643b248bfddce7d57564345a6617d7812a51f52105f794d89cb376f7ac"
+    },
+    {
+      "file": "shard-0075.h5",
+      "seed": 1389585650,
+      "episodes": 1000,
+      "sha256": "e2aee9932374ba467ef51c582c63042024f1cfe36163d68ef12f3d9f65b3eee7"
+    },
+    {
+      "file": "shard-0076.h5",
+      "seed": 3834869629,
+      "episodes": 1000,
+      "sha256": "d3978f5136731ba0230aac9691e4b3304c609352308bc37f363873be74cff782"
+    },
+    {
+      "file": "shard-0077.h5",
+      "seed": 3971172317,
+      "episodes": 1000,
+      "sha256": "673da739125cb7ea6f1be5907152958921d61c5180b6625d64109e21ab645381"
+    },
+    {
+      "file": "shard-0078.h5",
+      "seed": 2000695177,
+      "episodes": 1000,
+      "sha256": "88e194f179d61176f5a7e365a127e8a9fd5498e396ce8e3d576a8cca732a87cc"
+    },
+    {
+      "file": "shard-0079.h5",
+      "seed": 1417820803,
+      "episodes": 1000,
+      "sha256": "6a343a2348e023863a92b8c6ee91e57b12f06c91c3b265e55ba12b253c61be20"
+    },
+    {
+      "file": "shard-0080.h5",
+      "seed": 1257038866,
+      "episodes": 1000,
+      "sha256": "f0c5cb83bea9e706698f1437916c99c299cdc0c72e61ab9ed724ccde3802acdf"
+    },
+    {
+      "file": "shard-0081.h5",
+      "seed": 4248693827,
+      "episodes": 1000,
+      "sha256": "30565e18e31ac25505809fc783c33c560d2af26b2fe01e60c337680b90030993"
+    },
+    {
+      "file": "shard-0082.h5",
+      "seed": 566180246,
+      "episodes": 1000,
+      "sha256": "5e114502a6b8030a26c1240aa60e52e8fc05b9026d64bfa317a4c0838cbd3b90"
+    },
+    {
+      "file": "shard-0083.h5",
+      "seed": 3243733046,
+      "episodes": 1000,
+      "sha256": "0d99779f32220a589ca57e48a84363fb999803c67caeb3255103111aa740e349"
+    },
+    {
+      "file": "shard-0084.h5",
+      "seed": 3793504530,
+      "episodes": 1000,
+      "sha256": "619ad5bb90821892de8a548db91ca26f454d482c0a3278fc6577ce2027def07c"
+    },
+    {
+      "file": "shard-0085.h5",
+      "seed": 271427747,
+      "episodes": 1000,
+      "sha256": "695c20257712cb035208faea5c8aae9c5b9171a3abbbd8a639f1b13f95932820"
+    },
+    {
+      "file": "shard-0086.h5",
+      "seed": 3211084524,
+      "episodes": 1000,
+      "sha256": "96492919d26e251e4d1534e351cfab72742f54e8c70d03501747e08a9fe0fa10"
+    },
+    {
+      "file": "shard-0087.h5",
+      "seed": 4112262237,
+      "episodes": 1000,
+      "sha256": "59a60c992e0e50912e4f73fa54c3c67e650da7cdaf9c396e4a60bd99449a4d51"
+    },
+    {
+      "file": "shard-0088.h5",
+      "seed": 2845797761,
+      "episodes": 1000,
+      "sha256": "36a7cfa190a76802d53bb107015124b024dda2c56444f5b28f447b6ab4ea17ce"
+    },
+    {
+      "file": "shard-0089.h5",
+      "seed": 3999865591,
+      "episodes": 1000,
+      "sha256": "a6f413ba76046bb8ddcb7fc8be3891755541f4f701d88c5b0e5d554aeaf55c1e"
+    },
+    {
+      "file": "shard-0090.h5",
+      "seed": 3899371522,
+      "episodes": 1000,
+      "sha256": "b3be176984961975e4c67d8e78f4f7fd3e68f54ef1846da91596d67ea6cd3d1e"
+    },
+    {
+      "file": "shard-0091.h5",
+      "seed": 2198237735,
+      "episodes": 1000,
+      "sha256": "49dfa1d60192f25c0e3e0bc233e0421dd11ed75d032841c74469ca74f95280c9"
+    },
+    {
+      "file": "shard-0092.h5",
+      "seed": 423771116,
+      "episodes": 1000,
+      "sha256": "a7b2887439fa8e09971440e95c196b0ae8b3b0e5b94b07b952b3ef448d64d0c3"
+    },
+    {
+      "file": "shard-0093.h5",
+      "seed": 2650723152,
+      "episodes": 1000,
+      "sha256": "f2032493f98df8c8f20318552fb829343e04917d05a7b5921d7dd3dcb11cfa5e"
+    },
+    {
+      "file": "shard-0094.h5",
+      "seed": 3006837489,
+      "episodes": 1000,
+      "sha256": "d2270cd4f47d56e3f1a86af9c795e60450a875ce5bccc6edbe86f1ece11753d8"
+    },
+    {
+      "file": "shard-0095.h5",
+      "seed": 519167984,
+      "episodes": 1000,
+      "sha256": "ea12bb067cfbe129c66200f6b87f3b225b9034b3f76f95d0a51b41379dafbcd3"
+    },
+    {
+      "file": "shard-0096.h5",
+      "seed": 641300359,
+      "episodes": 1000,
+      "sha256": "675b179a44908c8d51b292867b0c2cb4e4d90b7a0b7702d310eb7383cb75f57b"
+    },
+    {
+      "file": "shard-0097.h5",
+      "seed": 240919266,
+      "episodes": 1000,
+      "sha256": "24ebc087e7e40796178ecd0b73166c57e81ed7f545c73d13b353fb81cae3f8e8"
+    },
+    {
+      "file": "shard-0098.h5",
+      "seed": 958398473,
+      "episodes": 1000,
+      "sha256": "7c4b3ddb20d210cdff9da91c71aacfdc59f134185832429aa62647e1be898324"
+    },
+    {
+      "file": "shard-0099.h5",
+      "seed": 1644927082,
+      "episodes": 1000,
+      "sha256": "ec3bc17a5310a31a17f7f13448589bfa0a3d5d208abae11119c37e12e9ccfd79"
+    }
+  ],
+  "generation_identity": {
+    "version": 1,
+    "episodes": 100000,
+    "seed": 20261005,
+    "shard_size": 1000,
+    "blocked_fraction": 0.2,
+    "planner": {
+      "iterations": 800,
+      "step": 0.08,
+      "radius": 0.2,
+      "goal_bias": 0.18,
+      "post_solution": 40,
+      "neighbors": 20,
+      "max_step_rad": 0.04
+    },
+    "robot": {
+      "schema": 1,
+      "robot": "myCobot 280 Pi",
+      "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+      "geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+      "joint_names": [
+        "joint2_to_joint1",
+        "joint3_to_joint2",
+        "joint4_to_joint3",
+        "joint5_to_joint4",
+        "joint6_to_joint5",
+        "joint6output_to_joint6"
+      ],
+      "limits_rad": {
+        "min": [
+          -2.895501229058593,
+          -2.321287905152458,
+          -2.5813419636996136,
+          -2.4958208303518914,
+          -2.66860842629933,
+          -3.1049407392979123
+        ],
+        "max": [
+          2.895501229058593,
+          2.321287905152458,
+          2.5813419636996136,
+          2.4958208303518914,
+          2.7558748888990463,
+          3.1049407392979123
+        ]
+      },
+      "base_frame": "g_base",
+      "tcp": "joint6_flange",
+      "units": "meters/radians/seconds",
+      "goal": "selected joint goal from XYZ + directed flange Z; local Z spin free",
+      "observation": [
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "box_x_scaled",
+        "box_y_scaled",
+        "box_z_scaled",
+        "box_half_x_scaled",
+        "box_half_y_scaled",
+        "box_half_z_scaled",
+        "box_present"
+      ],
+      "action": "absolute operating-box-normalized joint positions",
+      "horizon": 16,
+      "observation_dim": 19
+    },
+    "source_sha256": {
+      "generate_dataset.py": "05a7e277e60b604d39331330bc1acbb63b6b5320f328172326cfab841cbf9f7c",
+      "planner.py": "e608f70f3918b717120c779dd1415c690f7a6abf2a2111b97aeb06ea542ce02c",
+      "env.py": "2ca1371c652ec5f55a89dc8b5685ddfb60206bea90426c59fc44efed8e9875fa",
+      "common.py": "58045957e0ddfbc5aa4d1cb769afb3c1a855b2d794872564ee76499a213d0cca"
+    }
+  },
+  "seconds": 2787.0905948500003,
+  "validation": {
+    "every_episode": "generated scene-valid; merged finite shapes/FK/limits/speed/acceleration checked",
+    "independent_collision_episodes": 1000,
+    "independent_collision_states": 51486
+  },
+  "sha256": "d0818df88bee27b9a55c2168340eba5f6ac1f5f4c69181e2439a007861a47ab3"
+}

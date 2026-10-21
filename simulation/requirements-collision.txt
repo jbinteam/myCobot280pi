@@ -1,0 +1,5 @@
+# Self-collision PRM extension; existing XYZ inference still needs only NumPy.
+python-fcl==0.7.0.11
+trimesh==5.1.0
+pycollada==0.9.3
+scipy==1.18.1

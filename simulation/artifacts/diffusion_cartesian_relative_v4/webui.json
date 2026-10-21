@@ -1,0 +1,750 @@
+{
+  "schema": 1,
+  "checkpoint_sha256": "a98f84e15ed279369e3d4ee442bde16cd469fe9b380f9e285557c7decd8f57da",
+  "dataset_sha256": "604e5c12df9a38f0691054a65f800f9cac8235d11315938c8471a0df7bcece9d",
+  "environment": {
+    "robot": {
+      "schema": 1,
+      "robot": "myCobot 280 Pi",
+      "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+      "geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+      "joint_names": [
+        "joint2_to_joint1",
+        "joint3_to_joint2",
+        "joint4_to_joint3",
+        "joint5_to_joint4",
+        "joint6_to_joint5",
+        "joint6output_to_joint6"
+      ],
+      "limits_rad": {
+        "min": [
+          -2.895501229058593,
+          -2.321287905152458,
+          -2.5813419636996136,
+          -2.4958208303518914,
+          -2.66860842629933,
+          -3.1049407392979123
+        ],
+        "max": [
+          2.895501229058593,
+          2.321287905152458,
+          2.5813419636996136,
+          2.4958208303518914,
+          2.7558748888990463,
+          3.1049407392979123
+        ]
+      },
+      "base_frame": "g_base",
+      "tcp": "joint6_flange",
+      "units": "meters/radians/seconds",
+      "goal": "selected joint goal from XYZ + directed flange Z; local Z spin free",
+      "observation": [
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "box_x_scaled",
+        "box_y_scaled",
+        "box_z_scaled",
+        "box_half_x_scaled",
+        "box_half_y_scaled",
+        "box_half_z_scaled",
+        "box_present"
+      ],
+      "action": "absolute operating-box-normalized joint positions",
+      "horizon": 16,
+      "observation_dim": 19
+    },
+    "self_collision": {
+      "schema": 1,
+      "robot": "myCobot 280 Pi",
+      "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+      "geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+      "joint_names": [
+        "joint2_to_joint1",
+        "joint3_to_joint2",
+        "joint4_to_joint3",
+        "joint5_to_joint4",
+        "joint6_to_joint5",
+        "joint6output_to_joint6"
+      ],
+      "joint_types": [
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute"
+      ],
+      "limits_rad": {
+        "min": [
+          -2.895501229058593,
+          -2.321287905152458,
+          -2.5813419636996136,
+          -2.4958208303518914,
+          -2.66860842629933,
+          -3.1049407392979123
+        ],
+        "max": [
+          2.895501229058593,
+          2.321287905152458,
+          2.5813419636996136,
+          2.4958208303518914,
+          2.7558748888990463,
+          3.1049407392979123
+        ]
+      },
+      "units": {
+        "joints": "radians",
+        "position": "meters"
+      },
+      "base_frame": "g_base",
+      "base_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tcp": "joint6_flange",
+      "tool_offset_m": [
+        0,
+        0,
+        0
+      ],
+      "validation": "joint_limits_and_self_collision",
+      "assumptions": {
+        "checker": "urdf_convex_fcl_v1",
+        "environment": "self_only_no_external_obstacles",
+        "representation": "convex_hull_per_URDF_collision_mesh",
+        "clearance_mm": 1.0,
+        "excluded_pairs": [
+          [
+            "g_base",
+            "joint1"
+          ],
+          [
+            "joint1",
+            "joint2"
+          ],
+          [
+            "joint2",
+            "joint3"
+          ],
+          [
+            "joint3",
+            "joint4"
+          ],
+          [
+            "joint4",
+            "joint5"
+          ],
+          [
+            "joint5",
+            "joint6"
+          ],
+          [
+            "joint6",
+            "joint6_flange"
+          ]
+        ],
+        "exclusion_policy": "direct_URDF_parent_child_pairs_only",
+        "checked_link_pairs": [
+          [
+            "g_base",
+            "joint2"
+          ],
+          [
+            "g_base",
+            "joint3"
+          ],
+          [
+            "g_base",
+            "joint4"
+          ],
+          [
+            "g_base",
+            "joint5"
+          ],
+          [
+            "g_base",
+            "joint6"
+          ],
+          [
+            "g_base",
+            "joint6_flange"
+          ],
+          [
+            "joint1",
+            "joint3"
+          ],
+          [
+            "joint1",
+            "joint4"
+          ],
+          [
+            "joint1",
+            "joint5"
+          ],
+          [
+            "joint1",
+            "joint6"
+          ],
+          [
+            "joint1",
+            "joint6_flange"
+          ],
+          [
+            "joint2",
+            "joint4"
+          ],
+          [
+            "joint2",
+            "joint5"
+          ],
+          [
+            "joint2",
+            "joint6"
+          ],
+          [
+            "joint2",
+            "joint6_flange"
+          ],
+          [
+            "joint3",
+            "joint5"
+          ],
+          [
+            "joint3",
+            "joint6"
+          ],
+          [
+            "joint3",
+            "joint6_flange"
+          ],
+          [
+            "joint4",
+            "joint6"
+          ],
+          [
+            "joint4",
+            "joint6_flange"
+          ],
+          [
+            "joint5",
+            "joint6_flange"
+          ]
+        ],
+        "mesh_info": [
+          {
+            "link": "g_base",
+            "file": "G_base.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 45372,
+            "hull_triangles": 1180,
+            "local_bounds_m": [
+              [
+                -0.07499998474121095,
+                -0.05499998474121094,
+                0.0
+              ],
+              [
+                0.07499998474121095,
+                0.054987457275390624,
+                0.032
+              ]
+            ]
+          },
+          {
+            "link": "joint1",
+            "file": "joint1_pi.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 95700,
+            "hull_triangles": 3836,
+            "local_bounds_m": [
+              [
+                -0.050517555236816405,
+                -0.04631658935546875,
+                0.0
+              ],
+              [
+                0.04795552825927735,
+                0.046318634033203125,
+                0.08090007019042969
+              ]
+            ]
+          },
+          {
+            "link": "joint2",
+            "file": "joint2.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 14246,
+            "hull_triangles": 3340,
+            "local_bounds_m": [
+              [
+                -0.023964159190654755,
+                -0.02400003932416439,
+                -0.003181695006787777
+              ],
+              [
+                0.036575790494680405,
+                0.02400003932416439,
+                0.08387827128171921
+              ]
+            ]
+          },
+          {
+            "link": "joint3",
+            "file": "joint3.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 22976,
+            "hull_triangles": 7100,
+            "local_bounds_m": [
+              [
+                -0.0027239909395575523,
+                -0.023999979719519615,
+                -0.023999979719519615
+              ],
+              [
+                0.05271594971418381,
+                0.023999979719519615,
+                0.13199999928474426
+              ]
+            ]
+          },
+          {
+            "link": "joint4",
+            "file": "joint4.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 6149,
+            "hull_triangles": 2722,
+            "local_bounds_m": [
+              [
+                -0.052963968366384506,
+                -0.021599939092993736,
+                -0.021640000864863396
+              ],
+              [
+                0.004835962783545256,
+                0.021599939092993736,
+                0.1151600033044815
+              ]
+            ]
+          },
+          {
+            "link": "joint5",
+            "file": "joint5.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 22907,
+            "hull_triangles": 4668,
+            "local_bounds_m": [
+              [
+                1.6202032566070558e-07,
+                -0.01943772812187672,
+                -0.019706802368164064
+              ],
+              [
+                0.05278763569891453,
+                0.01914904861152172,
+                0.03663734436035156
+              ]
+            ]
+          },
+          {
+            "link": "joint6",
+            "file": "joint6.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 9810,
+            "hull_triangles": 2666,
+            "local_bounds_m": [
+              [
+                -0.019200001674890554,
+                -0.021600001407414693,
+                0.0
+              ],
+              [
+                0.019200041729213746,
+                0.03510000014128156,
+                0.05712000164493913
+              ]
+            ]
+          },
+          {
+            "link": "joint6_flange",
+            "file": "joint7.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 9652,
+            "hull_triangles": 3464,
+            "local_bounds_m": [
+              [
+                -0.019200001674890554,
+                -0.019200001674890554,
+                0.0
+              ],
+              [
+                0.019200001674890554,
+                0.019200001674890554,
+                0.01370000045998021
+              ]
+            ]
+          }
+        ],
+        "derived_bounds_sha256": "a645169bb31088d0a7ea125fd844d5a32b3aaf550d79098d9ccc1b90dfb2967a",
+        "versions": {
+          "python-fcl": "0.7.0.11",
+          "trimesh": "5.1.0",
+          "pycollada": "0.9.3",
+          "scipy": "1.18.1"
+        }
+      },
+      "metric": "Euclidean displacement / operating joint range"
+    },
+    "scene_checker": "PyBullet convex URDF hulls versus table and one axis-aligned box",
+    "clearance_mm": 1.0,
+    "path_sample_rad": 0.04,
+    "table_top_m": -0.034999999999999996,
+    "pybullet_version": "3.2.7",
+    "execution": "kinematic reference interpolation; no calibrated dynamics or physical IO"
+  },
+  "cases": [
+    {
+      "id": "000590",
+      "name": "Block detour \u00b7 legacy example 000590",
+      "start_deg": [
+        107.74732535307042,
+        -22.270703034796217,
+        22.873229185063675,
+        -12.727510939984997,
+        -11.653879827694912,
+        -119.21818277038213
+      ],
+      "target_mm": [
+        -163.14389565014324,
+        -24.582043886988295,
+        129.0896721954794
+      ],
+      "target_axis": [
+        -0.6493725053152838,
+        -0.7603759677202576,
+        -0.01198903891199639
+      ],
+      "obstacle_mm": [
+        -57.89337591501463,
+        -164.0330104392802,
+        163.44816816835922,
+        16.16243442552792,
+        12.653726456161543,
+        198.44816816835922
+      ]
+    },
+    {
+      "id": "000062",
+      "name": "Nearby goal \u00b7 legacy example 000062",
+      "start_deg": [
+        -8.318224036214652,
+        76.08977320396454,
+        65.39640822734249,
+        -40.82917559776098,
+        86.32743131138542,
+        113.24601722862104
+      ],
+      "target_mm": [
+        -160.0508206211624,
+        38.3615691267599,
+        13.442700710813982
+      ],
+      "target_axis": [
+        -0.0068533547653649544,
+        0.9928073757802999,
+        0.11952634071489932
+      ],
+      "obstacle_mm": [
+        262.16654565401615,
+        18.386520751665856,
+        56.943829230207804,
+        32.51476971926416,
+        34.738891624077894,
+        91.9438292302078
+      ]
+    },
+    {
+      "id": "000672",
+      "name": "Global goal \u00b7 legacy example 000672",
+      "start_deg": [
+        -77.04888767893404,
+        114.86775885326439,
+        -102.89953730502583,
+        66.33383452271345,
+        40.69615089715253,
+        -97.65342715616006
+      ],
+      "target_mm": [
+        -100.01547990534335,
+        164.39932354481851,
+        216.64623468001068
+      ],
+      "target_axis": [
+        -0.7535168951525799,
+        0.5600961096635019,
+        0.3442450241607369
+      ],
+      "obstacle_mm": [
+        -190.82046122438558,
+        46.32376442062772,
+        86.75468296072067,
+        22.290281550872685,
+        22.08165662074584,
+        121.75468296072067
+      ]
+    }
+  ],
+  "held_out_evaluation": {
+    "episodes": 16,
+    "successes": 0,
+    "within_5mm_5deg": 0,
+    "within_10mm_5deg": 1,
+    "mean_final_error_mm": 61.04781163504863,
+    "median_final_error_mm": 48.02947717991172,
+    "mean_final_angle_deg": 17.942086772803343,
+    "mean_tracking_rmse_mm": 114.36237256703625,
+    "mean_axis_tracking_rmse_deg": 40.810622858002844,
+    "tracking_measurement_duration_s": 40.0,
+    "by_kind": {
+      "block": {
+        "episodes": 8,
+        "successes": 0
+      },
+      "static_absent": {
+        "episodes": 8,
+        "successes": 0
+      }
+    },
+    "initial_continuation_rejections": 0,
+    "seconds": 98.09356631599985,
+    "execution_collisions": 0,
+    "stalls": 69,
+    "join_rejections": 132,
+    "proposals": 6400,
+    "joint_goal_capture": 0,
+    "neural_prefix_capture": 0,
+    "neural_prefix_candidates": 0,
+    "static_target_brakes": 0,
+    "max_velocity_rad_s": 0.9699611991777121,
+    "max_acceleration_rad_s2": 2.9811135651037164,
+    "max_jerk_rad_s3": 110.7734348868863,
+    "max_boundary_velocity_error": 1.2267478023917525e-14,
+    "max_boundary_acceleration_error": 4.675497817037849e-13,
+    "raw_collision_rejections": 401,
+    "success_rate": 0.0
+  },
+  "model_name": "diffusion_cartesian_relative_v4",
+  "dataset_episodes": 120000,
+  "conditioning": {
+    "schema": 4,
+    "observation_dim": 34,
+    "base_observation_dim": 19,
+    "target_input": "Cartesian target-minus-current XYZ and directed flange-Z residual; spin free",
+    "observation": [
+      "current_joint_normalized",
+      "current_joint_normalized",
+      "current_joint_normalized",
+      "current_joint_normalized",
+      "current_joint_normalized",
+      "current_joint_normalized",
+      "target_minus_current_x_scaled",
+      "target_minus_current_y_scaled",
+      "target_minus_current_z_scaled",
+      "target_minus_current_tool_z_x",
+      "target_minus_current_tool_z_y",
+      "target_minus_current_tool_z_z",
+      "box_x_scaled",
+      "box_y_scaled",
+      "box_z_scaled",
+      "box_half_x_scaled",
+      "box_half_y_scaled",
+      "box_half_z_scaled",
+      "box_present",
+      "joint_velocity_rad_s",
+      "joint_velocity_rad_s",
+      "joint_velocity_rad_s",
+      "joint_velocity_rad_s",
+      "joint_velocity_rad_s",
+      "joint_velocity_rad_s",
+      "joint_acceleration_rad_s2",
+      "joint_acceleration_rad_s2",
+      "joint_acceleration_rad_s2",
+      "joint_acceleration_rad_s2",
+      "joint_acceleration_rad_s2",
+      "joint_acceleration_rad_s2",
+      "target_velocity_m_s",
+      "target_velocity_m_s",
+      "target_velocity_m_s"
+    ],
+    "normalization": {
+      "Cartesian_position": 0.3,
+      "obstacle_geometry": 0.3,
+      "joint_velocity": 1.0,
+      "joint_acceleration": 3.0,
+      "target_velocity": 0.5
+    },
+    "base_frame": "g_base",
+    "tcp": "joint6_flange",
+    "tcp_offset_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "target_velocity": "Cartesian target point in g_base; vector clipped to 0.5 m/s",
+    "goal_joint_input": false,
+    "current_FK": "shared URDF current joints -> XYZ and directed flange local-Z",
+    "target_axis_residual": "normalized target tool-Z minus current tool-Z"
+  },
+  "no_block_trained": true,
+  "moving_targets_trained": true,
+  "motion_evaluation": {
+    "episodes": 8,
+    "successes": 1,
+    "within_5mm_5deg": 1,
+    "within_10mm_5deg": 1,
+    "mean_final_error_mm": 14.635805714940538,
+    "median_final_error_mm": 17.536550517326997,
+    "mean_final_angle_deg": 10.007023452983745,
+    "mean_tracking_rmse_mm": 63.59677246282497,
+    "mean_axis_tracking_rmse_deg": 17.631333345953312,
+    "tracking_measurement_duration_s": 48.0,
+    "by_kind": {
+      "moving_absent": {
+        "episodes": 2,
+        "successes": 0
+      },
+      "moving_block": {
+        "episodes": 2,
+        "successes": 0
+      },
+      "retarget_absent": {
+        "episodes": 2,
+        "successes": 0
+      },
+      "retarget_block": {
+        "episodes": 2,
+        "successes": 1
+      }
+    },
+    "initial_continuation_rejections": 0,
+    "seconds": 49.83901265899976,
+    "execution_collisions": 0,
+    "stalls": 49,
+    "join_rejections": 22,
+    "proposals": 3600,
+    "joint_goal_capture": 0,
+    "neural_prefix_capture": 1,
+    "neural_prefix_candidates": 1,
+    "static_target_brakes": 0,
+    "max_velocity_rad_s": 0.9866788524291196,
+    "max_acceleration_rad_s2": 2.9775490584423485,
+    "max_jerk_rad_s3": 111.2985111628943,
+    "max_boundary_velocity_error": 9.237956588986235e-15,
+    "max_boundary_acceleration_error": 3.6654732118363615e-13,
+    "raw_collision_rejections": 239
+  },
+  "comparison": {
+    "path": "output/diffusion/cartesian_relative_v4/comparison.json",
+    "sha256": "0ce27aff4eeac98dbc91dc57c0760bb6fc901fb7386495367e95eebf6e16123b"
+  },
+  "augmentation_audit": {
+    "path": "output/diffusion/motion_v2_dataset_validation.json",
+    "sha256": "6066ab0d24efc17a24d4cc8c88410794a78bc3328b84d6db0283498be36a8d3d"
+  },
+  "goal_joint_input": false,
+  "inverse_kinematics_required": false,
+  "dataset_episode_count_scope": "All preserved source/augmentation episodes; test excluded from training",
+  "recommended_for_deployment": false,
+  "dataset_audit": {
+    "path": "output/diffusion/cartesian_relative_v4_dataset_validation.json",
+    "sha256": "d9f3a11c79faa5c1421e03ccbb576d63712f7d4475ea5ad3a5aac2c06dfa3682"
+  },
+  "deployment_checks": {
+    "fixed_success_not_lower": false,
+    "motion_success_not_lower": false,
+    "fixed_position_error_not_higher": false,
+    "motion_tracking_error_not_higher": false,
+    "usable_fixed_precision": false,
+    "usable_motion_precision": false,
+    "executed_collision_free": true,
+    "continuous_motion_limits": true,
+    "continuous_boundaries_match": true,
+    "candidate_ik_disabled": true,
+    "no_joint_goal_capture": true
+  },
+  "training_provenance": {
+    "path": "simulation/artifacts/diffusion_cartesian_relative_v4/model/training.json",
+    "sha256": "d99ef41a471922d3d383c836df69578fc98e590e9b084d3a315bb70552c864f9"
+  }
+}

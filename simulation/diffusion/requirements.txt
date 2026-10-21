@@ -1,0 +1,11 @@
+# Use the existing CUDA-enabled PyTorch environment; capture exact versions in runs.
+-r ../requirements-collision.txt
+numpy>=2.0,<3
+scipy>=1.14,<2
+torch>=2.5,<3
+pybullet>=3.2.7,<4
+diffusers>=0.35,<1
+h5py>=3.12,<4
+tqdm>=4.67,<5
+Pillow>=11,<13
+PyYAML>=6,<7

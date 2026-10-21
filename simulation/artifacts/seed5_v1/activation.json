@@ -1,0 +1,37 @@
+{
+  "activated_utc": "2026-10-03T17:58:37.047209+00:00",
+  "reason": "User requested activation of the collision-aware NN in the WebUI",
+  "candidate": "simulation/artifacts/seed5_v1/candidates/collision-aware-s102-balanced",
+  "active_checkpoint": "simulation/artifacts/seed5_v1/models.json",
+  "checkpoint_sha256": "5b49f16e0b97a4a3f9ff71655ded46bc3f8b5c5745f3e334abf965d78e0805e9",
+  "previous_checkpoint_sha256": "574a9107421b03adadeb214225e9aee1db1c63440e1faa1c992b803e18077fcd",
+  "backup_directory": "simulation/artifacts/seed5_v1/backups/pre-collision-webui-20261004-574a9107421b",
+  "backup_sha256": {
+    "models.json": "574a9107421b03adadeb214225e9aee1db1c63440e1faa1c992b803e18077fcd",
+    "training.json": "307ed93b9bfb8ad99f6d9e2cee12ff5e6752a0b8ade121be1f2ef033c2363981",
+    "seed5_v1.pt": "7eb12a8d49856168b6534c410198923e234ba9cf7a7809d7ab48b3c47bb3aa31",
+    "selection.json": "1c1fc61e40171cf26931da393de3c8f58b11e6974644310a3725be35bcacdb45"
+  },
+  "training_steps": 4000,
+  "training_seed": 102,
+  "validation_metrics": {
+    "held_out_tasks": 2048,
+    "raw_valid_success": 0,
+    "tolerance_mm": 1.0,
+    "angle_tolerance_deg": 1.0,
+    "mean_best_position_error_mm": 17.927256227917297,
+    "mean_best_direction_error_deg": 5.724078091602956,
+    "mean_inference_ms": 0.15057852490096835,
+    "refinement": "not included in raw validation",
+    "raw_proposals": 8192,
+    "raw_invalid_proposals": 59,
+    "raw_invalid_fraction": 0.0072021484375,
+    "tasks_with_valid_proposal": 2048,
+    "pose_best_invalid_tasks": 5,
+    "limitation": "One reproducible training seed; benchmark before relying on quality"
+  },
+  "comparison": "output/collision_training/comparison.json",
+  "scope": "Shared 5D NN serving for WebUI PRM and mouse-aim fallback. Runtime endpoint and path checks remain required.",
+  "tradeoff": "Fewer unsafe raw proposals, with slightly worse raw pose accuracy and more refinement iterations than the matched control.",
+  "historical_selection": "selection.json records the previous model search; this explicit activation supersedes that publication."
+}

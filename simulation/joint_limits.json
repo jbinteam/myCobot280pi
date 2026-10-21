@@ -1,0 +1,24 @@
+{
+  "model": "myCobot 280 Pi",
+  "source": "read-only get_joint_min_angle/get_joint_max_angle from connected Atom firmware",
+  "firmware": 6.5,
+  "queried_at": "2026-09-30T22:42:10+0700",
+  "hardware_min_deg": [
+    -168.0,
+    -135.0,
+    -150.0,
+    -145.0,
+    -165.0,
+    -180.0
+  ],
+  "hardware_max_deg": [
+    168.0,
+    135.0,
+    150.0,
+    145.0,
+    165.0,
+    180.0
+  ],
+  "operating_margin_deg": 2.0,
+  "manufacturer_reference": "https://docs.elephantrobotics.com/docs/mycobot-pi-en/2-serialproduct/2.1-280/2.1.2.1%20Introduction%20of%20product%20parameters.html"
+}

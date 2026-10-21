@@ -1,0 +1,42 @@
+Training new 6-joint XYZ models on cuda; source URDF f9c2d1bd637b
+/home/jb/codex/projects/myCobot280pi/simulation/train.py:86: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  history.append({'step':step+1,'train_loss':float(loss),'validation_loss':val})
+direct 1/1200: validation loss 0.893998
+direct 201/1200: validation loss 0.116899
+direct 401/1200: validation loss 0.068087
+direct 601/1200: validation loss 0.045288
+direct 801/1200: validation loss 0.041204
+direct 1001/1200: validation loss 0.037844
+direct 1200/1200: validation loss 0.035218
+conditional 1/1200: validation loss 0.041611
+conditional 201/1200: validation loss 0.032309
+conditional 401/1200: validation loss 0.028617
+conditional 601/1200: validation loss 0.025718
+conditional 801/1200: validation loss 0.024749
+conditional 1001/1200: validation loss 0.023400
+conditional 1200/1200: validation loss 0.022464
+differential 1/1200: validation loss 0.149757
+differential 201/1200: validation loss 0.129086
+differential 401/1200: validation loss 0.111740
+differential 601/1200: validation loss 0.098515
+differential 801/1200: validation loss 0.092542
+differential 1001/1200: validation loss 0.087928
+differential 1200/1200: validation loss 0.084151
+null 1/400: validation loss 0.079093
+null 201/400: validation loss 0.000155
+null 400/400: validation loss 0.000126
+seed 1/2400: validation loss 0.207420
+seed 201/2400: validation loss 0.066527
+seed 401/2400: validation loss 0.057588
+seed 601/2400: validation loss 0.051453
+seed 801/2400: validation loss 0.047967
+seed 1001/2400: validation loss 0.044705
+seed 1201/2400: validation loss 0.040608
+seed 1401/2400: validation loss 0.039185
+seed 1601/2400: validation loss 0.037737
+seed 1801/2400: validation loss 0.036220
+seed 2001/2400: validation loss 0.035577
+seed 2201/2400: validation loss 0.035066
+seed 2400/2400: validation loss 0.034820
+Exported five trained models in 19.9s

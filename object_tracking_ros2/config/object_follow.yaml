@@ -1,0 +1,39 @@
+object_follow:
+  ros__parameters:
+    backend: direct
+    api_url: http://127.0.0.1:8000
+    robot_host: 192.168.77.225
+    robot_port: 9000
+    auto_connect: false
+    dry_run: true
+    mount_configured: true
+    mount_assumed: true
+    mount_calibrated: false
+    frame_verified: false
+    scene_verified: false
+    sdk_speed: 70
+    # The executor also applies its SDK-dependent trajectory cap: at 70 this
+    # is 0.81449 rad/s (46.67 deg/s) for the six-joint velocity vector.
+    reference_speed_rad_s: 1.0
+    optical_frame: camera_color_optical_frame
+    base_frame: g_base
+    eef_frame: joint6_flange
+    max_detection_age_s: 0.75
+    target_deadband_mm: 30.0
+    cone_distance_mm: 350.0
+    cone_half_angle_deg: 30.0
+    approach_enabled: true
+    approach_camera_fov_fallback: true
+    show_rrt: true
+    approach_final_distance_mm: 150.0
+    approach_step_mm: 20.0
+    approach_distance_tolerance_mm: 10.0
+    # Orbbec Gemini 305 nominal COLOR FOV for the scanner's preferred
+    # 640x480 (4:3) stream; datasheet v1.0 table 4-7-3.
+    # Full-frame 1280x800 is 94x68. Rectified intrinsics remain uncalibrated.
+    horizontal_fov_deg: 82.0
+    vertical_fov_deg: 68.0
+    angular_margin_deg: 0.0
+    near_m: 0.005
+    eef_to_optical_translation_m: [0.0, 0.0, 0.0]
+    eef_to_optical_quaternion_xyzw: [0.0, 0.0, 0.0, 1.0]

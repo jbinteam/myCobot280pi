@@ -1,0 +1,60 @@
+import { test, expect } from '@playwright/test';
+test.beforeEach(async({page})=>{await page.addInitScript(()=>localStorage.setItem('ik-task-mode','position'));});
+
+test('simulation compares eight methods, plays motion, and matches URDF FK without hardware requests', async ({ page }, testInfo) => {
+  const posts=[], errors=[];
+  page.on('request',r=>{if(r.method()==='POST') posts.push(new URL(r.url()).pathname);});
+  page.on('pageerror',e=>errors.push(e.message));
+  await page.goto('/?view=lab');
+  await expect(page.locator('#run-results tbody tr')).toHaveCount(8,{timeout:45000});
+  await expect(page.locator('#benchmark-results tbody tr')).toHaveCount(8);
+  await expect(page.locator('#mode-badge')).toContainText('hardware disabled');
+  await expect(page.locator('.robot-toolbar')).toBeHidden();
+  await expect(page.locator('.robot-actions')).toBeHidden();
+  await expect(page.locator('#ik-summary')).toContainText('Reached target');
+  await expect(page.locator('#error-chart')).toContainText('Simulation time (s)');
+  await expect(page.locator('#error-chart')).toContainText('Position error (mm)');
+  await page.locator('#ik-scrub').fill(await page.locator('#ik-scrub').getAttribute('max'));
+  const fk = await page.evaluate(async () => {
+    const {robot} = await import(document.querySelector('script[src*="/src/main.js"]').src);
+    robot.updateMatrixWorld(true);
+    return robot.links.joint6_flange.matrixWorld.elements.slice(12,15).map(v=>v*1000);
+  });
+  const stats=await page.locator('#frame-stats').textContent();
+  const displayed=stats.match(/TCP \[([^\]]+)\]/)[1].split(',').map(Number);
+  fk.forEach((v,i)=>expect(Math.abs(v-displayed[i])).toBeLessThan(.051));
+  const finalPose=await page.locator('#pose-value').textContent();
+  await page.locator('#play-ik').click();
+  await expect(page.locator('#play-ik')).toHaveText('Ⅱ Pause');
+  await expect(page.locator('#pose-value')).not.toHaveText(finalPose);
+  await page.locator('#play-ik').click();
+  await page.locator('#ik-method').selectOption('direct');
+  await expect(page.locator('#ik-summary')).toContainText('Did not reach tolerance');
+  await page.locator('#ik-case').selectOption('0');
+  await expect(page.locator('#run-results tbody tr')).toHaveCount(0);
+  await expect(page.locator('#play-ik')).toBeDisabled();
+  await page.locator('#compare-ik').click();
+  await expect(page.locator('#ik-feedback')).toContainText('methods reached the target',{timeout:30000});
+  await expect(page.locator('#run-results tbody tr')).toHaveCount(8);
+  await page.locator('#ik-method').selectOption('seed_dls');
+  await page.locator('#ik-scrub').fill(await page.locator('#ik-scrub').getAttribute('max'));
+  await page.screenshot({path:testInfo.outputPath('simulation-desktop.png'),fullPage:true});
+  expect(posts.every(p=>p==='/api/sim/solve')).toBe(true);
+  expect(posts).toHaveLength(2);
+  expect(errors).toEqual([]);
+});
+
+test('simulation layout fits mobile screen and rejects unreachable results honestly', async ({ page }, testInfo) => {
+  await page.setViewportSize({width:390,height:844});
+  await page.goto('/?view=lab');
+  await expect(page.locator('#run-results tbody tr')).toHaveCount(8,{timeout:45000});
+  await page.locator('#target-x').fill('600');
+  await page.locator('#target-y').fill('0');
+  await page.locator('#target-z').fill('0');
+  await page.locator('#ik-method').selectOption('dls');
+  await page.locator('#solve-ik').click();
+  await expect(page.locator('#ik-feedback')).toContainText('0/1 methods reached');
+  await expect(page.locator('#ik-summary')).toContainText('Did not reach tolerance');
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
+  await page.screenshot({path:testInfo.outputPath('simulation-mobile.png'),fullPage:true});
+});

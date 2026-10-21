@@ -1,0 +1,4269 @@
+{
+  "schema": 1,
+  "name": "reachable_final_150mm_stage_outside_eight_candidate_search",
+  "physical_motion": false,
+  "description": "The corrected approach reaches its measured 170 mm initial disk, then the normal 150 mm final-stage request returns ik_failed. An additional candidate and independently checked complete route reach the actual final disk under the configured Orbbec FOV.",
+  "request": {
+    "tracking_engine": "learned_rrt",
+    "start_deg": [
+      -152.34586409402777,
+      73.23443720286609,
+      -26.657461062520678,
+      97.87976902440077,
+      -18.25560640608657,
+      -135.84872450371748
+    ],
+    "cursor_mm": [
+      279.76681067659405,
+      294.6667443516897,
+      295.8733373752055
+    ],
+    "target_axis": [
+      0.5390607039279457,
+      0.6361146602374759,
+      0.5520613158985768
+    ],
+    "tracking_region": {
+      "mode": "cone_disk",
+      "distance_mm": 150,
+      "half_angle_deg": 30
+    },
+    "obstacle_mm": null,
+    "seed": 42,
+    "continuous_motion": true,
+    "speed_rad_s": 0.8144869842640204,
+    "tolerance_mm": 1,
+    "orientation_tolerance_deg": 1,
+    "velocity_shape": {
+      "kind": "smooth_trapezoid",
+      "rise_percent": 5,
+      "fall_percent": 10
+    },
+    "start_velocity_rad_s": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "start_acceleration_rad_s2": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "camera": {
+    "horizontal_fov_deg": 82,
+    "vertical_fov_deg": 68,
+    "angular_margin_deg": 0,
+    "near_m": 0.005,
+    "eef_to_optical_translation_m": [
+      0,
+      0,
+      0
+    ],
+    "eef_to_optical_quaternion_xyzw": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "mount_assumed": true,
+    "mount_calibrated": false
+  },
+  "checkpoint_sha256": "168ab43a2d4d4dcc0e61acf8c3c89e6dff6e9723843b1fd023a4519108ea04f5",
+  "environment": {
+    "robot": {
+      "schema": 1,
+      "robot": "myCobot 280 Pi",
+      "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+      "geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+      "joint_names": [
+        "joint2_to_joint1",
+        "joint3_to_joint2",
+        "joint4_to_joint3",
+        "joint5_to_joint4",
+        "joint6_to_joint5",
+        "joint6output_to_joint6"
+      ],
+      "limits_rad": {
+        "min": [
+          -2.895501229058593,
+          -2.321287905152458,
+          -2.5813419636996136,
+          -2.4958208303518914,
+          -2.66860842629933,
+          -3.1049407392979123
+        ],
+        "max": [
+          2.895501229058593,
+          2.321287905152458,
+          2.5813419636996136,
+          2.4958208303518914,
+          2.7558748888990463,
+          3.1049407392979123
+        ]
+      },
+      "base_frame": "g_base",
+      "tcp": "joint6_flange",
+      "units": "meters/radians/seconds",
+      "goal": "selected joint goal from XYZ + directed flange Z; local Z spin free",
+      "observation": [
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "box_x_scaled",
+        "box_y_scaled",
+        "box_z_scaled",
+        "box_half_x_scaled",
+        "box_half_y_scaled",
+        "box_half_z_scaled",
+        "box_present"
+      ],
+      "action": "absolute operating-box-normalized joint positions",
+      "horizon": 16,
+      "observation_dim": 19
+    },
+    "self_collision": {
+      "schema": 1,
+      "robot": "myCobot 280 Pi",
+      "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+      "geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+      "joint_names": [
+        "joint2_to_joint1",
+        "joint3_to_joint2",
+        "joint4_to_joint3",
+        "joint5_to_joint4",
+        "joint6_to_joint5",
+        "joint6output_to_joint6"
+      ],
+      "joint_types": [
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute"
+      ],
+      "limits_rad": {
+        "min": [
+          -2.895501229058593,
+          -2.321287905152458,
+          -2.5813419636996136,
+          -2.4958208303518914,
+          -2.66860842629933,
+          -3.1049407392979123
+        ],
+        "max": [
+          2.895501229058593,
+          2.321287905152458,
+          2.5813419636996136,
+          2.4958208303518914,
+          2.7558748888990463,
+          3.1049407392979123
+        ]
+      },
+      "units": {
+        "joints": "radians",
+        "position": "meters"
+      },
+      "base_frame": "g_base",
+      "base_transform": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "tcp": "joint6_flange",
+      "tool_offset_m": [
+        0,
+        0,
+        0
+      ],
+      "validation": "joint_limits_and_self_collision",
+      "assumptions": {
+        "checker": "urdf_convex_fcl_v1",
+        "environment": "self_only_no_external_obstacles",
+        "representation": "convex_hull_per_URDF_collision_mesh",
+        "clearance_mm": 1,
+        "excluded_pairs": [
+          [
+            "g_base",
+            "joint1"
+          ],
+          [
+            "joint1",
+            "joint2"
+          ],
+          [
+            "joint2",
+            "joint3"
+          ],
+          [
+            "joint3",
+            "joint4"
+          ],
+          [
+            "joint4",
+            "joint5"
+          ],
+          [
+            "joint5",
+            "joint6"
+          ],
+          [
+            "joint6",
+            "joint6_flange"
+          ]
+        ],
+        "exclusion_policy": "direct_URDF_parent_child_pairs_only",
+        "checked_link_pairs": [
+          [
+            "g_base",
+            "joint2"
+          ],
+          [
+            "g_base",
+            "joint3"
+          ],
+          [
+            "g_base",
+            "joint4"
+          ],
+          [
+            "g_base",
+            "joint5"
+          ],
+          [
+            "g_base",
+            "joint6"
+          ],
+          [
+            "g_base",
+            "joint6_flange"
+          ],
+          [
+            "joint1",
+            "joint3"
+          ],
+          [
+            "joint1",
+            "joint4"
+          ],
+          [
+            "joint1",
+            "joint5"
+          ],
+          [
+            "joint1",
+            "joint6"
+          ],
+          [
+            "joint1",
+            "joint6_flange"
+          ],
+          [
+            "joint2",
+            "joint4"
+          ],
+          [
+            "joint2",
+            "joint5"
+          ],
+          [
+            "joint2",
+            "joint6"
+          ],
+          [
+            "joint2",
+            "joint6_flange"
+          ],
+          [
+            "joint3",
+            "joint5"
+          ],
+          [
+            "joint3",
+            "joint6"
+          ],
+          [
+            "joint3",
+            "joint6_flange"
+          ],
+          [
+            "joint4",
+            "joint6"
+          ],
+          [
+            "joint4",
+            "joint6_flange"
+          ],
+          [
+            "joint5",
+            "joint6_flange"
+          ]
+        ],
+        "mesh_info": [
+          {
+            "link": "g_base",
+            "file": "G_base.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "source_triangles": 45372,
+            "hull_triangles": 1180,
+            "local_bounds_m": [
+              [
+                -0.07499998474121095,
+                -0.05499998474121094,
+                0
+              ],
+              [
+                0.07499998474121095,
+                0.054987457275390624,
+                0.032
+              ]
+            ]
+          },
+          {
+            "link": "joint1",
+            "file": "joint1_pi.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "source_triangles": 95700,
+            "hull_triangles": 3836,
+            "local_bounds_m": [
+              [
+                -0.050517555236816405,
+                -0.04631658935546875,
+                0
+              ],
+              [
+                0.04795552825927735,
+                0.046318634033203125,
+                0.08090007019042969
+              ]
+            ]
+          },
+          {
+            "link": "joint2",
+            "file": "joint2.dae",
+            "asset_unit_m": 1,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "source_triangles": 14246,
+            "hull_triangles": 3340,
+            "local_bounds_m": [
+              [
+                -0.023964159190654755,
+                -0.02400003932416439,
+                -0.003181695006787777
+              ],
+              [
+                0.036575790494680405,
+                0.02400003932416439,
+                0.08387827128171921
+              ]
+            ]
+          },
+          {
+            "link": "joint3",
+            "file": "joint3.dae",
+            "asset_unit_m": 1,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "source_triangles": 22976,
+            "hull_triangles": 7100,
+            "local_bounds_m": [
+              [
+                -0.0027239909395575523,
+                -0.023999979719519615,
+                -0.023999979719519615
+              ],
+              [
+                0.05271594971418381,
+                0.023999979719519615,
+                0.13199999928474426
+              ]
+            ]
+          },
+          {
+            "link": "joint4",
+            "file": "joint4.dae",
+            "asset_unit_m": 1,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "source_triangles": 6149,
+            "hull_triangles": 2722,
+            "local_bounds_m": [
+              [
+                -0.052963968366384506,
+                -0.021599939092993736,
+                -0.021640000864863396
+              ],
+              [
+                0.004835962783545256,
+                0.021599939092993736,
+                0.1151600033044815
+              ]
+            ]
+          },
+          {
+            "link": "joint5",
+            "file": "joint5.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "source_triangles": 22907,
+            "hull_triangles": 4668,
+            "local_bounds_m": [
+              [
+                1.6202032566070558e-07,
+                -0.01943772812187672,
+                -0.019706802368164064
+              ],
+              [
+                0.05278763569891453,
+                0.01914904861152172,
+                0.03663734436035156
+              ]
+            ]
+          },
+          {
+            "link": "joint6",
+            "file": "joint6.dae",
+            "asset_unit_m": 1,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "source_triangles": 9810,
+            "hull_triangles": 2666,
+            "local_bounds_m": [
+              [
+                -0.019200001674890554,
+                -0.021600001407414693,
+                0
+              ],
+              [
+                0.019200041729213746,
+                0.03510000014128156,
+                0.05712000164493913
+              ]
+            ]
+          },
+          {
+            "link": "joint6_flange",
+            "file": "joint7.dae",
+            "asset_unit_m": 1,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "source_triangles": 9652,
+            "hull_triangles": 3464,
+            "local_bounds_m": [
+              [
+                -0.019200001674890554,
+                -0.019200001674890554,
+                0
+              ],
+              [
+                0.019200001674890554,
+                0.019200001674890554,
+                0.01370000045998021
+              ]
+            ]
+          }
+        ],
+        "derived_bounds_sha256": "a645169bb31088d0a7ea125fd844d5a32b3aaf550d79098d9ccc1b90dfb2967a",
+        "versions": {
+          "python-fcl": "0.7.0.11",
+          "trimesh": "5.1.0",
+          "pycollada": "0.9.3",
+          "scipy": "1.18.1"
+        }
+      },
+      "metric": "Euclidean displacement / operating joint range"
+    },
+    "scene_checker": "PyBullet convex URDF hulls versus table and one axis-aligned box",
+    "clearance_mm": 1,
+    "path_sample_rad": 0.04,
+    "table_top_m": -0.034999999999999996,
+    "pybullet_version": "3.2.7",
+    "execution": "kinematic reference interpolation; no calibrated dynamics or physical IO"
+  },
+  "expected_baseline": {
+    "status": "ik_failed",
+    "candidate_limit": 8,
+    "candidates_filtered": 0,
+    "candidates_tested": 8,
+    "jobs_started": 16,
+    "route_attempts": 0
+  },
+  "witness": {
+    "q_deg": [
+      73.18485412059056,
+      -56.944749032735544,
+      -30.597145417641688,
+      93.78431135624791,
+      -33.01312088958805,
+      -108.8419504190175
+    ],
+    "candidate_index": 9,
+    "recovery_ik": {
+      "seed": 42,
+      "attempts": 4,
+      "robust": true,
+      "learned": true
+    },
+    "route_rad": [
+      [
+        -2.658936930236593,
+        1.2781820550350398,
+        -0.4652604657631718,
+        1.7083242405673515,
+        -0.3186204387343797,
+        -2.37100752722457
+      ],
+      [
+        -2.2254197704434877,
+        1.0464184382660193,
+        -0.37868948606422786,
+        1.5691528258641811,
+        0.2920768380328251,
+        -1.5429020380696965
+      ],
+      [
+        -1.7686165205215363,
+        1.0958679884434677,
+        0.30661822512937587,
+        1.1968001991654442,
+        0.4712281216648455,
+        -1.0646226732343256
+      ],
+      [
+        -1.6205092516651283,
+        0.9237373963165694,
+        0.39903178490402186,
+        1.0988049596680718,
+        0.6749637596342314,
+        -0.7697510234807986
+      ],
+      [
+        -1.2498583943281614,
+        0.589602892360016,
+        0.38869930241099104,
+        0.38523521492566876,
+        1.1753762110400299,
+        -0.9333489495340447
+      ],
+      [
+        -0.6962056561720673,
+        0.7308115575981984,
+        0.04774265654248269,
+        0.22959956812439758,
+        0.8031664948378006,
+        -1.3126748555126064
+      ],
+      [
+        -0.18921451395337213,
+        0.6161563255407785,
+        -0.5220361911637703,
+        -0.3768793726105887,
+        0.9019483373908892,
+        -1.0563009652495368
+      ],
+      [
+        0.11659877914558991,
+        0.6922220488779286,
+        -0.4677580710169147,
+        -0.5808767033838959,
+        1.116138688085923,
+        -1.045568207589693
+      ],
+      [
+        1.2773166669960445,
+        -0.9938733623430914,
+        -0.534020929249343,
+        1.6368450198820348,
+        -0.5761876558822309,
+        -1.899650399104277
+      ]
+    ],
+    "rrt": {
+      "seed": 42,
+      "configuration": {
+        "iterations": 800,
+        "step": 0.08,
+        "radius": 0.2,
+        "goal_bias": 0.18,
+        "post_solution": 40,
+        "neighbors": 20,
+        "max_step_rad": 0.02
+      },
+      "nodes": 62,
+      "iterations": 211,
+      "rewires": 0,
+      "seconds": 1.32064738400004,
+      "status": "rrt_star",
+      "cost": 1.791932241797646,
+      "first_solution_iteration": 171
+    }
+  },
+  "approach": {
+    "nominal_demo_distance_mm": 350,
+    "measured_initial_distance_mm": 170,
+    "step_mm": 20,
+    "final_distance_mm": 150,
+    "initial_request": {
+      "tracking_engine": "learned_rrt",
+      "start_deg": [
+        -152.34586409402777,
+        73.23443720286609,
+        -26.657461062520678,
+        97.87976902440077,
+        -18.25560640608657,
+        -135.84872450371748
+      ],
+      "cursor_mm": [
+        279.76681067659405,
+        294.6667443516897,
+        295.8733373752055
+      ],
+      "target_axis": [
+        0.5390607039279457,
+        0.6361146602374759,
+        0.5520613158985768
+      ],
+      "tracking_region": {
+        "mode": "cone_disk",
+        "distance_mm": 170,
+        "half_angle_deg": 30
+      },
+      "obstacle_mm": null,
+      "seed": 42,
+      "continuous_motion": true,
+      "speed_rad_s": 0.8144869842640204,
+      "tolerance_mm": 1,
+      "orientation_tolerance_deg": 1,
+      "velocity_shape": {
+        "kind": "smooth_trapezoid",
+        "rise_percent": 5,
+        "fall_percent": 10
+      },
+      "start_velocity_rad_s": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_acceleration_rad_s2": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "initial_feedback": {
+      "q": [
+        -152.34586409402777,
+        73.23443720286609,
+        -26.657461062520678,
+        97.87976902440077,
+        -18.25560640608657,
+        -135.84872450371748
+      ],
+      "position": [
+        188.1264910088433,
+        186.52725211131883,
+        202.0229136724475
+      ],
+      "axis": [
+        0.5390607039279457,
+        0.636114660237476,
+        0.5520613158985763
+      ]
+    },
+    "completed_before_failure": [
+      170
+    ]
+  },
+  "final_stage_proof": {
+    "distance_mm": 150,
+    "accepted": true,
+    "acceptance": {
+      "accepted": true,
+      "tracking_accepted": true,
+      "distance_mm": 173.18725763532984,
+      "gap_error_mm": 0.6385421529812234,
+      "axial_error_mm": 0.6385421529812234,
+      "radial_distance_mm": 85.45089715895678,
+      "radius_mm": 86.60254037844386,
+      "direction_error_deg": 0.1358434013362174
+    },
+    "position_mm": [
+      147.89072747325187,
+      183.56265250527835,
+      279.7983362499965
+    ],
+    "route_audit": {
+      "passed": true,
+      "samples": 1246,
+      "outside_view_samples": 0,
+      "occluded_samples": 0,
+      "minimum_view_margin_deg": 4.012392601199743,
+      "max_step_rad": 0.005
+    },
+    "tool_axis": [
+      0.762676474182028,
+      0.6403216990302505,
+      0.0911741053166035
+    ],
+    "timed_route": {
+      "passed": true,
+      "physical_motion": false,
+      "camera": {
+        "horizontal_fov_deg": 82.0,
+        "vertical_fov_deg": 68.0,
+        "angular_margin_deg": 0.0,
+        "near_m": 0.005,
+        "eef_to_optical_translation_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "eef_to_optical_quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mount_assumed": true,
+        "mount_calibrated": false
+      },
+      "stage_sequence_mm": [
+        170,
+        150
+      ],
+      "stage_150_acceptance": {
+        "accepted": true,
+        "tracking_accepted": true,
+        "distance_mm": 173.18725763532984,
+        "gap_error_mm": 0.6385421529812803,
+        "axial_error_mm": 0.6385421529812803,
+        "radial_distance_mm": 85.4508971589567,
+        "radius_mm": 86.60254037844386,
+        "direction_error_deg": 0.1358434013362174
+      },
+      "legs": 28,
+      "frames": 6999,
+      "total_duration_s": 139.96000000000004,
+      "complete_route": true,
+      "timed_replay_audit": {
+        "passed": true,
+        "samples": 6999,
+        "outside_view_samples": 0,
+        "occluded_samples": 0,
+        "minimum_view_margin_deg": 4.012392601199743,
+        "max_step_rad": 0.005
+      },
+      "all_references_start_and_end_at_rest": true,
+      "encoder_rounding_checked": false,
+      "hardware_qualified": false,
+      "references": [
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -152.34586409402777,
+            73.23443720286609,
+            -26.657461062520678,
+            97.87976902440077,
+            -18.25560640608657,
+            -135.84872450371748
+          ],
+          "dt": 0.02,
+          "frames": 267,
+          "duration_s": 5.32,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07803646519433477,
+          "max_acceleration_rad_s2": 0.44005525485527675,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.32,
+              "start_deg": [
+                -152.34586409402777,
+                73.23443720286609,
+                -26.657461062520678,
+                97.87976902440077,
+                -18.25560640608657,
+                -135.84872450371748
+              ],
+              "end_deg": [
+                -144.06629622647998,
+                68.80807817434867,
+                -25.004077140833274,
+                95.22179079394859,
+                -6.59214756645538,
+                -120.03307466365389
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 266
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.05609330685869235,
+            "joint_acceleration_rad_s2": 0.31631564018060376,
+            "tcp_velocity_m_s": 0.01995369839368293,
+            "tcp_acceleration_m_s2": 0.11378450165598557,
+            "angular_velocity_rad_s": 0.15781520943482677,
+            "angular_acceleration_rad_s2": 0.8993433667642492
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -144.06629622647998,
+            68.80807817434867,
+            -25.004077140833274,
+            95.22179079394859,
+            -6.59214756645538,
+            -120.03307466365389
+          ],
+          "dt": 0.02,
+          "frames": 267,
+          "duration_s": 5.32,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07803646519433477,
+          "max_acceleration_rad_s2": 0.44005525485527874,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.32,
+              "start_deg": [
+                -144.06629622647998,
+                68.80807817434867,
+                -25.004077140833274,
+                95.22179079394859,
+                -6.59214756645538,
+                -120.03307466365389
+              ],
+              "end_deg": [
+                -135.78672835893215,
+                64.38171914583123,
+                -23.350693219145867,
+                92.56381256349638,
+                5.071311273175811,
+                -104.21742482359028
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 266
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.05609330685869235,
+            "joint_acceleration_rad_s2": 0.31631564018060376,
+            "tcp_velocity_m_s": 0.01995369839368293,
+            "tcp_acceleration_m_s2": 0.11378450165598616,
+            "angular_velocity_rad_s": 0.15781520943482677,
+            "angular_acceleration_rad_s2": 0.8993433667642546
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -135.78672835893215,
+            64.38171914583123,
+            -23.350693219145867,
+            92.56381256349638,
+            5.071311273175811,
+            -104.21742482359028
+          ],
+          "dt": 0.02,
+          "frames": 267,
+          "duration_s": 5.32,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.0780364651943347,
+          "max_acceleration_rad_s2": 0.44005525485528496,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.32,
+              "start_deg": [
+                -135.78672835893215,
+                64.38171914583123,
+                -23.350693219145867,
+                92.56381256349638,
+                5.071311273175811,
+                -104.21742482359028
+              ],
+              "end_deg": [
+                -127.50716049138435,
+                59.95536011731379,
+                -21.69730929745846,
+                89.90583433304418,
+                16.734770112807002,
+                -88.40177498352668
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 266
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.0560933068586926,
+            "joint_acceleration_rad_s2": 0.31631564018061253,
+            "tcp_velocity_m_s": 0.019953698393682925,
+            "tcp_acceleration_m_s2": 0.11378450165598572,
+            "angular_velocity_rad_s": 0.1578152094348267,
+            "angular_acceleration_rad_s2": 0.8993433667642619
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -127.50716049138435,
+            59.95536011731379,
+            -21.69730929745846,
+            89.90583433304418,
+            16.734770112807002,
+            -88.40177498352668
+          ],
+          "dt": 0.02,
+          "frames": 256,
+          "duration_s": 5.1000000000000005,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07343950915778494,
+          "max_acceleration_rad_s2": 0.43199711269285834,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.1000000000000005,
+              "start_deg": [
+                -127.50716049138435,
+                59.95536011731379,
+                -21.69730929745846,
+                89.90583433304418,
+                16.734770112807002,
+                -88.40177498352668
+              ],
+              "end_deg": [
+                -118.78286106192182,
+                60.89977695864318,
+                -8.608896124403856,
+                82.79442299956155,
+                20.156307594962307,
+                -79.26731197243852
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 255
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.04842308505165965,
+            "joint_acceleration_rad_s2": 0.28484167677446426,
+            "tcp_velocity_m_s": 0.027428320339187087,
+            "tcp_acceleration_m_s2": 0.16389110318558797,
+            "angular_velocity_rad_s": 0.1569576955632671,
+            "angular_acceleration_rad_s2": 0.9329017404825007
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -118.78286106192182,
+            60.89977695864318,
+            -8.608896124403856,
+            82.79442299956155,
+            20.156307594962307,
+            -79.26731197243852
+          ],
+          "dt": 0.02,
+          "frames": 256,
+          "duration_s": 5.1000000000000005,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07343950915778463,
+          "max_acceleration_rad_s2": 0.4319971126928592,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.1000000000000005,
+              "start_deg": [
+                -118.78286106192182,
+                60.89977695864318,
+                -8.608896124403856,
+                82.79442299956155,
+                20.156307594962307,
+                -79.26731197243852
+              ],
+              "end_deg": [
+                -110.0585616324593,
+                61.84419379997258,
+                4.4795170486507505,
+                75.68301166607894,
+                23.577845077117615,
+                -70.13284896135036
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 255
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.04842308505165911,
+            "joint_acceleration_rad_s2": 0.2848416767744655,
+            "tcp_velocity_m_s": 0.02742832033918696,
+            "tcp_acceleration_m_s2": 0.16389110318558822,
+            "angular_velocity_rad_s": 0.15695769556326883,
+            "angular_acceleration_rad_s2": 0.932901740482502
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -110.0585616324593,
+            61.84419379997258,
+            4.4795170486507505,
+            75.68301166607894,
+            23.577845077117615,
+            -70.13284896135036
+          ],
+          "dt": 0.02,
+          "frames": 256,
+          "duration_s": 5.1000000000000005,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07343950915778462,
+          "max_acceleration_rad_s2": 0.43199711269285374,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.1000000000000005,
+              "start_deg": [
+                -110.0585616324593,
+                61.84419379997258,
+                4.4795170486507505,
+                75.68301166607894,
+                23.577845077117615,
+                -70.13284896135036
+              ],
+              "end_deg": [
+                -101.33426220299678,
+                62.78861064130197,
+                17.567930221705357,
+                68.5716003325963,
+                26.99938255927292,
+                -60.99838595026221
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 255
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.04842308505165913,
+            "joint_acceleration_rad_s2": 0.28484167677446376,
+            "tcp_velocity_m_s": 0.027428320339186518,
+            "tcp_acceleration_m_s2": 0.1638911031855838,
+            "angular_velocity_rad_s": 0.15695769556326897,
+            "angular_acceleration_rad_s2": 0.9329017404824891
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -101.33426220299678,
+            62.78861064130197,
+            17.567930221705357,
+            68.5716003325963,
+            26.99938255927292,
+            -60.99838595026221
+          ],
+          "dt": 0.02,
+          "frames": 206,
+          "duration_s": 4.1,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.058689239096969166,
+          "max_acceleration_rad_s2": 0.42943345680707357,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 4.1,
+              "start_deg": [
+                -101.33426220299678,
+                62.78861064130197,
+                17.567930221705357,
+                68.5716003325963,
+                26.99938255927292,
+                -60.99838595026221
+              ],
+              "end_deg": [
+                -97.091301492656,
+                57.85743241432244,
+                20.215383694138943,
+                65.76424351480973,
+                32.83597865529846,
+                -52.55093543579375
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 205
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.038875629499476275,
+            "joint_acceleration_rad_s2": 0.2844558256058982,
+            "tcp_velocity_m_s": 0.02019827948194653,
+            "tcp_acceleration_m_s2": 0.14906818090380922,
+            "angular_velocity_rad_s": 0.13305918892264287,
+            "angular_acceleration_rad_s2": 0.9807339818706569
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -97.091301492656,
+            57.85743241432244,
+            20.215383694138943,
+            65.76424351480973,
+            32.83597865529846,
+            -52.55093543579375
+          ],
+          "dt": 0.02,
+          "frames": 206,
+          "duration_s": 4.1,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.058689239096969166,
+          "max_acceleration_rad_s2": 0.4294334568070904,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 4.1,
+              "start_deg": [
+                -97.091301492656,
+                57.85743241432244,
+                20.215383694138943,
+                65.76424351480973,
+                32.83597865529846,
+                -52.55093543579375
+              ],
+              "end_deg": [
+                -92.84834078231522,
+                52.9262541873429,
+                22.86283716657253,
+                62.95688669702316,
+                38.672574751324014,
+                -44.10348492132529
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 205
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.038875629499476205,
+            "joint_acceleration_rad_s2": 0.2844558256059229,
+            "tcp_velocity_m_s": 0.020198279481946413,
+            "tcp_acceleration_m_s2": 0.14906818090380924,
+            "angular_velocity_rad_s": 0.13305918892264296,
+            "angular_acceleration_rad_s2": 0.980733981870682
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -92.84834078231522,
+            52.9262541873429,
+            22.86283716657253,
+            62.95688669702316,
+            38.672574751324014,
+            -44.10348492132529
+          ],
+          "dt": 0.02,
+          "frames": 251,
+          "duration_s": 5.0,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07333996007037032,
+          "max_acceleration_rad_s2": 0.44003976042222004,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.0,
+              "start_deg": [
+                -92.84834078231522,
+                52.9262541873429,
+                22.86283716657253,
+                62.95688669702316,
+                38.672574751324014,
+                -44.10348492132529
+              ],
+              "end_deg": [
+                -85.76943084954397,
+                46.54475523187363,
+                22.66550128699137,
+                49.3287084430341,
+                48.2297485784399,
+                -47.22797515464006
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 250
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.05142845007152454,
+            "joint_acceleration_rad_s2": 0.30857070042914714,
+            "tcp_velocity_m_s": 0.025474768029882446,
+            "tcp_acceleration_m_s2": 0.1550990105573775,
+            "angular_velocity_rad_s": 0.15082507862976596,
+            "angular_acceleration_rad_s2": 0.9136351990788644
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -85.76943084954397,
+            46.54475523187363,
+            22.66550128699137,
+            49.3287084430341,
+            48.2297485784399,
+            -47.22797515464006
+          ],
+          "dt": 0.02,
+          "frames": 251,
+          "duration_s": 5.0,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.0733399600703703,
+          "max_acceleration_rad_s2": 0.44003976042222004,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.0,
+              "start_deg": [
+                -85.76943084954397,
+                46.54475523187363,
+                22.66550128699137,
+                49.3287084430341,
+                48.2297485784399,
+                -47.22797515464006
+              ],
+              "end_deg": [
+                -78.6905209167727,
+                40.163256276404354,
+                22.46816540741021,
+                35.70053018904505,
+                57.786922405555785,
+                -50.35246538795485
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 250
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.05142845007152458,
+            "joint_acceleration_rad_s2": 0.30857070042914714,
+            "tcp_velocity_m_s": 0.02547476802988245,
+            "tcp_acceleration_m_s2": 0.1550990105573775,
+            "angular_velocity_rad_s": 0.15082507862976596,
+            "angular_acceleration_rad_s2": 0.9136351990788644
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -78.6905209167727,
+            40.163256276404354,
+            22.46816540741021,
+            35.70053018904505,
+            57.786922405555785,
+            -50.35246538795485
+          ],
+          "dt": 0.02,
+          "frames": 251,
+          "duration_s": 5.0,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07333996007037076,
+          "max_acceleration_rad_s2": 0.44003976042221865,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.0,
+              "start_deg": [
+                -78.6905209167727,
+                40.163256276404354,
+                22.46816540741021,
+                35.70053018904505,
+                57.786922405555785,
+                -50.35246538795485
+              ],
+              "end_deg": [
+                -71.61161098400143,
+                33.781757320935085,
+                22.27082952782905,
+                22.072351935056,
+                67.34409623267167,
+                -53.476955621269624
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 250
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.05142845007152454,
+            "joint_acceleration_rad_s2": 0.30857070042914714,
+            "tcp_velocity_m_s": 0.025474768029882494,
+            "tcp_acceleration_m_s2": 0.15509901055737724,
+            "angular_velocity_rad_s": 0.15082507862976668,
+            "angular_acceleration_rad_s2": 0.9136351990788598
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -71.61161098400143,
+            33.781757320935085,
+            22.27082952782905,
+            22.072351935056,
+            67.34409623267167,
+            -53.476955621269624
+          ],
+          "dt": 0.02,
+          "frames": 232,
+          "duration_s": 4.62,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.06752182282276242,
+          "max_acceleration_rad_s2": 0.4384533949530041,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 4.62,
+              "start_deg": [
+                -71.61161098400143,
+                33.781757320935085,
+                22.27082952782905,
+                22.072351935056,
+                67.34409623267167,
+                -53.476955621269624
+              ],
+              "end_deg": [
+                -61.037622579932815,
+                36.478644170542935,
+                15.759037259428334,
+                19.099930033888803,
+                60.23541428862171,
+                -60.72154677878557
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 231
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.043184956761132196,
+            "joint_acceleration_rad_s2": 0.280421797150209,
+            "tcp_velocity_m_s": 0.027739619457338417,
+            "tcp_acceleration_m_s2": 0.18251938643493076,
+            "angular_velocity_rad_s": 0.15155331837641772,
+            "angular_acceleration_rad_s2": 0.9933170628665319
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -61.037622579932815,
+            36.478644170542935,
+            15.759037259428334,
+            19.099930033888803,
+            60.23541428862171,
+            -60.72154677878557
+          ],
+          "dt": 0.02,
+          "frames": 232,
+          "duration_s": 4.62,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.06752182282276194,
+          "max_acceleration_rad_s2": 0.4384533949530041,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 4.62,
+              "start_deg": [
+                -61.037622579932815,
+                36.478644170542935,
+                15.759037259428334,
+                19.099930033888803,
+                60.23541428862171,
+                -60.72154677878557
+              ],
+              "end_deg": [
+                -50.463634175864186,
+                39.175531020150785,
+                9.24724499102762,
+                16.127508132721605,
+                53.12673234457176,
+                -67.96613793630154
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 231
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.043184956761132196,
+            "joint_acceleration_rad_s2": 0.280421797150209,
+            "tcp_velocity_m_s": 0.027739619457338417,
+            "tcp_acceleration_m_s2": 0.18251938643493076,
+            "angular_velocity_rad_s": 0.15155331837641672,
+            "angular_acceleration_rad_s2": 0.9933170628665319
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -50.463634175864186,
+            39.175531020150785,
+            9.24724499102762,
+            16.127508132721605,
+            53.12673234457176,
+            -67.96613793630154
+          ],
+          "dt": 0.02,
+          "frames": 232,
+          "duration_s": 4.62,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.06752182282276187,
+          "max_acceleration_rad_s2": 0.43845339495300184,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 4.62,
+              "start_deg": [
+                -50.463634175864186,
+                39.175531020150785,
+                9.24724499102762,
+                16.127508132721605,
+                53.12673234457176,
+                -67.96613793630154
+              ],
+              "end_deg": [
+                -39.88964577179557,
+                41.872417869758635,
+                2.7354527226269054,
+                13.155086231554408,
+                46.018050400521794,
+                -75.21072909381749
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 231
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.043184956761132196,
+            "joint_acceleration_rad_s2": 0.280421797150209,
+            "tcp_velocity_m_s": 0.027739619457338605,
+            "tcp_acceleration_m_s2": 0.18251938643492946,
+            "angular_velocity_rad_s": 0.15155331837641683,
+            "angular_acceleration_rad_s2": 0.9933170628665255
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -39.88964577179557,
+            41.872417869758635,
+            2.7354527226269054,
+            13.155086231554408,
+            46.018050400521794,
+            -75.21072909381749
+          ],
+          "dt": 0.02,
+          "frames": 251,
+          "duration_s": 5.0,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.0734334807380988,
+          "max_acceleration_rad_s2": 0.44060088442859263,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.0,
+              "start_deg": [
+                -39.88964577179557,
+                41.872417869758635,
+                2.7354527226269054,
+                13.155086231554408,
+                46.018050400521794,
+                -75.21072909381749
+              ],
+              "end_deg": [
+                -30.206828205246193,
+                39.68266423776423,
+                -8.146521687171623,
+                1.5721916756612437,
+                47.90464462412772,
+                -70.31434846400948
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 250
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.043710193926845865,
+            "joint_acceleration_rad_s2": 0.262261163561075,
+            "tcp_velocity_m_s": 0.030636648079425295,
+            "tcp_acceleration_m_s2": 0.18697705500288672,
+            "angular_velocity_rad_s": 0.15517548796637948,
+            "angular_acceleration_rad_s2": 0.9403964057844222
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -30.206828205246193,
+            39.68266423776423,
+            -8.146521687171623,
+            1.5721916756612437,
+            47.90464462412772,
+            -70.31434846400948
+          ],
+          "dt": 0.02,
+          "frames": 251,
+          "duration_s": 5.0,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07343348073809879,
+          "max_acceleration_rad_s2": 0.4406008844285932,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.0,
+              "start_deg": [
+                -30.206828205246193,
+                39.68266423776423,
+                -8.146521687171623,
+                1.5721916756612437,
+                47.90464462412772,
+                -70.31434846400948
+              ],
+              "end_deg": [
+                -20.52401063869682,
+                37.49291060576983,
+                -19.02849609697015,
+                -10.01070288023192,
+                49.791238847733645,
+                -65.41796783420149
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 250
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.0437101939268459,
+            "joint_acceleration_rad_s2": 0.2622611635610751,
+            "tcp_velocity_m_s": 0.03063664807942532,
+            "tcp_acceleration_m_s2": 0.18697705500288694,
+            "angular_velocity_rad_s": 0.15517548796637928,
+            "angular_acceleration_rad_s2": 0.9403964057844194
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -20.52401063869682,
+            37.49291060576983,
+            -19.02849609697015,
+            -10.01070288023192,
+            49.791238847733645,
+            -65.41796783420149
+          ],
+          "dt": 0.02,
+          "frames": 251,
+          "duration_s": 5.0,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07343348073809883,
+          "max_acceleration_rad_s2": 0.44060088442859285,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.0,
+              "start_deg": [
+                -20.52401063869682,
+                37.49291060576983,
+                -19.02849609697015,
+                -10.01070288023192,
+                49.791238847733645,
+                -65.41796783420149
+              ],
+              "end_deg": [
+                -10.841193072147448,
+                35.303156973775415,
+                -29.91047050676868,
+                -21.593597436125087,
+                51.67783307133957,
+                -60.52158720439349
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 250
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.04371019392684589,
+            "joint_acceleration_rad_s2": 0.262261163561075,
+            "tcp_velocity_m_s": 0.030636648079425333,
+            "tcp_acceleration_m_s2": 0.18697705500288728,
+            "angular_velocity_rad_s": 0.1551754879663795,
+            "angular_acceleration_rad_s2": 0.9403964057844234
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -10.841193072147448,
+            35.303156973775415,
+            -29.91047050676868,
+            -21.593597436125087,
+            51.67783307133957,
+            -60.52158720439349
+          ],
+          "dt": 0.02,
+          "frames": 202,
+          "duration_s": 4.0200000000000005,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.05858961697818754,
+          "max_acceleration_rad_s2": 0.4372359475983994,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 4.0200000000000005,
+              "start_deg": [
+                -10.841193072147448,
+                35.303156973775415,
+                -29.91047050676868,
+                -21.593597436125087,
+                51.67783307133957,
+                -60.52158720439349
+              ],
+              "end_deg": [
+                -2.0802875653635735,
+                37.48227943018965,
+                -28.355516904609264,
+                -27.437690478747452,
+                57.81393462496579,
+                -60.21411634617061
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 201
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.04112051809855615,
+            "joint_acceleration_rad_s2": 0.30686953804892614,
+            "tcp_velocity_m_s": 0.0240348986841568,
+            "tcp_acceleration_m_s2": 0.18119975505390917,
+            "angular_velocity_rad_s": 0.11632077123990987,
+            "angular_acceleration_rad_s2": 0.8731143463163165
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            -2.0802875653635735,
+            37.48227943018965,
+            -28.355516904609264,
+            -27.437690478747452,
+            57.81393462496579,
+            -60.21411634617061
+          ],
+          "dt": 0.02,
+          "frames": 202,
+          "duration_s": 4.0200000000000005,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.05858961697818714,
+          "max_acceleration_rad_s2": 0.437235947598401,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 4.0200000000000005,
+              "start_deg": [
+                -2.0802875653635735,
+                37.48227943018965,
+                -28.355516904609264,
+                -27.437690478747452,
+                57.81393462496579,
+                -60.21411634617061
+              ],
+              "end_deg": [
+                6.680617941420301,
+                39.66140188660389,
+                -26.80056330244985,
+                -33.28178352136982,
+                63.95003617859201,
+                -59.90664548794774
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 201
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.041120518098556276,
+            "joint_acceleration_rad_s2": 0.30686953804892664,
+            "tcp_velocity_m_s": 0.02403489868415593,
+            "tcp_acceleration_m_s2": 0.1811997550539117,
+            "angular_velocity_rad_s": 0.11632077123990607,
+            "angular_acceleration_rad_s2": 0.8731143463163271
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            6.680617941420301,
+            39.66140188660389,
+            -26.80056330244985,
+            -33.28178352136982,
+            63.95003617859201,
+            -59.90664548794774
+          ],
+          "dt": 0.02,
+          "frames": 271,
+          "duration_s": 5.4,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.0792923633744743,
+          "max_acceleration_rad_s2": 0.44051312985819524,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.4,
+              "start_deg": [
+                6.680617941420301,
+                39.66140188660389,
+                -26.80056330244985,
+                -33.28178352136982,
+                63.95003617859201,
+                -59.90664548794774
+              ],
+              "end_deg": [
+                14.069977516883663,
+                28.9273851177884,
+                -27.222405759693384,
+                -19.163328534967846,
+                53.176352059905334,
+                -65.34390159139993
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 270
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.04933203699846364,
+            "joint_acceleration_rad_s2": 0.2740668722136887,
+            "tcp_velocity_m_s": 0.029789773465754652,
+            "tcp_acceleration_m_s2": 0.16843183941600276,
+            "angular_velocity_rad_s": 0.1707753623857764,
+            "angular_acceleration_rad_s2": 0.9601904860085595
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            14.069977516883663,
+            28.9273851177884,
+            -27.222405759693384,
+            -19.163328534967846,
+            53.176352059905334,
+            -65.34390159139993
+          ],
+          "dt": 0.02,
+          "frames": 271,
+          "duration_s": 5.4,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07929236337447486,
+          "max_acceleration_rad_s2": 0.4405131298581894,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.4,
+              "start_deg": [
+                14.069977516883663,
+                28.9273851177884,
+                -27.222405759693384,
+                -19.163328534967846,
+                53.176352059905334,
+                -65.34390159139993
+              ],
+              "end_deg": [
+                21.459337092347024,
+                18.193368348972907,
+                -27.644248216936923,
+                -5.044873548565874,
+                42.40266794121866,
+                -70.78115769485214
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 270
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.04933203699846369,
+            "joint_acceleration_rad_s2": 0.27406687221369086,
+            "tcp_velocity_m_s": 0.029789773465755204,
+            "tcp_acceleration_m_s2": 0.16843183941600262,
+            "angular_velocity_rad_s": 0.17077536238577737,
+            "angular_acceleration_rad_s2": 0.9601904860085464
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            21.459337092347024,
+            18.193368348972907,
+            -27.644248216936923,
+            -5.044873548565874,
+            42.40266794121866,
+            -70.78115769485214
+          ],
+          "dt": 0.02,
+          "frames": 271,
+          "duration_s": 5.4,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07929236337447447,
+          "max_acceleration_rad_s2": 0.4405131298581881,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.4,
+              "start_deg": [
+                21.459337092347024,
+                18.193368348972907,
+                -27.644248216936923,
+                -5.044873548565874,
+                42.40266794121866,
+                -70.78115769485214
+              ],
+              "end_deg": [
+                28.848696667810387,
+                7.4593515801574135,
+                -28.06609067418046,
+                9.073581437836093,
+                31.628983822531982,
+                -76.21841379830433
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 270
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.04933203699846364,
+            "joint_acceleration_rad_s2": 0.2740668722136868,
+            "tcp_velocity_m_s": 0.029789773465754836,
+            "tcp_acceleration_m_s2": 0.16843183941600262,
+            "angular_velocity_rad_s": 0.17077536238577684,
+            "angular_acceleration_rad_s2": 0.9601904860085438
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            28.848696667810387,
+            7.4593515801574135,
+            -28.06609067418046,
+            9.073581437836093,
+            31.628983822531982,
+            -76.21841379830433
+          ],
+          "dt": 0.02,
+          "frames": 271,
+          "duration_s": 5.4,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07929236337447458,
+          "max_acceleration_rad_s2": 0.44051312985819024,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.4,
+              "start_deg": [
+                28.848696667810387,
+                7.4593515801574135,
+                -28.06609067418046,
+                9.073581437836093,
+                31.628983822531982,
+                -76.21841379830433
+              ],
+              "end_deg": [
+                36.238056243273746,
+                -3.2746651886580787,
+                -28.487933131424,
+                23.19203642423807,
+                20.855299703845315,
+                -81.65566990175653
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 270
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.04933203699846364,
+            "joint_acceleration_rad_s2": 0.2740668722136868,
+            "tcp_velocity_m_s": 0.02978977346575451,
+            "tcp_acceleration_m_s2": 0.16843183941600454,
+            "angular_velocity_rad_s": 0.17077536238577723,
+            "angular_acceleration_rad_s2": 0.9601904860085494
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            36.238056243273746,
+            -3.2746651886580787,
+            -28.487933131424,
+            23.19203642423807,
+            20.855299703845315,
+            -81.65566990175653
+          ],
+          "dt": 0.02,
+          "frames": 271,
+          "duration_s": 5.4,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07929236337447465,
+          "max_acceleration_rad_s2": 0.4405131298581917,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.4,
+              "start_deg": [
+                36.238056243273746,
+                -3.2746651886580787,
+                -28.487933131424,
+                23.19203642423807,
+                20.855299703845315,
+                -81.65566990175653
+              ],
+              "end_deg": [
+                43.62741581873711,
+                -14.008681957473577,
+                -28.90977558866754,
+                37.31049141064005,
+                10.08161558515863,
+                -87.09292600520871
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 270
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.04933203699846369,
+            "joint_acceleration_rad_s2": 0.27406687221369086,
+            "tcp_velocity_m_s": 0.029789773465754666,
+            "tcp_acceleration_m_s2": 0.16843183941600448,
+            "angular_velocity_rad_s": 0.17077536238577784,
+            "angular_acceleration_rad_s2": 0.960190486008552
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            43.62741581873711,
+            -14.008681957473577,
+            -28.90977558866754,
+            37.31049141064005,
+            10.08161558515863,
+            -87.09292600520871
+          ],
+          "dt": 0.02,
+          "frames": 271,
+          "duration_s": 5.4,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07929236337447461,
+          "max_acceleration_rad_s2": 0.4405131298581907,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.4,
+              "start_deg": [
+                43.62741581873711,
+                -14.008681957473577,
+                -28.90977558866754,
+                37.31049141064005,
+                10.08161558515863,
+                -87.09292600520871
+              ],
+              "end_deg": [
+                51.01677539420047,
+                -24.742698726289063,
+                -29.33161804591108,
+                51.428946397042004,
+                -0.6920685335280399,
+                -92.53018210866091
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 270
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.04933203699846364,
+            "joint_acceleration_rad_s2": 0.2740668722136887,
+            "tcp_velocity_m_s": 0.029789773465754663,
+            "tcp_acceleration_m_s2": 0.16843183941600615,
+            "angular_velocity_rad_s": 0.17077536238577778,
+            "angular_acceleration_rad_s2": 0.9601904860085568
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            51.01677539420047,
+            -24.742698726289063,
+            -29.33161804591108,
+            51.428946397042004,
+            -0.6920685335280399,
+            -92.53018210866091
+          ],
+          "dt": 0.02,
+          "frames": 271,
+          "duration_s": 5.4,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07929236337447425,
+          "max_acceleration_rad_s2": 0.44051312985819036,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.4,
+              "start_deg": [
+                51.01677539420047,
+                -24.742698726289063,
+                -29.33161804591108,
+                51.428946397042004,
+                -0.6920685335280399,
+                -92.53018210866091
+              ],
+              "end_deg": [
+                58.40613496966383,
+                -35.47671549510456,
+                -29.753460503154614,
+                65.54740138344398,
+                -11.465752652214704,
+                -97.96743821211311
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 270
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.04933203699846357,
+            "joint_acceleration_rad_s2": 0.2740668722136887,
+            "tcp_velocity_m_s": 0.029789773465754406,
+            "tcp_acceleration_m_s2": 0.16843183941600584,
+            "angular_velocity_rad_s": 0.1707753623857765,
+            "angular_acceleration_rad_s2": 0.9601904860085562
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            58.40613496966383,
+            -35.47671549510456,
+            -29.753460503154614,
+            65.54740138344398,
+            -11.465752652214704,
+            -97.96743821211311
+          ],
+          "dt": 0.02,
+          "frames": 271,
+          "duration_s": 5.4,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07929236337447428,
+          "max_acceleration_rad_s2": 0.4405131298581862,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.4,
+              "start_deg": [
+                58.40613496966383,
+                -35.47671549510456,
+                -29.753460503154614,
+                65.54740138344398,
+                -11.465752652214704,
+                -97.96743821211311
+              ],
+              "end_deg": [
+                65.7954945451272,
+                -46.21073226392005,
+                -30.175302960398152,
+                79.66585636984595,
+                -22.23943677090138,
+                -103.40469431556531
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 270
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.04933203699846357,
+            "joint_acceleration_rad_s2": 0.2740668722136811,
+            "tcp_velocity_m_s": 0.029789773465754406,
+            "tcp_acceleration_m_s2": 0.168431839416006,
+            "angular_velocity_rad_s": 0.1707753623857765,
+            "angular_acceleration_rad_s2": 0.9601904860085514
+          }
+        },
+        {
+          "method": "collision_checked_velocity_profile_c2",
+          "applied": true,
+          "collision_rechecked": true,
+          "reference_shape": {
+            "kind": "smooth_trapezoid",
+            "rise_percent": 5.0,
+            "fall_percent": 10.0
+          },
+          "boundary_blended": false,
+          "hold_deg": [
+            65.7954945451272,
+            -46.21073226392005,
+            -30.175302960398152,
+            79.66585636984595,
+            -22.23943677090138,
+            -103.40469431556531
+          ],
+          "dt": 0.02,
+          "frames": 271,
+          "duration_s": 5.4,
+          "collision_sample_dt_s": 0.01,
+          "speed_limit_rad_s": 0.8144869842640204,
+          "acceleration_limit_rad_s2": 3.0,
+          "max_velocity_rad_s": 0.07929236337447425,
+          "max_acceleration_rad_s2": 0.4405131298581866,
+          "start_velocity_rad_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_acceleration_rad_s2": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "starts_and_ends_at_rest": true,
+          "ends_at_rest": true,
+          "stops_at_corners": true,
+          "segments": [
+            {
+              "start_frame": 0,
+              "start_time_s": 0.0,
+              "duration_s": 5.4,
+              "start_deg": [
+                65.7954945451272,
+                -46.21073226392005,
+                -30.175302960398152,
+                79.66585636984595,
+                -22.23943677090138,
+                -103.40469431556531
+              ],
+              "end_deg": [
+                73.18485412059056,
+                -56.944749032735544,
+                -30.597145417641688,
+                93.78431135624791,
+                -33.01312088958805,
+                -108.8419504190175
+              ],
+              "start_velocity_rad_s": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "start_acceleration_rad_s2": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "end_frame": 270
+            }
+          ],
+          "path_vertices": 2,
+          "specification_checked": true,
+          "motion_specification": {
+            "robot": "myCobot 280 Pi",
+            "source": "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/6.developmentGuide/CommunicationProtocolPackage/18-communication.html",
+            "joint_velocity_deg_s": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "joint_acceleration_deg_s2": [
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0,
+              200.0
+            ],
+            "tcp_velocity_mm_s": 100.0,
+            "tcp_acceleration_mm_s2": 400.0,
+            "angular_velocity_deg_s": 40.0,
+            "angular_acceleration_deg_s2": 66.0,
+            "scope": "bare joint6_flange; conservative XYZ norm and angular-vector policy; not an Euler-rate, payload torque or measured servo guarantee"
+          },
+          "motion_bounds": {
+            "joint_velocity_rad_s": 0.04933203699846357,
+            "joint_acceleration_rad_s2": 0.2740668722136811,
+            "tcp_velocity_m_s": 0.029789773465754406,
+            "tcp_acceleration_m_s2": 0.16843183941600606,
+            "angular_velocity_rad_s": 0.1707753623857765,
+            "angular_acceleration_rad_s2": 0.9601904860085524
+          }
+        }
+      ]
+    }
+  },
+  "camera_revalidation": {
+    "date": "2026-10-15",
+    "camera": {
+      "horizontal_fov_deg": 82,
+      "vertical_fov_deg": 68,
+      "angular_margin_deg": 0,
+      "near_m": 0.005,
+      "eef_to_optical_translation_m": [
+        0,
+        0,
+        0
+      ],
+      "eef_to_optical_quaternion_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "mount_assumed": true,
+      "mount_calibrated": false
+    },
+    "route_visibility_audit": {
+      "passed": true,
+      "samples": 1246,
+      "outside_view_samples": 0,
+      "occluded_samples": 0,
+      "minimum_view_margin_deg": 4.012392601199743,
+      "max_step_rad": 0.005
+    },
+    "source": "output/approach_150_reachable_failure_20261015/found.json"
+  },
+  "provenance": {
+    "discovered": "2026-10-15",
+    "search_seed": 20261015,
+    "draw_index": 0,
+    "change_from_previous_case": "Keep the difficult start pose and move the fixed object 100 mm toward the EEF along its initial gaze, changing the approach from 270-to-150 (unreachable finish) to 170-to-150 (independently checked reachable finish).",
+    "controller_replay": "output/approach_150_reachable_failure_20261015/approach_replay.json",
+    "baseline_injected_failures": false
+  },
+  "limitations": [
+    "The 150 mm distance is axial; off-center accepted endpoints can have larger Euclidean object distance.",
+    "The current bounded planner still fails the recorded request; independent witness proof does not mean the unchanged planner completes the task.",
+    "Visibility uses nominal Orbbec 640x480 RGB FOV 82x68 and the assumed identity optical mount; calibrated live intrinsics and full-object visibility remain unverified.",
+    "No physical hardware execution or rounded encoder qualification."
+  ]
+}

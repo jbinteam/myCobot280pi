@@ -1,0 +1,54 @@
+{
+  "queried_at": "2026-09-30T22:42:10+0700",
+  "host": "192.168.77.225",
+  "port": 9000,
+  "initial_firmware": 6.5,
+  "queries": [
+    {
+      "joint": 1,
+      "min_deg": -168.0,
+      "max_deg": 168.0,
+      "valid": true
+    },
+    {
+      "joint": 2,
+      "min_deg": -135.0,
+      "max_deg": 135.0,
+      "valid": true
+    },
+    {
+      "joint": 3,
+      "min_deg": -150.0,
+      "max_deg": 150.0,
+      "valid": true
+    },
+    {
+      "joint": 4,
+      "min_deg": -145.0,
+      "max_deg": 145.0,
+      "valid": true
+    },
+    {
+      "joint": 5,
+      "min_deg": -165.0,
+      "max_deg": 165.0,
+      "valid": true
+    },
+    {
+      "joint": 6,
+      "min_deg": -180.0,
+      "max_deg": 180.0,
+      "valid": true
+    }
+  ],
+  "firmware": 6.5,
+  "angles_deg": [
+    0.26,
+    -0.26,
+    -0.52,
+    -0.26,
+    -0.08,
+    0.26
+  ],
+  "error_code": 4
+}

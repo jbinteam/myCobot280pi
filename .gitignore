@@ -1,0 +1,36 @@
+# Local environments, caches and generated builds
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+webui/dist/
+webui/test-results*/
+webui/playwright-report/
+/output/
+/tmp/
+/log/
+/Log/
+/backups/
+/.codex/
+*.AppImage
+# Separate upstream checkouts; SDK installation is documented in docs/HANDOVER.md.
+/pymycobot/
+/catkin_ws/
+/colcon_ws/
+# Training inputs/caches are transferred separately; retain runtime weights/manifests.
+/simulation/artifacts/**/cache/
+/simulation/artifacts/**/*_shards/
+/simulation/artifacts/**/backups/
+/simulation/artifacts/**/candidates/
+/simulation/artifacts/**/*.h5
+/simulation/artifacts/**/dataset*.npz
+/simulation/artifacts/**/start_labels.npz
+# Machine-local secrets/configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Local copies of third-party research papers; retain citations in research.md.
+/research_references/

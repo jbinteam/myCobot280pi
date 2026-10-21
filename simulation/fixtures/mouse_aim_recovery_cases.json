@@ -1,0 +1,1884 @@
+{
+  "units": {
+    "start_deg": "degrees",
+    "cursor_mm": "g_base millimeters"
+  },
+  "baseline": "Before removing hidden 0.392694 mm / 0.5 degree tolerances; bounded DLS only, 240 steps, seed5 + 4 roadmap + 4 fixed random seeds, self-collision clearance 1 mm",
+  "cases": [
+    {
+      "id": "start-0-cursor--120--120",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        221.28644037746096,
+        52.882774661740946,
+        140.55397864604032
+      ],
+      "plane_offset_mm": [
+        -120,
+        -120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.33546457022376586,
+        "orientation_error_deg": 0.04976746211693405
+      }
+    },
+    {
+      "id": "start-0-cursor--120--60",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        237.90212866380784,
+        32.113164303807324,
+        86.77161919286486
+      ],
+      "plane_offset_mm": [
+        -120,
+        -60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3437253406577641,
+        "orientation_error_deg": 0.09229367389152142
+      }
+    },
+    {
+      "id": "start-0-cursor--120-0",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        254.51781695015475,
+        11.343553945873705,
+        32.9892597396894
+      ],
+      "plane_offset_mm": [
+        -120,
+        0
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.35664100361236645,
+        "orientation_error_deg": 0.06429958717683298
+      }
+    },
+    {
+      "id": "start-0-cursor--120-60",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        271.1335052365016,
+        -9.426056412059902,
+        -20.793099713486065
+      ],
+      "plane_offset_mm": [
+        -120,
+        60
+      ],
+      "previous_accepted_goal_count": 3,
+      "previous_best_error": {
+        "error_mm": 0.35146949446585396,
+        "orientation_error_deg": 0.035790834780637784
+      }
+    },
+    {
+      "id": "start-0-cursor--120-120",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        287.7491935228485,
+        -30.195666769993508,
+        -74.57545916666153
+      ],
+      "plane_offset_mm": [
+        -120,
+        120
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 29.338531141439514,
+        "orientation_error_deg": 3.4569805724958274
+      }
+    },
+    {
+      "id": "start-0-cursor--60--120",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        174.4343118108791,
+        15.401071808475484,
+        140.55397864604032
+      ],
+      "plane_offset_mm": [
+        -60,
+        -120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.34846843049568377,
+        "orientation_error_deg": 0.05425329602010124
+      }
+    },
+    {
+      "id": "start-0-cursor--60--60",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        191.050000097226,
+        -5.368538549458131,
+        86.77161919286486
+      ],
+      "plane_offset_mm": [
+        -60,
+        -60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.34708809322584655,
+        "orientation_error_deg": 0.030941990555536314
+      }
+    },
+    {
+      "id": "start-0-cursor--60-0",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        207.6656883835729,
+        -26.138148907391752,
+        32.9892597396894
+      ],
+      "plane_offset_mm": [
+        -60,
+        0
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3424017201242235,
+        "orientation_error_deg": 0.13731422963682724
+      }
+    },
+    {
+      "id": "start-0-cursor--60-60",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        224.28137666991978,
+        -46.90775926532536,
+        -20.793099713486065
+      ],
+      "plane_offset_mm": [
+        -60,
+        60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.368290155413398,
+        "orientation_error_deg": 0.06477823616918063
+      }
+    },
+    {
+      "id": "start-0-cursor--60-120",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        240.89706495626666,
+        -67.67736962325897,
+        -74.57545916666153
+      ],
+      "plane_offset_mm": [
+        -60,
+        120
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 3.833996624312297,
+        "orientation_error_deg": 0.46298204832869133
+      }
+    },
+    {
+      "id": "start-0-cursor-0--120",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        127.58218324429733,
+        -22.08063104478999,
+        140.55397864604032
+      ],
+      "plane_offset_mm": [
+        0,
+        -120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.35337876397262363,
+        "orientation_error_deg": 0.03274630604019043
+      }
+    },
+    {
+      "id": "start-0-cursor-0--60",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        144.1978715306442,
+        -42.850241402723604,
+        86.77161919286486
+      ],
+      "plane_offset_mm": [
+        0,
+        -60
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 25.57366790469329,
+        "orientation_error_deg": 3.8697062636304693
+      }
+    },
+    {
+      "id": "start-0-cursor-0-0",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        160.81355981699107,
+        -63.61985176065721,
+        32.9892597396894
+      ],
+      "plane_offset_mm": [
+        0,
+        0
+      ],
+      "previous_accepted_goal_count": 1,
+      "previous_best_error": {
+        "error_mm": 2.7755575615628914e-14,
+        "orientation_error_deg": 4.7297027027016094e-15
+      }
+    },
+    {
+      "id": "start-0-cursor-0-60",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        177.42924810333795,
+        -84.38946211859081,
+        -20.793099713486065
+      ],
+      "plane_offset_mm": [
+        0,
+        60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3374603706729064,
+        "orientation_error_deg": 0.07781432531116049
+      }
+    },
+    {
+      "id": "start-0-cursor-0-120",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        194.04493638968484,
+        -105.15907247652443,
+        -74.57545916666153
+      ],
+      "plane_offset_mm": [
+        0,
+        120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3821215732182992,
+        "orientation_error_deg": 0.022180153960959313
+      }
+    },
+    {
+      "id": "start-0-cursor-60--120",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        80.73005467771547,
+        -59.56233389805544,
+        140.55397864604032
+      ],
+      "plane_offset_mm": [
+        60,
+        -120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.355881299729539,
+        "orientation_error_deg": 0.02951764488025284
+      }
+    },
+    {
+      "id": "start-0-cursor-60--60",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        97.34574296406237,
+        -80.33194425598906,
+        86.77161919286486
+      ],
+      "plane_offset_mm": [
+        60,
+        -60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3548240878669834,
+        "orientation_error_deg": 0.06372191576481853
+      }
+    },
+    {
+      "id": "start-0-cursor-60-0",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        113.96143125040925,
+        -101.10155461392267,
+        32.9892597396894
+      ],
+      "plane_offset_mm": [
+        60,
+        0
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3617974060868584,
+        "orientation_error_deg": 0.08134942530095703
+      }
+    },
+    {
+      "id": "start-0-cursor-60-60",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        130.57711953675616,
+        -121.87116497185629,
+        -20.793099713486065
+      ],
+      "plane_offset_mm": [
+        60,
+        60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.35106563947514746,
+        "orientation_error_deg": 0.06527306823305801
+      }
+    },
+    {
+      "id": "start-0-cursor-60-120",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        147.19280782310304,
+        -142.6407753297899,
+        -74.57545916666153
+      ],
+      "plane_offset_mm": [
+        60,
+        120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3545090146542162,
+        "orientation_error_deg": 0.03918353768611486
+      }
+    },
+    {
+      "id": "start-0-cursor-120--120",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        33.87792611113366,
+        -97.0440367513209,
+        140.55397864604032
+      ],
+      "plane_offset_mm": [
+        120,
+        -120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3668212957149972,
+        "orientation_error_deg": 0.05604054752769193
+      }
+    },
+    {
+      "id": "start-0-cursor-120--60",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        50.493614397480556,
+        -117.81364710925452,
+        86.77161919286486
+      ],
+      "plane_offset_mm": [
+        120,
+        -60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3451242593644787,
+        "orientation_error_deg": 0.10858690896942441
+      }
+    },
+    {
+      "id": "start-0-cursor-120-0",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        67.10930268382744,
+        -138.58325746718813,
+        32.9892597396894
+      ],
+      "plane_offset_mm": [
+        120,
+        0
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3441631481496539,
+        "orientation_error_deg": 0.10577199660727045
+      }
+    },
+    {
+      "id": "start-0-cursor-120-60",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        83.72499097017432,
+        -159.35286782512176,
+        -20.793099713486065
+      ],
+      "plane_offset_mm": [
+        120,
+        60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3682901735035115,
+        "orientation_error_deg": 0.09228106821116266
+      }
+    },
+    {
+      "id": "start-0-cursor-120-120",
+      "start_deg": [
+        0,
+        -40,
+        -130,
+        80,
+        0,
+        50
+      ],
+      "cursor_mm": [
+        100.34067925652121,
+        -180.1224781830554,
+        -74.57545916666153
+      ],
+      "plane_offset_mm": [
+        120,
+        120
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 0.34821668551278845,
+        "orientation_error_deg": 0.009263578454872516
+      }
+    },
+    {
+      "id": "start-1-cursor--120--120",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        345.69709856079663,
+        32.10990138603191,
+        206.5193482366126
+      ],
+      "plane_offset_mm": [
+        -120,
+        -120
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 30.09813323969881,
+        "orientation_error_deg": 2.493913678980202
+      }
+    },
+    {
+      "id": "start-1-cursor--120--60",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        345.69709856079663,
+        32.10990138603191,
+        146.5193482366126
+      ],
+      "plane_offset_mm": [
+        -120,
+        -60
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 35.613919144201326,
+        "orientation_error_deg": 4.308829013339045
+      }
+    },
+    {
+      "id": "start-1-cursor--120-0",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        345.69709856079663,
+        32.10990138603191,
+        86.51934823661259
+      ],
+      "plane_offset_mm": [
+        -120,
+        0
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 26.186342020670153,
+        "orientation_error_deg": 3.1389341810163036
+      }
+    },
+    {
+      "id": "start-1-cursor--120-60",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        345.69709856079663,
+        32.10990138603191,
+        26.51934823661259
+      ],
+      "plane_offset_mm": [
+        -120,
+        60
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 31.244298368938466,
+        "orientation_error_deg": 2.8143707893182524
+      }
+    },
+    {
+      "id": "start-1-cursor--120-120",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        345.69709856079663,
+        32.10990138603191,
+        -33.48065176338741
+      ],
+      "plane_offset_mm": [
+        -120,
+        120
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 51.555324984432865,
+        "orientation_error_deg": 3.8339983059079974
+      }
+    },
+    {
+      "id": "start-1-cursor--60--120",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        285.69709856079663,
+        32.10990138603191,
+        206.5193482366126
+      ],
+      "plane_offset_mm": [
+        -60,
+        -120
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 11.82100832578954,
+        "orientation_error_deg": 0.917089208947601
+      }
+    },
+    {
+      "id": "start-1-cursor--60--60",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        285.69709856079663,
+        32.10990138603191,
+        146.5193482366126
+      ],
+      "plane_offset_mm": [
+        -60,
+        -60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.337520625586058,
+        "orientation_error_deg": 0.04074447613548945
+      }
+    },
+    {
+      "id": "start-1-cursor--60-0",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        285.69709856079663,
+        32.10990138603191,
+        86.51934823661259
+      ],
+      "plane_offset_mm": [
+        -60,
+        0
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3564251426035711,
+        "orientation_error_deg": 0.06687188561247255
+      }
+    },
+    {
+      "id": "start-1-cursor--60-60",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        285.69709856079663,
+        32.10990138603191,
+        26.51934823661259
+      ],
+      "plane_offset_mm": [
+        -60,
+        60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3475319613695943,
+        "orientation_error_deg": 0.0278287665189463
+      }
+    },
+    {
+      "id": "start-1-cursor--60-120",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        285.69709856079663,
+        32.10990138603191,
+        -33.48065176338741
+      ],
+      "plane_offset_mm": [
+        -60,
+        120
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 0.9709824090932421,
+        "orientation_error_deg": 0.048569287707057346
+      }
+    },
+    {
+      "id": "start-1-cursor-0--120",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        225.6970985607966,
+        32.10990138603191,
+        206.5193482366126
+      ],
+      "plane_offset_mm": [
+        0,
+        -120
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 9.121868044357887,
+        "orientation_error_deg": 0.7276288274603675
+      }
+    },
+    {
+      "id": "start-1-cursor-0--60",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        225.6970985607966,
+        32.10990138603191,
+        146.5193482366126
+      ],
+      "plane_offset_mm": [
+        0,
+        -60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3596086148078638,
+        "orientation_error_deg": 0.02430213776822121
+      }
+    },
+    {
+      "id": "start-1-cursor-0-0",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        225.6970985607966,
+        32.10990138603191,
+        86.51934823661259
+      ],
+      "plane_offset_mm": [
+        0,
+        0
+      ],
+      "previous_accepted_goal_count": 1,
+      "previous_best_error": {
+        "error_mm": 0.0,
+        "orientation_error_deg": 3.1809429090733202e-15
+      }
+    },
+    {
+      "id": "start-1-cursor-0-60",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        225.6970985607966,
+        32.10990138603191,
+        26.51934823661259
+      ],
+      "plane_offset_mm": [
+        0,
+        60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3476313604913913,
+        "orientation_error_deg": 0.03620797179248551
+      }
+    },
+    {
+      "id": "start-1-cursor-0-120",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        225.6970985607966,
+        32.10990138603191,
+        -33.48065176338741
+      ],
+      "plane_offset_mm": [
+        0,
+        120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.35584514410127427,
+        "orientation_error_deg": 0.0420146624160477
+      }
+    },
+    {
+      "id": "start-1-cursor-60--120",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        165.69709856079663,
+        32.10990138603191,
+        206.5193482366126
+      ],
+      "plane_offset_mm": [
+        60,
+        -120
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 3.9665264273158187,
+        "orientation_error_deg": 2.322813592093761
+      }
+    },
+    {
+      "id": "start-1-cursor-60--60",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        165.69709856079663,
+        32.10990138603191,
+        146.5193482366126
+      ],
+      "plane_offset_mm": [
+        60,
+        -60
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 35.13558483430163,
+        "orientation_error_deg": 4.867886837221016
+      }
+    },
+    {
+      "id": "start-1-cursor-60-0",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        165.69709856079663,
+        32.10990138603191,
+        86.51934823661259
+      ],
+      "plane_offset_mm": [
+        60,
+        0
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3823827430856592,
+        "orientation_error_deg": 0.044342479679622175
+      }
+    },
+    {
+      "id": "start-1-cursor-60-60",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        165.69709856079663,
+        32.10990138603191,
+        26.51934823661259
+      ],
+      "plane_offset_mm": [
+        60,
+        60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3428914534438252,
+        "orientation_error_deg": 0.02363100772641393
+      }
+    },
+    {
+      "id": "start-1-cursor-60-120",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        165.69709856079663,
+        32.10990138603191,
+        -33.48065176338741
+      ],
+      "plane_offset_mm": [
+        60,
+        120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.37460893850829796,
+        "orientation_error_deg": 0.06428957102700758
+      }
+    },
+    {
+      "id": "start-1-cursor-120--120",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        105.69709856079662,
+        32.10990138603191,
+        206.5193482366126
+      ],
+      "plane_offset_mm": [
+        120,
+        -120
+      ],
+      "previous_accepted_goal_count": 2,
+      "previous_best_error": {
+        "error_mm": 0.3407664665699506,
+        "orientation_error_deg": 0.05274552586519666
+      }
+    },
+    {
+      "id": "start-1-cursor-120--60",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        105.69709856079662,
+        32.10990138603191,
+        146.5193482366126
+      ],
+      "plane_offset_mm": [
+        120,
+        -60
+      ],
+      "previous_accepted_goal_count": 3,
+      "previous_best_error": {
+        "error_mm": 0.365212235910626,
+        "orientation_error_deg": 0.039077868036629826
+      }
+    },
+    {
+      "id": "start-1-cursor-120-0",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        105.69709856079662,
+        32.10990138603191,
+        86.51934823661259
+      ],
+      "plane_offset_mm": [
+        120,
+        0
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.355454168237348,
+        "orientation_error_deg": 0.045820556029636896
+      }
+    },
+    {
+      "id": "start-1-cursor-120-60",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        105.69709856079662,
+        32.10990138603191,
+        26.51934823661259
+      ],
+      "plane_offset_mm": [
+        120,
+        60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.33501122865724725,
+        "orientation_error_deg": 0.09950848967825707
+      }
+    },
+    {
+      "id": "start-1-cursor-120-120",
+      "start_deg": [
+        20,
+        -35,
+        -90,
+        40,
+        10,
+        0
+      ],
+      "cursor_mm": [
+        105.69709856079662,
+        32.10990138603191,
+        -33.48065176338741
+      ],
+      "plane_offset_mm": [
+        120,
+        120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.35802708328354943,
+        "orientation_error_deg": 0.011240740293166393
+      }
+    },
+    {
+      "id": "start-2-cursor--120--120",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        82.03050815659132,
+        -115.77658506454986,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        -120,
+        -120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3518693729603066,
+        "orientation_error_deg": 0.1254613601407415
+      }
+    },
+    {
+      "id": "start-2-cursor--120--60",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        82.03050815659132,
+        -55.77658506454987,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        -120,
+        -60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3466934281172594,
+        "orientation_error_deg": 0.0810697078597842
+      }
+    },
+    {
+      "id": "start-2-cursor--120-0",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        82.03050815659132,
+        4.223414935450125,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        -120,
+        0
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3414354757326622,
+        "orientation_error_deg": 0.057372389033073824
+      }
+    },
+    {
+      "id": "start-2-cursor--120-60",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        82.03050815659132,
+        64.22341493545012,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        -120,
+        60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.34226071678288883,
+        "orientation_error_deg": 0.06500300813665047
+      }
+    },
+    {
+      "id": "start-2-cursor--120-120",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        82.03050815659132,
+        124.22341493545012,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        -120,
+        120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.35694314604377286,
+        "orientation_error_deg": 0.06275663520434702
+      }
+    },
+    {
+      "id": "start-2-cursor--60--120",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        142.0305081565913,
+        -115.77658506454986,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        -60,
+        -120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3491805034771199,
+        "orientation_error_deg": 0.040055216527126035
+      }
+    },
+    {
+      "id": "start-2-cursor--60--60",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        142.0305081565913,
+        -55.77658506454987,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        -60,
+        -60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.34680670971780886,
+        "orientation_error_deg": 0.08928292816954508
+      }
+    },
+    {
+      "id": "start-2-cursor--60-0",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        142.0305081565913,
+        4.223414935450125,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        -60,
+        0
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.359557877837193,
+        "orientation_error_deg": 0.05244605412077142
+      }
+    },
+    {
+      "id": "start-2-cursor--60-60",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        142.0305081565913,
+        64.22341493545012,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        -60,
+        60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.35129063100279245,
+        "orientation_error_deg": 0.09223837796162201
+      }
+    },
+    {
+      "id": "start-2-cursor--60-120",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        142.0305081565913,
+        124.22341493545012,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        -60,
+        120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.36140612492290347,
+        "orientation_error_deg": 0.07251570889830491
+      }
+    },
+    {
+      "id": "start-2-cursor-0--120",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        202.0305081565913,
+        -115.77658506454986,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        0,
+        -120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3502834974614464,
+        "orientation_error_deg": 0.09117574058843977
+      }
+    },
+    {
+      "id": "start-2-cursor-0--60",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        202.0305081565913,
+        -55.77658506454987,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        0,
+        -60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.03806012715544086,
+        "orientation_error_deg": 0.4374113910841893
+      }
+    },
+    {
+      "id": "start-2-cursor-0-0",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        202.0305081565913,
+        4.223414935450125,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        0,
+        0
+      ],
+      "previous_accepted_goal_count": 1,
+      "previous_best_error": {
+        "error_mm": 1.5515838457795457e-14,
+        "orientation_error_deg": 7.904034347964478e-15
+      }
+    },
+    {
+      "id": "start-2-cursor-0-60",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        202.0305081565913,
+        64.22341493545012,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        0,
+        60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.33692106004310335,
+        "orientation_error_deg": 0.06227087568255181
+      }
+    },
+    {
+      "id": "start-2-cursor-0-120",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        202.0305081565913,
+        124.22341493545012,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        0,
+        120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.35300913031254083,
+        "orientation_error_deg": 0.04458596935047529
+      }
+    },
+    {
+      "id": "start-2-cursor-60--120",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        262.03050815659134,
+        -115.77658506454986,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        60,
+        -120
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3515155749780141,
+        "orientation_error_deg": 0.18827632288510676
+      }
+    },
+    {
+      "id": "start-2-cursor-60--60",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        262.03050815659134,
+        -55.77658506454987,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        60,
+        -60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.3412156669419007,
+        "orientation_error_deg": 0.2978824502211561
+      }
+    },
+    {
+      "id": "start-2-cursor-60-0",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        262.03050815659134,
+        4.223414935450125,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        60,
+        0
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.35380650548032416,
+        "orientation_error_deg": 0.05985052557568312
+      }
+    },
+    {
+      "id": "start-2-cursor-60-60",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        262.03050815659134,
+        64.22341493545012,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        60,
+        60
+      ],
+      "previous_accepted_goal_count": 4,
+      "previous_best_error": {
+        "error_mm": 0.36518163841400153,
+        "orientation_error_deg": 0.050602174578510996
+      }
+    },
+    {
+      "id": "start-2-cursor-60-120",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        262.03050815659134,
+        124.22341493545012,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        60,
+        120
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 15.70386759914814,
+        "orientation_error_deg": 2.760797363569523
+      }
+    },
+    {
+      "id": "start-2-cursor-120--120",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        322.0305081565913,
+        -115.77658506454986,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        120,
+        -120
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 36.11529053141344,
+        "orientation_error_deg": 5.792066998083944
+      }
+    },
+    {
+      "id": "start-2-cursor-120--60",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        322.0305081565913,
+        -55.77658506454987,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        120,
+        -60
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 21.149729675670788,
+        "orientation_error_deg": 3.0346380371603514
+      }
+    },
+    {
+      "id": "start-2-cursor-120-0",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        322.0305081565913,
+        4.223414935450125,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        120,
+        0
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 17.011664382790816,
+        "orientation_error_deg": 2.474849727557594
+      }
+    },
+    {
+      "id": "start-2-cursor-120-60",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        322.0305081565913,
+        64.22341493545012,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        120,
+        60
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 24.185296257204833,
+        "orientation_error_deg": 3.8251454491017833
+      }
+    },
+    {
+      "id": "start-2-cursor-120-120",
+      "start_deg": [
+        10,
+        -40,
+        -110,
+        65,
+        20,
+        50
+      ],
+      "cursor_mm": [
+        322.0305081565913,
+        124.22341493545012,
+        56.87788056786093
+      ],
+      "plane_offset_mm": [
+        120,
+        120
+      ],
+      "previous_accepted_goal_count": 0,
+      "previous_best_error": {
+        "error_mm": 52.56470292747519,
+        "orientation_error_deg": 7.581129519537303
+      }
+    }
+  ]
+}

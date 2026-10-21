@@ -1,0 +1,209 @@
+{
+  "schema": 1,
+  "name": "fixed-v2-velocity-profile-20261006-190739",
+  "saved_at": "2026-10-06T19:07:39.404279+07:00",
+  "status": "current",
+  "model": {
+    "name": "diffusion_motion_v2",
+    "checkpoint_sha256": "6582cbf4e1d2575007cfead8f99ed5f15a7b7021083d0eb200c61b224401bddc",
+    "active_pointer": "simulation/artifacts/diffusion_active.json",
+    "manifest": "simulation/artifacts/diffusion_motion_v2/webui.json"
+  },
+  "pipeline": {
+    "rollout_controller": "full_horizon_c2",
+    "final_path": "collision_checked_shortcuts_quintic",
+    "hardware_timing": "specification_checked_quintic",
+    "joint_command": "encoder_drag_profile",
+    "velocity_source": "analytic dq/dt; nominal encoder step/s magnitudes and route targets",
+    "settings": {
+      "seed": 42,
+      "samples": 4,
+      "inference_steps": 32,
+      "max_decisions": 200,
+      "speed_percent": 5,
+      "send_period_s": 0.2,
+      "lookahead_s": 0.2,
+      "maximum_tracking_error_deg": 3.0,
+      "maximum_command_lead_deg": 4.0,
+      "arrival_deg": 0.75
+    }
+  },
+  "offline_replay": {
+    "scope": "Offline restored planner replay; no robot motion",
+    "saved_reference": "output/velocity_profile_live_api_plan.json",
+    "checkpoint_sha256": "6582cbf4e1d2575007cfead8f99ed5f15a7b7021083d0eb200c61b224401bddc",
+    "rollout_controller": "full_horizon_c2",
+    "decisions": 12,
+    "frames": 622,
+    "duration_s": 12.42,
+    "segments": 1,
+    "frame_max_difference": 0.0,
+    "q_max_difference_deg": 0.0,
+    "velocity_max_difference_deg_s": 0.0,
+    "acceleration_max_difference_deg_s2": 0.0,
+    "processing_ms": 5014.050778998353,
+    "timing_ms": {
+      "deployment_and_request": 21.558808999543544,
+      "trajectory_generation": 4779.863052001019,
+      "hardware_route_validation": 111.30604600111837,
+      "velocity_retiming": 32.43206999832182,
+      "total": 4945.159977000003
+    },
+    "ui_joint_travel_deg": 58.2932373303857,
+    "collision_rechecked": true,
+    "last_completed_plan": {
+      "decisions": 34,
+      "duration_s": 19.86,
+      "frames": 994,
+      "segments": 1,
+      "error_mm": 0.9944027501989491
+    }
+  },
+  "processing_time_measurements": {
+    "restored_saved_profile": {
+      "processing_ms": 5014.050778998353,
+      "scope": "single offline run; includes model load; not a warm timing average"
+    },
+    "last_completed_plan": {
+      "scope": "Replay of the last completed plan from its archived live starting joints; excludes new live capture/recheck while Pi is unreachable",
+      "trials": [
+        {
+          "run": "cold_replay_process",
+          "source": "archived live start of the last completed motion; not fresh telemetry",
+          "start_deg": [
+            19.42,
+            -35.24,
+            -90.35,
+            39.9,
+            9.93,
+            -2.28
+          ],
+          "target_mm": [
+            20.0369,
+            -13.9501,
+            398.5529
+          ],
+          "converged": true,
+          "reason": "success",
+          "v2_prepare_timing_ms": {
+            "deployment_and_request": 23.84451899706619,
+            "trajectory_generation": 12456.912343001022,
+            "hardware_route_validation": 306.45584800004144,
+            "velocity_retiming": 67.6434880006127,
+            "total": 12854.856197998743
+          },
+          "encoder_profile_prepare_ms": 97.79891400103224,
+          "computation_pipeline_total_ms": 12952.855349998572,
+          "reference_duration_s": 19.86,
+          "final_error_mm": 0.9944027501989491,
+          "motion_commands_sent": false,
+          "inference_device": "cuda"
+        },
+        {
+          "run": "warm_replay_process",
+          "source": "archived live start of the last completed motion; not fresh telemetry",
+          "start_deg": [
+            19.42,
+            -35.24,
+            -90.35,
+            39.9,
+            9.93,
+            -2.28
+          ],
+          "target_mm": [
+            20.0369,
+            -13.9501,
+            398.5529
+          ],
+          "converged": true,
+          "reason": "success",
+          "v2_prepare_timing_ms": {
+            "deployment_and_request": 2.685568000742933,
+            "trajectory_generation": 8840.48080699722,
+            "hardware_route_validation": 305.3860860018176,
+            "velocity_retiming": 69.84205299886526,
+            "total": 9218.394513998646
+          },
+          "encoder_profile_prepare_ms": 98.88738099834882,
+          "computation_pipeline_total_ms": 9317.525079000916,
+          "reference_duration_s": 19.86,
+          "final_error_mm": 0.9944027501989491,
+          "motion_commands_sent": false,
+          "inference_device": "cuda"
+        }
+      ]
+    }
+  },
+  "verification": {
+    "python_tests_passed": 83,
+    "browser_tests_passed": 2,
+    "motion_executed_during_save": false
+  },
+  "physical_trials": {
+    "earlier_completed_trial": {
+      "state": "completed",
+      "actual_motion_trace_duration_s": 20.494985853001708,
+      "reference_duration_s": 19.86,
+      "final_error_mm": 3.36278086323834,
+      "final_orientation_error_deg": 0.36149472071597,
+      "send_interval_ms": {
+        "n": 100,
+        "mean": 202.91461536002316,
+        "median": 201.5966844992363,
+        "max": 211.20146199973533
+      },
+      "telemetry_cycle_ms": {
+        "n": 100,
+        "mean": 94.49850733984931,
+        "median": 94.73229700051888,
+        "max": 101.06885400091414
+      },
+      "send_deadline_lateness_ms": {
+        "n": 100,
+        "mean": 2.914615359295567,
+        "median": 1.5966844985086937,
+        "max": 11.201461999007734
+      },
+      "original_start_deg": [
+        19.42,
+        -35.24,
+        -90.35,
+        39.9,
+        9.93,
+        -2.28
+      ],
+      "target_mm": [
+        20.0369,
+        -13.9501,
+        398.5529
+      ],
+      "planning_time_recorded_in_original_process": null
+    },
+    "latest_trial_at_save": {
+      "state": "failed",
+      "message": "Velocity-profile execution stopped: Velocity-profile endpoint did not settle within ten seconds. Plan again before retrying.",
+      "joint_command": "encoder_drag_profile",
+      "execution_mode": "encoder_profile",
+      "sdk_speed": 5,
+      "planned_duration_s": 23.04,
+      "completed_waypoints": 0,
+      "total_waypoints": 1,
+      "estimated_error_mm": 9.025948659001864,
+      "estimated_orientation_error_deg": 1.9022621969807971,
+      "actual_send_interval_s": 0.20044791200052714
+    }
+  },
+  "qualification": "Exact offline reference replay confirmed. Latest hardware trial failed endpoint settling; this snapshot does not claim general physical tracking qualification.",
+  "backup": {
+    "archive": "backups/fixed-v2-velocity-profile-20261006-190739.tar.gz",
+    "scope": "Runtime source, pinned v2 weights/manifests, SDK source, robot geometry, built UI, replay fixtures and verification logs.",
+    "excluded": [
+      "training datasets",
+      "Python virtual environment",
+      "node_modules",
+      "ROS build outputs",
+      "credentials",
+      "other model checkpoints"
+    ]
+  }
+}

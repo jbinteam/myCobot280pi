@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "name": "fixed-v2-velocity-profile-20261006-190739",
+  "saved_at": "2026-10-06T19:07:39.404279+07:00",
+  "benchmark": "benchmarks/fixed-v2-velocity-profile-20261006-190739/benchmark.json",
+  "backup": "backups/fixed-v2-velocity-profile-20261006-190739.tar.gz",
+  "backup_sha256": "fc329cfb09d7511f675928927cc3ec231cfc6bf84fc013a7992bbd907a34427b",
+  "qualification": "Exact offline reference replay confirmed. Latest hardware trial failed endpoint settling; this snapshot does not claim general physical tracking qualification."
+}

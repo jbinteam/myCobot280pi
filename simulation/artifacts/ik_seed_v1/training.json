@@ -1,0 +1,690 @@
+{
+  "kind": "full",
+  "completed": true,
+  "completed_steps": 8000,
+  "selected_step": 8000,
+  "seed": 202610072,
+  "dataset": "simulation/artifacts/ik_seed_v1/dataset.npz",
+  "dataset_sha256": "493f884ac80fed515c695f887748943c9915f70868f68b1a5b9c174d86013aa0",
+  "dataset_generation": {
+    "seed": 202610071,
+    "currents_per_target": 2,
+    "splits": {
+      "train": {
+        "target_groups": 16000,
+        "pairs": 32000,
+        "witness_sampling_attempts": 20750,
+        "current_pool": 2048,
+        "current_sampling_attempts": 2676
+      },
+      "validation": {
+        "target_groups": 512,
+        "pairs": 1024,
+        "witness_sampling_attempts": 658,
+        "current_pool": 512,
+        "current_sampling_attempts": 672
+      },
+      "test": {
+        "target_groups": 256,
+        "pairs": 512,
+        "witness_sampling_attempts": 339,
+        "current_pool": 256,
+        "current_sampling_attempts": 333
+      }
+    },
+    "strategy": "Uniform operating-box joint witnesses; rejection by exact runtime self/table validity; independent current pools",
+    "split_unit": "FK target group before current pairing",
+    "target_leakage": "No target_id or exact XYZ+directed-axis label crosses splits",
+    "supervision": "Known reachable FK witness, not an IK solver success claim"
+  },
+  "scene": {
+    "robot": {
+      "schema": 1,
+      "robot": "myCobot 280 Pi",
+      "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+      "geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+      "joint_names": [
+        "joint2_to_joint1",
+        "joint3_to_joint2",
+        "joint4_to_joint3",
+        "joint5_to_joint4",
+        "joint6_to_joint5",
+        "joint6output_to_joint6"
+      ],
+      "limits_rad": {
+        "min": [
+          -2.895501229058593,
+          -2.321287905152458,
+          -2.5813419636996136,
+          -2.4958208303518914,
+          -2.66860842629933,
+          -3.1049407392979123
+        ],
+        "max": [
+          2.895501229058593,
+          2.321287905152458,
+          2.5813419636996136,
+          2.4958208303518914,
+          2.7558748888990463,
+          3.1049407392979123
+        ]
+      },
+      "base_frame": "g_base",
+      "tcp": "joint6_flange",
+      "units": "meters/radians/seconds",
+      "goal": "selected joint goal from XYZ + directed flange Z; local Z spin free",
+      "observation": [
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "box_x_scaled",
+        "box_y_scaled",
+        "box_z_scaled",
+        "box_half_x_scaled",
+        "box_half_y_scaled",
+        "box_half_z_scaled",
+        "box_present"
+      ],
+      "action": "absolute operating-box-normalized joint positions",
+      "horizon": 16,
+      "observation_dim": 19
+    },
+    "self_collision": {
+      "schema": 1,
+      "robot": "myCobot 280 Pi",
+      "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+      "geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+      "joint_names": [
+        "joint2_to_joint1",
+        "joint3_to_joint2",
+        "joint4_to_joint3",
+        "joint5_to_joint4",
+        "joint6_to_joint5",
+        "joint6output_to_joint6"
+      ],
+      "joint_types": [
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute"
+      ],
+      "limits_rad": {
+        "min": [
+          -2.895501229058593,
+          -2.321287905152458,
+          -2.5813419636996136,
+          -2.4958208303518914,
+          -2.66860842629933,
+          -3.1049407392979123
+        ],
+        "max": [
+          2.895501229058593,
+          2.321287905152458,
+          2.5813419636996136,
+          2.4958208303518914,
+          2.7558748888990463,
+          3.1049407392979123
+        ]
+      },
+      "units": {
+        "joints": "radians",
+        "position": "meters"
+      },
+      "base_frame": "g_base",
+      "base_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tcp": "joint6_flange",
+      "tool_offset_m": [
+        0,
+        0,
+        0
+      ],
+      "validation": "joint_limits_and_self_collision",
+      "assumptions": {
+        "checker": "urdf_convex_fcl_v1",
+        "environment": "self_only_no_external_obstacles",
+        "representation": "convex_hull_per_URDF_collision_mesh",
+        "clearance_mm": 1.0,
+        "excluded_pairs": [
+          [
+            "g_base",
+            "joint1"
+          ],
+          [
+            "joint1",
+            "joint2"
+          ],
+          [
+            "joint2",
+            "joint3"
+          ],
+          [
+            "joint3",
+            "joint4"
+          ],
+          [
+            "joint4",
+            "joint5"
+          ],
+          [
+            "joint5",
+            "joint6"
+          ],
+          [
+            "joint6",
+            "joint6_flange"
+          ]
+        ],
+        "exclusion_policy": "direct_URDF_parent_child_pairs_only",
+        "checked_link_pairs": [
+          [
+            "g_base",
+            "joint2"
+          ],
+          [
+            "g_base",
+            "joint3"
+          ],
+          [
+            "g_base",
+            "joint4"
+          ],
+          [
+            "g_base",
+            "joint5"
+          ],
+          [
+            "g_base",
+            "joint6"
+          ],
+          [
+            "g_base",
+            "joint6_flange"
+          ],
+          [
+            "joint1",
+            "joint3"
+          ],
+          [
+            "joint1",
+            "joint4"
+          ],
+          [
+            "joint1",
+            "joint5"
+          ],
+          [
+            "joint1",
+            "joint6"
+          ],
+          [
+            "joint1",
+            "joint6_flange"
+          ],
+          [
+            "joint2",
+            "joint4"
+          ],
+          [
+            "joint2",
+            "joint5"
+          ],
+          [
+            "joint2",
+            "joint6"
+          ],
+          [
+            "joint2",
+            "joint6_flange"
+          ],
+          [
+            "joint3",
+            "joint5"
+          ],
+          [
+            "joint3",
+            "joint6"
+          ],
+          [
+            "joint3",
+            "joint6_flange"
+          ],
+          [
+            "joint4",
+            "joint6"
+          ],
+          [
+            "joint4",
+            "joint6_flange"
+          ],
+          [
+            "joint5",
+            "joint6_flange"
+          ]
+        ],
+        "mesh_info": [
+          {
+            "link": "g_base",
+            "file": "G_base.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 45372,
+            "hull_triangles": 1180,
+            "local_bounds_m": [
+              [
+                -0.07499998474121095,
+                -0.05499998474121094,
+                0.0
+              ],
+              [
+                0.07499998474121095,
+                0.054987457275390624,
+                0.032
+              ]
+            ]
+          },
+          {
+            "link": "joint1",
+            "file": "joint1_pi.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 95700,
+            "hull_triangles": 3836,
+            "local_bounds_m": [
+              [
+                -0.050517555236816405,
+                -0.04631658935546875,
+                0.0
+              ],
+              [
+                0.04795552825927735,
+                0.046318634033203125,
+                0.08090007019042969
+              ]
+            ]
+          },
+          {
+            "link": "joint2",
+            "file": "joint2.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 14246,
+            "hull_triangles": 3340,
+            "local_bounds_m": [
+              [
+                -0.023964159190654755,
+                -0.02400003932416439,
+                -0.003181695006787777
+              ],
+              [
+                0.036575790494680405,
+                0.02400003932416439,
+                0.08387827128171921
+              ]
+            ]
+          },
+          {
+            "link": "joint3",
+            "file": "joint3.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 22976,
+            "hull_triangles": 7100,
+            "local_bounds_m": [
+              [
+                -0.0027239909395575523,
+                -0.023999979719519615,
+                -0.023999979719519615
+              ],
+              [
+                0.05271594971418381,
+                0.023999979719519615,
+                0.13199999928474426
+              ]
+            ]
+          },
+          {
+            "link": "joint4",
+            "file": "joint4.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 6149,
+            "hull_triangles": 2722,
+            "local_bounds_m": [
+              [
+                -0.052963968366384506,
+                -0.021599939092993736,
+                -0.021640000864863396
+              ],
+              [
+                0.004835962783545256,
+                0.021599939092993736,
+                0.1151600033044815
+              ]
+            ]
+          },
+          {
+            "link": "joint5",
+            "file": "joint5.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 22907,
+            "hull_triangles": 4668,
+            "local_bounds_m": [
+              [
+                1.6202032566070558e-07,
+                -0.01943772812187672,
+                -0.019706802368164064
+              ],
+              [
+                0.05278763569891453,
+                0.01914904861152172,
+                0.03663734436035156
+              ]
+            ]
+          },
+          {
+            "link": "joint6",
+            "file": "joint6.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 9810,
+            "hull_triangles": 2666,
+            "local_bounds_m": [
+              [
+                -0.019200001674890554,
+                -0.021600001407414693,
+                0.0
+              ],
+              [
+                0.019200041729213746,
+                0.03510000014128156,
+                0.05712000164493913
+              ]
+            ]
+          },
+          {
+            "link": "joint6_flange",
+            "file": "joint7.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 9652,
+            "hull_triangles": 3464,
+            "local_bounds_m": [
+              [
+                -0.019200001674890554,
+                -0.019200001674890554,
+                0.0
+              ],
+              [
+                0.019200001674890554,
+                0.019200001674890554,
+                0.01370000045998021
+              ]
+            ]
+          }
+        ],
+        "derived_bounds_sha256": "a645169bb31088d0a7ea125fd844d5a32b3aaf550d79098d9ccc1b90dfb2967a",
+        "versions": {
+          "python-fcl": "0.7.0.11",
+          "trimesh": "5.1.0",
+          "pycollada": "0.9.3",
+          "scipy": "1.18.1"
+        }
+      },
+      "metric": "Euclidean displacement / operating joint range"
+    },
+    "scene_checker": "PyBullet convex URDF hulls versus table and one axis-aligned box",
+    "clearance_mm": 1.0,
+    "path_sample_rad": 0.04,
+    "table_top_m": -0.034999999999999996,
+    "pybullet_version": "3.2.7",
+    "execution": "kinematic reference interpolation; no calibrated dynamics or physical IO"
+  },
+  "device": "cuda",
+  "torch_version": "2.14.1+cu130",
+  "batch_size": 512,
+  "seconds": 44.44560335400092,
+  "best_validation_loss": 0.024506110697984695,
+  "history": [
+    {
+      "step": 1,
+      "train_loss": 1.3350592851638794,
+      "validation_loss": 1.0515129566192627,
+      "mean_pose_best_position_mm": 222.95693969726562,
+      "mean_pose_best_direction_deg": 53.13243865966797,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 401,
+      "train_loss": 0.08572955429553986,
+      "validation_loss": 0.08800210058689117,
+      "mean_pose_best_position_mm": 53.3526611328125,
+      "mean_pose_best_direction_deg": 11.850624084472656,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 801,
+      "train_loss": 0.062049731612205505,
+      "validation_loss": 0.06211693212389946,
+      "mean_pose_best_position_mm": 42.42516326904297,
+      "mean_pose_best_direction_deg": 9.458269119262695,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 1201,
+      "train_loss": 0.04730147123336792,
+      "validation_loss": 0.04870302975177765,
+      "mean_pose_best_position_mm": 34.19573211669922,
+      "mean_pose_best_direction_deg": 8.504373550415039,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 1601,
+      "train_loss": 0.04003036022186279,
+      "validation_loss": 0.043419480323791504,
+      "mean_pose_best_position_mm": 31.081968307495117,
+      "mean_pose_best_direction_deg": 8.316034317016602,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 2001,
+      "train_loss": 0.033732399344444275,
+      "validation_loss": 0.03814883530139923,
+      "mean_pose_best_position_mm": 28.852216720581055,
+      "mean_pose_best_direction_deg": 7.585907936096191,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 2401,
+      "train_loss": 0.0329890102148056,
+      "validation_loss": 0.034762751311063766,
+      "mean_pose_best_position_mm": 26.598636627197266,
+      "mean_pose_best_direction_deg": 7.523087501525879,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 2801,
+      "train_loss": 0.029450373724102974,
+      "validation_loss": 0.030690286308526993,
+      "mean_pose_best_position_mm": 24.20362091064453,
+      "mean_pose_best_direction_deg": 6.646669864654541,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 3201,
+      "train_loss": 0.028290746733546257,
+      "validation_loss": 0.030195873230695724,
+      "mean_pose_best_position_mm": 23.832923889160156,
+      "mean_pose_best_direction_deg": 6.698698997497559,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 3601,
+      "train_loss": 0.02691592648625374,
+      "validation_loss": 0.028911300003528595,
+      "mean_pose_best_position_mm": 23.688108444213867,
+      "mean_pose_best_direction_deg": 6.345500946044922,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 4001,
+      "train_loss": 0.027396950870752335,
+      "validation_loss": 0.02809213660657406,
+      "mean_pose_best_position_mm": 23.352336883544922,
+      "mean_pose_best_direction_deg": 6.277878284454346,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 4401,
+      "train_loss": 0.025965116918087006,
+      "validation_loss": 0.027386993169784546,
+      "mean_pose_best_position_mm": 22.828105926513672,
+      "mean_pose_best_direction_deg": 6.260254859924316,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 4801,
+      "train_loss": 0.025568049401044846,
+      "validation_loss": 0.027063904330134392,
+      "mean_pose_best_position_mm": 22.814102172851562,
+      "mean_pose_best_direction_deg": 6.297776222229004,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 5201,
+      "train_loss": 0.02304372563958168,
+      "validation_loss": 0.026778142899274826,
+      "mean_pose_best_position_mm": 22.553220748901367,
+      "mean_pose_best_direction_deg": 6.386895179748535,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 5601,
+      "train_loss": 0.023292284458875656,
+      "validation_loss": 0.02575886994600296,
+      "mean_pose_best_position_mm": 21.69525146484375,
+      "mean_pose_best_direction_deg": 6.06495475769043,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 6001,
+      "train_loss": 0.022238073870539665,
+      "validation_loss": 0.02539287507534027,
+      "mean_pose_best_position_mm": 21.62145233154297,
+      "mean_pose_best_direction_deg": 5.923597812652588,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 6401,
+      "train_loss": 0.021679997444152832,
+      "validation_loss": 0.025341171771287918,
+      "mean_pose_best_position_mm": 21.612695693969727,
+      "mean_pose_best_direction_deg": 5.930045127868652,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 6801,
+      "train_loss": 0.021341290324926376,
+      "validation_loss": 0.025105122476816177,
+      "mean_pose_best_position_mm": 21.411094665527344,
+      "mean_pose_best_direction_deg": 5.980126857757568,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 7201,
+      "train_loss": 0.02208731509745121,
+      "validation_loss": 0.025050610303878784,
+      "mean_pose_best_position_mm": 21.489532470703125,
+      "mean_pose_best_direction_deg": 5.937225341796875,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 7601,
+      "train_loss": 0.02453572303056717,
+      "validation_loss": 0.02488051727414131,
+      "mean_pose_best_position_mm": 21.160083770751953,
+      "mean_pose_best_direction_deg": 6.07302188873291,
+      "raw_pose_success": 0
+    },
+    {
+      "step": 8000,
+      "train_loss": 0.0220847949385643,
+      "validation_loss": 0.024506110697984695,
+      "mean_pose_best_position_mm": 20.803695678710938,
+      "mean_pose_best_direction_deg": 5.8947272300720215,
+      "raw_pose_success": 0
+    }
+  ],
+  "objective": "Best-of-eight directed FK task loss plus separate best-of-eight normalized q1-q5 witness loss; tiny travel regularizer",
+  "witness_weight": 0.05,
+  "test_used_for_selection": false,
+  "scope": "Virtual initial guesses only; raw network outputs never certify reachability or collision freedom"
+}

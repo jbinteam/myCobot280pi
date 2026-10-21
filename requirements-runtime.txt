@@ -1,0 +1,6 @@
+# CPU-capable runtime; install an appropriate Torch wheel separately if using CUDA.
+# Exact versions observed on the development PC: docs/environment-observed.txt.
+-r simulation/diffusion/requirements.txt
+pyserial==3.5
+pymycobot==4.0.7
+pytest>=8,<10

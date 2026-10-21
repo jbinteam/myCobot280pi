@@ -1,0 +1,731 @@
+{
+  "schema": 1,
+  "name": "reachable_disk_outside_eight_candidate_search",
+  "physical_motion": false,
+  "description": "Unmodified cone-disk planner returns ik_failed; candidate 12 (zero-based index 11) provides a visible collision-free endpoint and a checked path from the same start.",
+  "request": {
+    "seed": 42,
+    "velocity_shape": {
+      "kind": "smooth_trapezoid",
+      "rise_percent": 5.0,
+      "fall_percent": 10.0
+    },
+    "tracking_region": {
+      "mode": "cone_disk",
+      "distance_mm": 330,
+      "half_angle_deg": 30.0
+    },
+    "start_deg": [
+      -110.390625,
+      -42.802734375,
+      49.5703125,
+      -74.794921875,
+      -66.005859375,
+      42.71484375
+    ],
+    "cursor_mm": [
+      -255.4690803482983,
+      -61.79255715606772,
+      262.98492406109415
+    ],
+    "target_axis": [
+      -0.8419235736836758,
+      0.243206416122897,
+      -0.481679701910268
+    ],
+    "obstacle_mm": null,
+    "speed_rad_s": 0.8144869842640204,
+    "continuous_motion": true,
+    "start_velocity_rad_s": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "start_acceleration_rad_s2": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "target_velocity_m_s": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "camera": {
+    "horizontal_fov_deg": 80.0,
+    "vertical_fov_deg": 80.0,
+    "angular_margin_deg": 0.0,
+    "near_m": 0.005,
+    "eef_to_optical_translation_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "eef_to_optical_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "mount_assumed": true,
+    "mount_calibrated": false
+  },
+  "checkpoint_sha256": "168ab43a2d4d4dcc0e61acf8c3c89e6dff6e9723843b1fd023a4519108ea04f5",
+  "environment": {
+    "robot": {
+      "schema": 1,
+      "robot": "myCobot 280 Pi",
+      "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+      "geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+      "joint_names": [
+        "joint2_to_joint1",
+        "joint3_to_joint2",
+        "joint4_to_joint3",
+        "joint5_to_joint4",
+        "joint6_to_joint5",
+        "joint6output_to_joint6"
+      ],
+      "limits_rad": {
+        "min": [
+          -2.895501229058593,
+          -2.321287905152458,
+          -2.5813419636996136,
+          -2.4958208303518914,
+          -2.66860842629933,
+          -3.1049407392979123
+        ],
+        "max": [
+          2.895501229058593,
+          2.321287905152458,
+          2.5813419636996136,
+          2.4958208303518914,
+          2.7558748888990463,
+          3.1049407392979123
+        ]
+      },
+      "base_frame": "g_base",
+      "tcp": "joint6_flange",
+      "units": "meters/radians/seconds",
+      "goal": "selected joint goal from XYZ + directed flange Z; local Z spin free",
+      "observation": [
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "box_x_scaled",
+        "box_y_scaled",
+        "box_z_scaled",
+        "box_half_x_scaled",
+        "box_half_y_scaled",
+        "box_half_z_scaled",
+        "box_present"
+      ],
+      "action": "absolute operating-box-normalized joint positions",
+      "horizon": 16,
+      "observation_dim": 19
+    },
+    "self_collision": {
+      "schema": 1,
+      "robot": "myCobot 280 Pi",
+      "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+      "geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+      "joint_names": [
+        "joint2_to_joint1",
+        "joint3_to_joint2",
+        "joint4_to_joint3",
+        "joint5_to_joint4",
+        "joint6_to_joint5",
+        "joint6output_to_joint6"
+      ],
+      "joint_types": [
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute"
+      ],
+      "limits_rad": {
+        "min": [
+          -2.895501229058593,
+          -2.321287905152458,
+          -2.5813419636996136,
+          -2.4958208303518914,
+          -2.66860842629933,
+          -3.1049407392979123
+        ],
+        "max": [
+          2.895501229058593,
+          2.321287905152458,
+          2.5813419636996136,
+          2.4958208303518914,
+          2.7558748888990463,
+          3.1049407392979123
+        ]
+      },
+      "units": {
+        "joints": "radians",
+        "position": "meters"
+      },
+      "base_frame": "g_base",
+      "base_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tcp": "joint6_flange",
+      "tool_offset_m": [
+        0,
+        0,
+        0
+      ],
+      "validation": "joint_limits_and_self_collision",
+      "assumptions": {
+        "checker": "urdf_convex_fcl_v1",
+        "environment": "self_only_no_external_obstacles",
+        "representation": "convex_hull_per_URDF_collision_mesh",
+        "clearance_mm": 1.0,
+        "excluded_pairs": [
+          [
+            "g_base",
+            "joint1"
+          ],
+          [
+            "joint1",
+            "joint2"
+          ],
+          [
+            "joint2",
+            "joint3"
+          ],
+          [
+            "joint3",
+            "joint4"
+          ],
+          [
+            "joint4",
+            "joint5"
+          ],
+          [
+            "joint5",
+            "joint6"
+          ],
+          [
+            "joint6",
+            "joint6_flange"
+          ]
+        ],
+        "exclusion_policy": "direct_URDF_parent_child_pairs_only",
+        "checked_link_pairs": [
+          [
+            "g_base",
+            "joint2"
+          ],
+          [
+            "g_base",
+            "joint3"
+          ],
+          [
+            "g_base",
+            "joint4"
+          ],
+          [
+            "g_base",
+            "joint5"
+          ],
+          [
+            "g_base",
+            "joint6"
+          ],
+          [
+            "g_base",
+            "joint6_flange"
+          ],
+          [
+            "joint1",
+            "joint3"
+          ],
+          [
+            "joint1",
+            "joint4"
+          ],
+          [
+            "joint1",
+            "joint5"
+          ],
+          [
+            "joint1",
+            "joint6"
+          ],
+          [
+            "joint1",
+            "joint6_flange"
+          ],
+          [
+            "joint2",
+            "joint4"
+          ],
+          [
+            "joint2",
+            "joint5"
+          ],
+          [
+            "joint2",
+            "joint6"
+          ],
+          [
+            "joint2",
+            "joint6_flange"
+          ],
+          [
+            "joint3",
+            "joint5"
+          ],
+          [
+            "joint3",
+            "joint6"
+          ],
+          [
+            "joint3",
+            "joint6_flange"
+          ],
+          [
+            "joint4",
+            "joint6"
+          ],
+          [
+            "joint4",
+            "joint6_flange"
+          ],
+          [
+            "joint5",
+            "joint6_flange"
+          ]
+        ],
+        "mesh_info": [
+          {
+            "link": "g_base",
+            "file": "G_base.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 45372,
+            "hull_triangles": 1180,
+            "local_bounds_m": [
+              [
+                -0.07499998474121095,
+                -0.05499998474121094,
+                0.0
+              ],
+              [
+                0.07499998474121095,
+                0.054987457275390624,
+                0.032
+              ]
+            ]
+          },
+          {
+            "link": "joint1",
+            "file": "joint1_pi.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 95700,
+            "hull_triangles": 3836,
+            "local_bounds_m": [
+              [
+                -0.050517555236816405,
+                -0.04631658935546875,
+                0.0
+              ],
+              [
+                0.04795552825927735,
+                0.046318634033203125,
+                0.08090007019042969
+              ]
+            ]
+          },
+          {
+            "link": "joint2",
+            "file": "joint2.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 14246,
+            "hull_triangles": 3340,
+            "local_bounds_m": [
+              [
+                -0.023964159190654755,
+                -0.02400003932416439,
+                -0.003181695006787777
+              ],
+              [
+                0.036575790494680405,
+                0.02400003932416439,
+                0.08387827128171921
+              ]
+            ]
+          },
+          {
+            "link": "joint3",
+            "file": "joint3.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 22976,
+            "hull_triangles": 7100,
+            "local_bounds_m": [
+              [
+                -0.0027239909395575523,
+                -0.023999979719519615,
+                -0.023999979719519615
+              ],
+              [
+                0.05271594971418381,
+                0.023999979719519615,
+                0.13199999928474426
+              ]
+            ]
+          },
+          {
+            "link": "joint4",
+            "file": "joint4.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 6149,
+            "hull_triangles": 2722,
+            "local_bounds_m": [
+              [
+                -0.052963968366384506,
+                -0.021599939092993736,
+                -0.021640000864863396
+              ],
+              [
+                0.004835962783545256,
+                0.021599939092993736,
+                0.1151600033044815
+              ]
+            ]
+          },
+          {
+            "link": "joint5",
+            "file": "joint5.dae",
+            "asset_unit_m": 0.001,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 22907,
+            "hull_triangles": 4668,
+            "local_bounds_m": [
+              [
+                1.6202032566070558e-07,
+                -0.01943772812187672,
+                -0.019706802368164064
+              ],
+              [
+                0.05278763569891453,
+                0.01914904861152172,
+                0.03663734436035156
+              ]
+            ]
+          },
+          {
+            "link": "joint6",
+            "file": "joint6.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 9810,
+            "hull_triangles": 2666,
+            "local_bounds_m": [
+              [
+                -0.019200001674890554,
+                -0.021600001407414693,
+                0.0
+              ],
+              [
+                0.019200041729213746,
+                0.03510000014128156,
+                0.05712000164493913
+              ]
+            ]
+          },
+          {
+            "link": "joint6_flange",
+            "file": "joint7.dae",
+            "asset_unit_m": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source_triangles": 9652,
+            "hull_triangles": 3464,
+            "local_bounds_m": [
+              [
+                -0.019200001674890554,
+                -0.019200001674890554,
+                0.0
+              ],
+              [
+                0.019200001674890554,
+                0.019200001674890554,
+                0.01370000045998021
+              ]
+            ]
+          }
+        ],
+        "derived_bounds_sha256": "a645169bb31088d0a7ea125fd844d5a32b3aaf550d79098d9ccc1b90dfb2967a",
+        "versions": {
+          "python-fcl": "0.7.0.11",
+          "trimesh": "5.1.0",
+          "pycollada": "0.9.3",
+          "scipy": "1.18.1"
+        }
+      },
+      "metric": "Euclidean displacement / operating joint range"
+    },
+    "scene_checker": "PyBullet convex URDF hulls versus table and one axis-aligned box",
+    "clearance_mm": 1.0,
+    "path_sample_rad": 0.04,
+    "table_top_m": -0.034999999999999996,
+    "pybullet_version": "3.2.7",
+    "execution": "kinematic reference interpolation; no calibrated dynamics or physical IO"
+  },
+  "expected_baseline": {
+    "status": "ik_failed",
+    "candidate_limit": 8,
+    "candidates_filtered": 4,
+    "candidates_tested": 4,
+    "jobs_started": 8,
+    "route_attempts": 0
+  },
+  "witness": {
+    "q_deg": [
+      153.47464943398353,
+      66.20712087359084,
+      -27.986221458304897,
+      -49.144775214893656,
+      33.40263225257411,
+      40.9124420479897
+    ],
+    "candidate_index": 11,
+    "recovery_ik": {
+      "seed": 42,
+      "attempts": 4,
+      "robust": true,
+      "learned": true
+    },
+    "route_rad": [
+      [
+        -1.9266798695843654,
+        -0.7470486437003072,
+        0.8651651643675017,
+        -1.3054176504906807,
+        -1.1520195717021164,
+        0.7455146629124216
+      ],
+      [
+        -1.8652041012284872,
+        -0.2130244122902295,
+        0.520838829847236,
+        -0.944202408651365,
+        -0.7477355010864861,
+        0.9065821300964482
+      ],
+      [
+        -1.1649091326172256,
+        0.28811263810277205,
+        0.4291421793499484,
+        -0.6351854541362434,
+        -1.1042143756172589,
+        0.5833125620641785
+      ],
+      [
+        -1.0450088294054372,
+        0.3561126094467103,
+        0.6684068505156466,
+        -0.5691710961377131,
+        -1.1400679129830924,
+        0.22173225347695097
+      ],
+      [
+        -0.7167015456573143,
+        0.5667619399365591,
+        0.9644201458518623,
+        -0.3839312833660185,
+        -0.9584841375212705,
+        0.0007350607007990118
+      ],
+      [
+        -0.0980685069815851,
+        0.880300838094701,
+        1.4146148770857256,
+        -0.5977952808127012,
+        -0.35948326929758123,
+        0.03934411982936151
+      ],
+      [
+        0.31453115700190637,
+        0.6887480965922685,
+        1.6058790992097485,
+        -0.5181820975118894,
+        0.24055798768549627,
+        0.7831491218884865
+      ],
+      [
+        1.0243100226400457,
+        0.812691871976651,
+        1.0292076589204329,
+        -0.5920637649136988,
+        0.7006326795157967,
+        0.8096529069918739
+      ],
+      [
+        1.424871869072879,
+        1.075475182346192,
+        0.4133835387047391,
+        -0.2755596278926409,
+        0.8385251149486329,
+        1.1239844253727314
+      ],
+      [
+        2.066116809666325,
+        1.1164207691956218,
+        -0.04786461483919943,
+        -0.5733177418636836,
+        0.7078283098498662,
+        0.9143248983362188
+      ],
+      [
+        2.6786379509670644,
+        1.1555322475100247,
+        -0.4884517096397094,
+        -0.8577381376523981,
+        0.5829859116402684,
+        0.7140568187687922
+      ]
+    ],
+    "rrt": {
+      "seed": 42,
+      "configuration": {
+        "iterations": 800,
+        "step": 0.08,
+        "radius": 0.2,
+        "goal_bias": 0.18,
+        "post_solution": 40,
+        "neighbors": 20,
+        "max_step_rad": 0.02
+      },
+      "nodes": 115,
+      "iterations": 505,
+      "rewires": 0,
+      "seconds": 3.151476181000021,
+      "status": "rrt_star",
+      "cost": 1.609885096646848,
+      "first_solution_iteration": 464
+    }
+  },
+  "provenance": {
+    "source_trace": "output/full_pipeline_simulation_20261012/run2/test_native_full_approach_loss0/pipeline_trace.json",
+    "source_plan_index": 25,
+    "change": "Set tracking_region.distance_mm to 330 instead of 350; preserve all other request fields.",
+    "discovered": "2026-10-14",
+    "baseline_injected_failures": false
+  },
+  "limitations": [
+    "Reachability and route validity use the saved robot geometry, point-object visibility and assumed camera model.",
+    "Route is geometric; its edges are checked at 0.005 rad spacing.",
+    "The witness uses an additional endpoint candidate and an 800-iteration RRT budget; the baseline request and production budgets are unchanged."
+  ],
+  "camera_revalidation": {
+    "date": "2026-10-15",
+    "camera": {
+      "horizontal_fov_deg": 82.0,
+      "vertical_fov_deg": 68.0,
+      "angular_margin_deg": 0.0,
+      "near_m": 0.005,
+      "eef_to_optical_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "eef_to_optical_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "mount_assumed": true,
+      "mount_calibrated": false
+    },
+    "route_visibility_audit": {
+      "passed": false,
+      "samples": 1179,
+      "outside_view_samples": 380,
+      "occluded_samples": 0,
+      "minimum_view_margin_deg": -5.931441694619721,
+      "max_step_rad": 0.005,
+      "start_valid": true,
+      "witness_valid": true
+    },
+    "source": "output/orbbec_fov_20261015/route_audit.json"
+  }
+}

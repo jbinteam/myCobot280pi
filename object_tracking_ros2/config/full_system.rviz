@@ -1,0 +1,112 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Table plane
+      Enabled: true
+      Cell Size: 0.1
+      Plane Cell Count: 16
+      Plane: XY
+      Offset: {X: 0, Y: 0, Z: -0.035}
+      Color: 110; 110; 110
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Arm, target and tracking region
+      Enabled: true
+      Topic:
+        Value: /arm/visualization
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        Depth: 10
+    - Class: rviz_default_plugins/MarkerArray
+      Name: RRT* search and checked route
+      Enabled: true
+      Topic:
+        Value: /arm/planning_visualization
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        Depth: 10
+    - Class: rviz_default_plugins/TF
+      Name: Camera and target frames
+      Enabled: true
+      Frames:
+        All Enabled: false
+        g_base: {Value: true}
+        joint6_flange: {Value: true}
+        camera_color_optical_frame: {Value: true}
+        box_center: {Value: true}
+      Marker Scale: 0.3
+      Show Names: false
+      Show Axes: true
+      Show Arrows: false
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Detected object cloud
+      Enabled: true
+      Filter size: 50
+      Topic:
+        Value: /object/cloud
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        Depth: 30
+      Color Transformer: RGB8
+      Position Transformer: XYZ
+      Style: Points
+      Size (Pixels): 3
+      Size (m): 0.003
+      Decay Time: 0.25
+    - Class: rviz_default_plugins/Image
+      Name: Segmentation - 2D detection
+      Enabled: true
+      Topic:
+        Value: /object_pose/detection_image
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        Depth: 2
+      Normalize Range: true
+    - Class: rviz_default_plugins/Image
+      Name: Segmentation - object mask
+      Enabled: true
+      Topic:
+        Value: /object/mask
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        Depth: 2
+      Normalize Range: true
+    - Class: rviz_default_plugins/Image
+      Name: Pose estimation - 3D box
+      Enabled: true
+      Topic:
+        Value: /object_pose/box_image
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        Depth: 2
+      Normalize Range: true
+  Enabled: true
+  Global Options:
+    Background Color: 35; 38; 42
+    Fixed Frame: g_base
+    Frame Rate: 20
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+  Transformation:
+    Current: {Class: rviz_default_plugins/TF}
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Name: Current View
+      Target Frame: g_base
+      Distance: 1.25
+      Pitch: 0.45
+      Yaw: 0.8
+      Focal Point: {X: 0.18, Y: 0, Z: 0.28}
+Window Geometry:
+  Width: 1500
+  Height: 940

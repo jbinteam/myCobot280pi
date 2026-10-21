@@ -1,0 +1,1610 @@
+{
+  "schema": 1,
+  "name": "fixed-v2-offline-regression-v1",
+  "checkpoint_sha256": "6582cbf4e1d2575007cfead8f99ed5f15a7b7021083d0eb200c61b224401bddc",
+  "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+  "conventions": {
+    "base_frame": "g_base",
+    "tcp": "joint6_flange",
+    "position_units": "mm",
+    "joint_units": "deg",
+    "target_axis": "directed flange Z; local Z spin free",
+    "obstacle": "XYZ center and XYZ half-extents in mm; table top -35 mm",
+    "tool_transform": "none"
+  },
+  "qualification": "Offline reference planning only; no physical accuracy or tracking qualification.",
+  "cases": [
+    {
+      "id": "heldout_000590_block",
+      "category": "heldout",
+      "description": "Block detour \u00b7 held-out 000590 / block",
+      "request": {
+        "start_deg": [
+          107.74732535307042,
+          -22.270703034796217,
+          22.873229185063675,
+          -12.727510939984997,
+          -11.653879827694912,
+          -119.21818277038213
+        ],
+        "target_mm": [
+          -163.14389565014324,
+          -24.582043886988295,
+          129.0896721954794
+        ],
+        "target_axis": [
+          -0.6493725053152838,
+          -0.7603759677202576,
+          -0.01198903891199639
+        ],
+        "obstacle_mm": [
+          -57.89337591501463,
+          -164.0330104392802,
+          163.44816816835922,
+          16.16243442552792,
+          12.653726456161543,
+          198.44816816835922
+        ],
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "success",
+        "statuses": [
+          "success"
+        ]
+      },
+      "quick": true,
+      "qualified": true,
+      "evidence": {
+        "kind": "saved_success",
+        "path": "output/planner_optimization_20261007/benchmark.json",
+        "sha256": "c8f9f4ec67b8130e65cf319784832cfd2ab460a6a3ca025589992cebba1979ac",
+        "fixture_path": "simulation/artifacts/diffusion_motion_v2/webui.json",
+        "fixture_sha256": "7ad6080e9b2851aada0cd7ab1be6595c395967894fb17b4d9ee88a30fd5dbd79"
+      },
+      "qualified_seeds": [
+        42
+      ],
+      "exploratory_statuses": [
+        "success",
+        "decision_limit",
+        "no_safe_chunk"
+      ],
+      "endpoint_selection": "cartesian_ik_when_start_valid"
+    },
+    {
+      "id": "heldout_000590_no_block",
+      "category": "heldout",
+      "description": "Block detour \u00b7 held-out 000590 / no_block",
+      "request": {
+        "start_deg": [
+          107.74732535307042,
+          -22.270703034796217,
+          22.873229185063675,
+          -12.727510939984997,
+          -11.653879827694912,
+          -119.21818277038213
+        ],
+        "target_mm": [
+          -163.14389565014324,
+          -24.582043886988295,
+          129.0896721954794
+        ],
+        "target_axis": [
+          -0.6493725053152838,
+          -0.7603759677202576,
+          -0.01198903891199639
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "success",
+        "statuses": [
+          "success"
+        ]
+      },
+      "quick": true,
+      "qualified": true,
+      "evidence": {
+        "kind": "saved_success",
+        "path": "output/planner_optimization_20261007/benchmark.json",
+        "sha256": "c8f9f4ec67b8130e65cf319784832cfd2ab460a6a3ca025589992cebba1979ac",
+        "fixture_path": "simulation/artifacts/diffusion_motion_v2/webui.json",
+        "fixture_sha256": "7ad6080e9b2851aada0cd7ab1be6595c395967894fb17b4d9ee88a30fd5dbd79"
+      },
+      "qualified_seeds": [
+        42
+      ],
+      "exploratory_statuses": [
+        "success",
+        "decision_limit",
+        "no_safe_chunk"
+      ],
+      "endpoint_selection": "cartesian_ik_when_start_valid"
+    },
+    {
+      "id": "heldout_000062_block",
+      "category": "heldout",
+      "description": "Nearby goal \u00b7 held-out 000062 / block",
+      "request": {
+        "start_deg": [
+          -8.318224036214652,
+          76.08977320396454,
+          65.39640822734249,
+          -40.82917559776098,
+          86.32743131138542,
+          113.24601722862104
+        ],
+        "target_mm": [
+          -160.0508206211624,
+          38.3615691267599,
+          13.442700710813982
+        ],
+        "target_axis": [
+          -0.0068533547653649544,
+          0.9928073757802999,
+          0.11952634071489932
+        ],
+        "obstacle_mm": [
+          262.16654565401615,
+          18.386520751665856,
+          56.943829230207804,
+          32.51476971926416,
+          34.738891624077894,
+          91.9438292302078
+        ],
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "success",
+        "statuses": [
+          "success"
+        ]
+      },
+      "quick": true,
+      "qualified": true,
+      "evidence": {
+        "kind": "saved_success",
+        "path": "output/planner_optimization_20261007/benchmark.json",
+        "sha256": "c8f9f4ec67b8130e65cf319784832cfd2ab460a6a3ca025589992cebba1979ac",
+        "fixture_path": "simulation/artifacts/diffusion_motion_v2/webui.json",
+        "fixture_sha256": "7ad6080e9b2851aada0cd7ab1be6595c395967894fb17b4d9ee88a30fd5dbd79"
+      },
+      "qualified_seeds": [
+        42
+      ],
+      "exploratory_statuses": [
+        "success",
+        "decision_limit",
+        "no_safe_chunk"
+      ],
+      "endpoint_selection": "cartesian_ik_when_start_valid"
+    },
+    {
+      "id": "heldout_000062_no_block",
+      "category": "heldout",
+      "description": "Nearby goal \u00b7 held-out 000062 / no_block",
+      "request": {
+        "start_deg": [
+          -8.318224036214652,
+          76.08977320396454,
+          65.39640822734249,
+          -40.82917559776098,
+          86.32743131138542,
+          113.24601722862104
+        ],
+        "target_mm": [
+          -160.0508206211624,
+          38.3615691267599,
+          13.442700710813982
+        ],
+        "target_axis": [
+          -0.0068533547653649544,
+          0.9928073757802999,
+          0.11952634071489932
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "success",
+        "statuses": [
+          "success"
+        ]
+      },
+      "quick": true,
+      "qualified": true,
+      "evidence": {
+        "kind": "saved_success",
+        "path": "output/planner_optimization_20261007/benchmark.json",
+        "sha256": "c8f9f4ec67b8130e65cf319784832cfd2ab460a6a3ca025589992cebba1979ac",
+        "fixture_path": "simulation/artifacts/diffusion_motion_v2/webui.json",
+        "fixture_sha256": "7ad6080e9b2851aada0cd7ab1be6595c395967894fb17b4d9ee88a30fd5dbd79"
+      },
+      "qualified_seeds": [
+        42
+      ],
+      "exploratory_statuses": [
+        "success",
+        "decision_limit",
+        "no_safe_chunk"
+      ],
+      "endpoint_selection": "cartesian_ik_when_start_valid"
+    },
+    {
+      "id": "heldout_000672_block",
+      "category": "heldout",
+      "description": "Global goal \u00b7 held-out 000672 / block",
+      "request": {
+        "start_deg": [
+          -77.04888767893404,
+          114.86775885326439,
+          -102.89953730502583,
+          66.33383452271345,
+          40.69615089715253,
+          -97.65342715616006
+        ],
+        "target_mm": [
+          -100.01547990534335,
+          164.39932354481851,
+          216.64623468001068
+        ],
+        "target_axis": [
+          -0.7535168951525799,
+          0.5600961096635019,
+          0.3442450241607369
+        ],
+        "obstacle_mm": [
+          -190.82046122438558,
+          46.32376442062772,
+          86.75468296072067,
+          22.290281550872685,
+          22.08165662074584,
+          121.75468296072067
+        ],
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "success",
+        "statuses": [
+          "success"
+        ]
+      },
+      "quick": true,
+      "qualified": true,
+      "evidence": {
+        "kind": "saved_success",
+        "path": "output/planner_optimization_20261007/benchmark.json",
+        "sha256": "c8f9f4ec67b8130e65cf319784832cfd2ab460a6a3ca025589992cebba1979ac",
+        "fixture_path": "simulation/artifacts/diffusion_motion_v2/webui.json",
+        "fixture_sha256": "7ad6080e9b2851aada0cd7ab1be6595c395967894fb17b4d9ee88a30fd5dbd79"
+      },
+      "qualified_seeds": [
+        42
+      ],
+      "exploratory_statuses": [
+        "success",
+        "decision_limit",
+        "no_safe_chunk"
+      ],
+      "endpoint_selection": "cartesian_ik_when_start_valid"
+    },
+    {
+      "id": "heldout_000672_no_block",
+      "category": "heldout",
+      "description": "Global goal \u00b7 held-out 000672 / no_block",
+      "request": {
+        "start_deg": [
+          -77.04888767893404,
+          114.86775885326439,
+          -102.89953730502583,
+          66.33383452271345,
+          40.69615089715253,
+          -97.65342715616006
+        ],
+        "target_mm": [
+          -100.01547990534335,
+          164.39932354481851,
+          216.64623468001068
+        ],
+        "target_axis": [
+          -0.7535168951525799,
+          0.5600961096635019,
+          0.3442450241607369
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "success",
+        "statuses": [
+          "success"
+        ]
+      },
+      "quick": true,
+      "qualified": true,
+      "evidence": {
+        "kind": "saved_success",
+        "path": "output/planner_optimization_20261007/benchmark.json",
+        "sha256": "c8f9f4ec67b8130e65cf319784832cfd2ab460a6a3ca025589992cebba1979ac",
+        "fixture_path": "simulation/artifacts/diffusion_motion_v2/webui.json",
+        "fixture_sha256": "7ad6080e9b2851aada0cd7ab1be6595c395967894fb17b4d9ee88a30fd5dbd79"
+      },
+      "qualified_seeds": [
+        42
+      ],
+      "exploratory_statuses": [
+        "success",
+        "decision_limit",
+        "no_safe_chunk"
+      ],
+      "endpoint_selection": "cartesian_ik_when_start_valid"
+    },
+    {
+      "id": "recent_live_start",
+      "category": "captured_start",
+      "description": "Archived October 6 live-start request; offline replay only.",
+      "request": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "target_mm": [
+          71.6813,
+          -56.3114,
+          401.7324
+        ],
+        "target_axis": [
+          0.9255477978143902,
+          0.26258496038275225,
+          -0.2727827203869796
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "success",
+        "statuses": [
+          "success"
+        ]
+      },
+      "quick": true,
+      "qualified": true,
+      "evidence": {
+        "kind": "saved_success",
+        "path": "output/planner_optimization_20261007/benchmark.json",
+        "sha256": "c8f9f4ec67b8130e65cf319784832cfd2ab460a6a3ca025589992cebba1979ac"
+      },
+      "qualified_seeds": [
+        42
+      ],
+      "exploratory_statuses": [
+        "success",
+        "decision_limit",
+        "no_safe_chunk"
+      ],
+      "encoder_profile": true,
+      "encoder_mapping": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "start_encoders": [
+          1813,
+          2449,
+          1023,
+          1601,
+          1939,
+          320
+        ],
+        "encoder_directions": [
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "steps_per_degree": 11.377777777777778,
+        "capture_seconds": 0.050899009002023377,
+        "scope": "Nominal step/s conversion; physical speed and zero-speed behavior unqualified",
+        "command": "set_encoders_drag",
+        "maximum_excursion_deg": null,
+        "maximum_speed_percent": 80,
+        "speed_scope": "Instantaneous analytic dq/dt converted to nominal step/s magnitudes; direction comes from encoder targets",
+        "quantized_waypoints_deg": [
+          [
+            -7.475000000000001,
+            0.707265624999998,
+            -11.593671874999998,
+            -6.247343749999999,
+            22.41203125,
+            151.87
+          ]
+        ],
+        "velocity_profile": true,
+        "streaming": true,
+        "staged": false,
+        "stage_count": 0,
+        "minimum_send_interval_s": 0.2,
+        "lookahead_s": 0.2,
+        "lookahead_limited_by_live_lead": true,
+        "cadence_time_stretch": 1.0,
+        "maximum_tracking_error_deg": 5.0,
+        "maximum_command_lead_deg": 6.0,
+        "arrival_deg": 0.75,
+        "timing_scope": "Telemetry starts before each 0.2-second send deadline using measured query cost. Monotonic trajectory clock; no waypoint arrival waits or added 2-degree stops. Lag beyond tolerance sends Stop. Physical speed units and timing remain unqualified."
+      },
+      "encoder_mapping_source": {
+        "path": "output/vectorized_collision_benchmark_inputs.json",
+        "sha256": "8b40da93e0b091270258bd3194d48e343c4d356f4dea8ee9b46651dfcb405ce3"
+      },
+      "endpoint_selection": "cartesian_ik_when_start_valid"
+    },
+    {
+      "id": "small_j1",
+      "category": "small_move",
+      "description": "Exact FK target after +2 deg on joint 1.",
+      "request": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "goal_deg": [
+          22.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "target_mm": [
+          222.89483227147937,
+          32.296186759706345,
+          133.4233162797199
+        ],
+        "target_axis": [
+          -0.0012508637961409926,
+          0.17981842024513822,
+          -0.9836990246413311
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "allowed",
+        "statuses": [
+          "success",
+          "decision_limit",
+          "no_safe_chunk"
+        ]
+      },
+      "quick": false,
+      "qualified": false,
+      "evidence": {
+        "kind": "exact_fk_and_scene_validation",
+        "planner_convergence": "unqualified"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    },
+    {
+      "id": "small_j2",
+      "category": "small_move",
+      "description": "Exact FK target after +2 deg on joint 2.",
+      "request": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "goal_deg": [
+          20.65,
+          -33.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "target_mm": [
+          223.92957649663174,
+          24.513923390408053,
+          141.03947216949533
+        ],
+        "target_axis": [
+          0.03711165649785331,
+          0.1918447593111639,
+          -0.9807233622570773
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "allowed",
+        "statuses": [
+          "success",
+          "decision_limit",
+          "no_safe_chunk"
+        ]
+      },
+      "quick": false,
+      "qualified": false,
+      "evidence": {
+        "kind": "exact_fk_and_scene_validation",
+        "planner_convergence": "unqualified"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    },
+    {
+      "id": "small_j3",
+      "category": "small_move",
+      "description": "Exact FK target after -2 deg on joint 3.",
+      "request": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "goal_deg": [
+          20.65,
+          -35.24,
+          -92.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "target_mm": [
+          220.68572746082802,
+          23.291473336820133,
+          128.09148258908706
+        ],
+        "target_axis": [
+          -0.02713834495917326,
+          0.1676310484050156,
+          -0.9854762005464729
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "allowed",
+        "statuses": [
+          "success",
+          "decision_limit",
+          "no_safe_chunk"
+        ]
+      },
+      "quick": false,
+      "qualified": false,
+      "evidence": {
+        "kind": "exact_fk_and_scene_validation",
+        "planner_convergence": "unqualified"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    },
+    {
+      "id": "direction_j4_plus",
+      "category": "direction_change",
+      "description": "Flange direction change from +20 deg on joint 4; position also changes.",
+      "request": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "goal_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          59.28,
+          9.58,
+          151.87
+        ],
+        "target_mm": [
+          232.32993462059136,
+          27.679662618362794,
+          161.85507065493815
+        ],
+        "target_axis": [
+          0.3160125330134803,
+          0.29695308865644804,
+          -0.9010854244275619
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "allowed",
+        "statuses": [
+          "success",
+          "decision_limit",
+          "no_safe_chunk"
+        ]
+      },
+      "quick": false,
+      "qualified": false,
+      "evidence": {
+        "kind": "exact_fk_and_scene_validation",
+        "planner_convergence": "unqualified"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    },
+    {
+      "id": "direction_j4_minus",
+      "category": "direction_change",
+      "description": "Flange direction change from -20 deg on joint 4; position also changes.",
+      "request": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "goal_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          19.28,
+          9.58,
+          151.87
+        ],
+        "target_mm": [
+          206.8521492994413,
+          18.078120842817906,
+          109.79240890253355
+        ],
+        "target_axis": [
+          -0.31364682552482887,
+          0.05965520023235467,
+          -0.9476639308971482
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "allowed",
+        "statuses": [
+          "success",
+          "decision_limit",
+          "no_safe_chunk"
+        ]
+      },
+      "quick": false,
+      "qualified": false,
+      "evidence": {
+        "kind": "exact_fk_and_scene_validation",
+        "planner_convergence": "unqualified"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    },
+    {
+      "id": "direction_j5_plus",
+      "category": "direction_change",
+      "description": "Flange direction change from +30 deg on joint 5; position also changes.",
+      "request": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "goal_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          39.58,
+          151.87
+        ],
+        "target_mm": [
+          215.68184091022198,
+          44.34463756517555,
+          143.21855533475696
+        ],
+        "target_axis": [
+          -0.1748940582797319,
+          0.61499468848369,
+          -0.7688911506288093
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "allowed",
+        "statuses": [
+          "success",
+          "decision_limit",
+          "no_safe_chunk"
+        ]
+      },
+      "quick": false,
+      "qualified": false,
+      "evidence": {
+        "kind": "exact_fk_and_scene_validation",
+        "planner_convergence": "unqualified"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    },
+    {
+      "id": "reverse_000590",
+      "category": "long_move",
+      "description": "Reverse held-out joint endpoints in no-block scene; planner convergence unqualified.",
+      "request": {
+        "start_deg": [
+          -32.68621845684056,
+          19.58875991512108,
+          95.05966687529721,
+          70.39304492652425,
+          -82.15887306249633,
+          37.94970949462457
+        ],
+        "goal_deg": [
+          107.74732535307042,
+          -22.270703034796217,
+          22.873229185063675,
+          -12.727510939984997,
+          -11.653879827694912,
+          -119.21818277038213
+        ],
+        "target_mm": [
+          38.92538660002621,
+          117.31318109462434,
+          398.885798178677
+        ],
+        "target_axis": [
+          -0.09949105276276765,
+          0.9735404577573697,
+          -0.2057194874816839
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "allowed",
+        "statuses": [
+          "success",
+          "decision_limit",
+          "no_safe_chunk"
+        ]
+      },
+      "quick": false,
+      "qualified": false,
+      "evidence": {
+        "kind": "exact_fk_and_scene_validation",
+        "planner_convergence": "unqualified"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    },
+    {
+      "id": "reverse_000062",
+      "category": "long_move",
+      "description": "Reverse held-out joint endpoints in no-block scene; planner convergence unqualified.",
+      "request": {
+        "start_deg": [
+          -20.96969889990118,
+          72.53438373224559,
+          96.40657037287342,
+          -7.226282207867907,
+          67.60791054848218,
+          112.27350593814401
+        ],
+        "goal_deg": [
+          -8.318224036214652,
+          76.08977320396454,
+          65.39640822734249,
+          -40.82917559776098,
+          86.32743131138542,
+          113.24601722862104
+        ],
+        "target_mm": [
+          -239.5017380619865,
+          16.712218570663538,
+          79.32175596163627
+        ],
+        "target_axis": [
+          0.1326607745687926,
+          0.9891604316247059,
+          0.0629504519350998
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "allowed",
+        "statuses": [
+          "success",
+          "decision_limit",
+          "no_safe_chunk"
+        ]
+      },
+      "quick": false,
+      "qualified": false,
+      "evidence": {
+        "kind": "exact_fk_and_scene_validation",
+        "planner_convergence": "unqualified"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    },
+    {
+      "id": "reverse_000672",
+      "category": "long_move",
+      "description": "Reverse held-out joint endpoints in no-block scene; planner convergence unqualified.",
+      "request": {
+        "start_deg": [
+          -89.16301935531685,
+          3.7309775484911256,
+          77.34275091835944,
+          67.84321438466054,
+          -48.18127677954899,
+          108.64179716927346
+        ],
+        "goal_deg": [
+          -77.04888767893404,
+          114.86775885326439,
+          -102.89953730502583,
+          66.33383452271345,
+          40.69615089715253,
+          -97.65342715616006
+        ],
+        "target_mm": [
+          -74.42391552445582,
+          172.42808069217332,
+          234.73950921158578
+        ],
+        "target_axis": [
+          0.6699133677742766,
+          -0.00368067990997762,
+          0.7424301531273678
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "allowed",
+        "statuses": [
+          "success",
+          "decision_limit",
+          "no_safe_chunk"
+        ]
+      },
+      "quick": false,
+      "qualified": false,
+      "evidence": {
+        "kind": "exact_fk_and_scene_validation",
+        "planner_convergence": "unqualified"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    },
+    {
+      "id": "near_limit_j1_lower",
+      "category": "near_limit",
+      "description": "Goal joint 1 one degree inside lower operating bound.",
+      "request": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "goal_deg": [
+          -164.9,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "target_mm": [
+          -225.20590226827937,
+          -2.72974652283583,
+          133.4233162797199
+        ],
+        "target_axis": [
+          -0.02238656389044503,
+          -0.17842385119953177,
+          -0.9836990246413311
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "allowed",
+        "statuses": [
+          "success",
+          "decision_limit",
+          "no_safe_chunk"
+        ]
+      },
+      "quick": false,
+      "qualified": false,
+      "evidence": {
+        "kind": "exact_fk_and_scene_validation",
+        "planner_convergence": "unqualified"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    },
+    {
+      "id": "near_limit_j1_upper",
+      "category": "near_limit",
+      "description": "Goal joint 1 one degree inside upper operating bound.",
+      "request": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "goal_deg": [
+          164.9,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "target_mm": [
+          -196.01290353195347,
+          110.92380980439614,
+          133.4233162797199
+        ],
+        "target_axis": [
+          -0.10909889918078777,
+          -0.1429463504858866,
+          -0.9836990246413311
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "allowed",
+        "statuses": [
+          "success",
+          "decision_limit",
+          "no_safe_chunk"
+        ]
+      },
+      "quick": false,
+      "qualified": false,
+      "evidence": {
+        "kind": "exact_fk_and_scene_validation",
+        "planner_convergence": "unqualified"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    },
+    {
+      "id": "near_limit_j2_upper",
+      "category": "near_limit",
+      "description": "Goal joint 2 one degree inside upper operating bound.",
+      "request": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "goal_deg": [
+          20.65,
+          132.0,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "target_mm": [
+          -178.26422946105333,
+          -127.06000062506745,
+          191.74981282168338
+        ],
+        "target_axis": [
+          0.08247343201546649,
+          0.20893245787636378,
+          0.9744461817141732
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "allowed",
+        "statuses": [
+          "success",
+          "decision_limit",
+          "no_safe_chunk"
+        ]
+      },
+      "quick": false,
+      "qualified": false,
+      "evidence": {
+        "kind": "exact_fk_and_scene_validation",
+        "planner_convergence": "unqualified"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    },
+    {
+      "id": "near_limit_j3_lower",
+      "category": "near_limit",
+      "description": "Goal joint 3 one degree inside lower operating bound.",
+      "request": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "goal_deg": [
+          20.65,
+          -35.24,
+          -146.9,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "target_mm": [
+          83.81733810133274,
+          -28.2894405477902,
+          47.31087190051042
+        ],
+        "target_axis": [
+          -0.7942389231089814,
+          -0.12146566631092895,
+          -0.5953407637028792
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "allowed",
+        "statuses": [
+          "success",
+          "decision_limit",
+          "no_safe_chunk"
+        ]
+      },
+      "quick": false,
+      "qualified": false,
+      "evidence": {
+        "kind": "exact_fk_and_scene_validation",
+        "planner_convergence": "unqualified"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    },
+    {
+      "id": "near_limit_j5_upper",
+      "category": "near_limit",
+      "description": "Goal joint 5 one degree inside upper operating bound.",
+      "request": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "goal_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          156.9,
+          151.87
+        ],
+        "target_mm": [
+          214.63721442299808,
+          32.02018008233984,
+          220.12383108798744
+        ],
+        "target_axis": [
+          -0.19780253387659258,
+          0.3447214980724494,
+          0.917628054474516
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "allowed",
+        "statuses": [
+          "success",
+          "decision_limit",
+          "no_safe_chunk"
+        ]
+      },
+      "quick": false,
+      "qualified": false,
+      "evidence": {
+        "kind": "exact_fk_and_scene_validation",
+        "planner_convergence": "unqualified"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    },
+    {
+      "id": "unreachable_corner",
+      "category": "unreachable",
+      "description": "Inside API coordinate bounds but outside the flange reach envelope.",
+      "request": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "target_mm": [
+          550,
+          550,
+          550
+        ],
+        "target_axis": [
+          0.9255477978143902,
+          0.26258496038275225,
+          -0.2727827203869796
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "reject",
+        "statuses": [
+          "ik_failed"
+        ]
+      },
+      "quick": true,
+      "qualified": true,
+      "evidence": {
+        "kind": "kinematic_reach_bound",
+        "minimum_target_norm_mm": 952.627944
+      },
+      "endpoint_selection": "cartesian_ik_when_start_valid"
+    },
+    {
+      "id": "reject_self_start",
+      "category": "self_rejection",
+      "description": "Joint-bounded start rejected by self collision checker.",
+      "request": {
+        "start_deg": [
+          -162.08684418236157,
+          115.27585880587397,
+          121.22228189770146,
+          -74.1613277389454,
+          -70.30619099906649,
+          -63.69668479646835
+        ],
+        "target_mm": [
+          71.6813,
+          -56.3114,
+          401.7324
+        ],
+        "target_axis": [
+          0.9255477978143902,
+          0.26258496038275225,
+          -0.2727827203869796
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "reject",
+        "statuses": [
+          "invalid_start"
+        ]
+      },
+      "quick": false,
+      "qualified": true,
+      "evidence": {
+        "kind": "scene_validation",
+        "invalid_component": "self"
+      },
+      "endpoint_selection": "cartesian_ik_when_start_valid"
+    },
+    {
+      "id": "reject_table_start",
+      "category": "table_rejection",
+      "description": "Joint-bounded start rejected by table collision checker.",
+      "request": {
+        "start_deg": [
+          -99.89753081577966,
+          126.17071142223278,
+          0.8955801574626707,
+          116.96119439255698,
+          -50.36395133567625,
+          -25.263790118948144
+        ],
+        "target_mm": [
+          71.6813,
+          -56.3114,
+          401.7324
+        ],
+        "target_axis": [
+          0.9255477978143902,
+          0.26258496038275225,
+          -0.2727827203869796
+        ],
+        "obstacle_mm": null,
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "reject",
+        "statuses": [
+          "invalid_start"
+        ]
+      },
+      "quick": false,
+      "qualified": true,
+      "evidence": {
+        "kind": "scene_validation",
+        "invalid_component": "table"
+      },
+      "endpoint_selection": "cartesian_ik_when_start_valid"
+    },
+    {
+      "id": "reject_block_start",
+      "category": "block_rejection",
+      "description": "Table-mounted box overlaps the archived starting flange.",
+      "request": {
+        "start_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "target_mm": [
+          71.6813,
+          -56.3114,
+          401.7324
+        ],
+        "target_axis": [
+          0.9255477978143902,
+          0.26258496038275225,
+          -0.2727827203869796
+        ],
+        "obstacle_mm": [
+          220,
+          25,
+          65,
+          30,
+          30,
+          100
+        ],
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "reject",
+        "statuses": [
+          "invalid_start"
+        ]
+      },
+      "quick": true,
+      "qualified": true,
+      "evidence": {
+        "kind": "scene_validation",
+        "invalid_component": "block"
+      },
+      "endpoint_selection": "cartesian_ik_when_start_valid"
+    },
+    {
+      "id": "reject_block_goal",
+      "category": "block_rejection",
+      "description": "Valid start and exact FK goal blocked by a table-mounted box.",
+      "request": {
+        "start_deg": [
+          107.74732535307042,
+          -22.270703034796217,
+          22.873229185063675,
+          -12.727510939984997,
+          -11.653879827694912,
+          -119.21818277038213
+        ],
+        "goal_deg": [
+          20.65,
+          -35.24,
+          -90.08,
+          39.28,
+          9.58,
+          151.87
+        ],
+        "target_mm": [
+          223.88617142540014,
+          24.497595331483094,
+          133.4233162797199
+        ],
+        "target_axis": [
+          0.0050254705606806215,
+          0.17975253423898466,
+          -0.9836990246413311
+        ],
+        "obstacle_mm": [
+          220,
+          25,
+          65,
+          30,
+          30,
+          100
+        ],
+        "seed": 42,
+        "samples": 4,
+        "inference_steps": 32,
+        "max_decisions": 200,
+        "speed": 70,
+        "velocity_shape": {
+          "kind": "smooth_trapezoid",
+          "rise_percent": 5,
+          "fall_percent": 10
+        }
+      },
+      "expected": {
+        "kind": "reject",
+        "statuses": [
+          "invalid_goal"
+        ]
+      },
+      "quick": false,
+      "qualified": true,
+      "evidence": {
+        "kind": "scene_validation",
+        "invalid_component": "block_goal"
+      },
+      "endpoint_selection": "explicit_joint_goal_skips_ik"
+    }
+  ]
+}

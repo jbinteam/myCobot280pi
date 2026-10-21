@@ -1,0 +1,108 @@
+{
+  "saved": "2026-10-20T17:12:30.830847+07:00",
+  "status": "passed",
+  "physical_motion": false,
+  "scope": [
+    "Strict-first FOV approach policy in both ROS frontends",
+    "Pinned camera/region endpoint and encoder checks",
+    "RViz measured-camera frustum and policy status",
+    "Cooperative cancellation on Stop, pause and disconnect"
+  ],
+  "ros_build": {
+    "packages": 2,
+    "log": "build_final.log"
+  },
+  "tests": {
+    "ros_regression": {
+      "log": "ros_final_tests.log",
+      "passed": 141,
+      "summary": "141 passed, 1 deselected, 128 warnings in 241.12s (0:04:01)"
+    },
+    "native_pipeline": {
+      "log": "native_final_tests.log",
+      "passed": 1,
+      "summary": "1 passed, 128 warnings in 136.79s (0:02:16)"
+    },
+    "shared_hardware": {
+      "log": "shared_tests.log",
+      "passed": 88,
+      "summary": "88 passed, 128 warnings in 98.40s (0:01:38)"
+    },
+    "planner_and_cancellation": {
+      "log": "cancellation_tests_final.log",
+      "passed": 47,
+      "summary": "47 passed, 128 warnings in 36.54s"
+    },
+    "resume_after_final_guard": {
+      "log": "resume_tests_final.log",
+      "passed": 2,
+      "summary": "2 passed, 128 warnings in 30.52s"
+    }
+  },
+  "native": {
+    "physical_motion": false,
+    "native_exit_code": 0,
+    "stages_mm": [
+      350.0,
+      330.0,
+      310.0,
+      290.0,
+      270.0,
+      250.0,
+      230.0,
+      210.0,
+      190.0,
+      170.0,
+      150.0
+    ],
+    "camera": {
+      "horizontal_fov_deg": 82.0,
+      "vertical_fov_deg": 68.0,
+      "angular_margin_deg": 0.0,
+      "near_m": 0.005,
+      "eef_to_optical_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "eef_to_optical_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "mount_assumed": true,
+      "mount_calibrated": false
+    },
+    "events": [
+      "armed_waiting_for_detection_without_motion",
+      "optical_detection_transformed_and_real_encoder_execution_started",
+      "rrt_toggle_off_clears_display_and_retains_motion_owner",
+      "lost_holds_motion_and_retains_owner",
+      "reacquisition_reanchors_from_measured_joints",
+      "rrt_toggle_on_waits_for_next_current_search",
+      "all_eleven_stages_complete_at_deployed_speed",
+      "five_mm_detection_jitter_stays_inside_thirty_mm_deadband",
+      "out_of_order_detection_ignored",
+      "expired_detection_pauses_without_releasing_owner",
+      "fresh_detection_resumes_after_expiry",
+      "thirty_five_mm_retarget_updates_base_target",
+      "explicit_stop_releases_owner_and_prevents_late_execution",
+      "wrong_frame_fault_disarms",
+      "simulated_disconnect_reported"
+    ],
+    "all_plans_strict_first": true,
+    "source_trace": "output/ros2_camera_fallback_20261020/pytest_native_final/test_native_full_approach_loss0/pipeline_trace.json"
+  },
+  "previous_failures": {
+    "initial_native_shutdown_timeout": "Resolved by cooperative session cancellation; native rerun exits 0",
+    "initial_resume_timeout": "Resolved on final ROS and focused resume runs; cancelled stale results are discarded before validation",
+    "mistyped_test_path": "Initial cancellation invocation collected no tests; corrected run passed"
+  },
+  "limitations": [
+    "Fake motors and synthetic detections only; no hardware/camera calibration test",
+    "ROS uses configured initial approach distance; random-object reset remains simulation-only"
+  ],
+  "review_patch": "source.patch",
+  "source_manifest": "source_manifest.json"
+}

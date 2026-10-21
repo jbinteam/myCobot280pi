@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "manifest": "diffusion_motion_v2/webui.json",
+  "manifest_sha256": "7ad6080e9b2851aada0cd7ab1be6595c395967894fb17b4d9ee88a30fd5dbd79",
+  "previous_manifest": "diffusion_v1/webui.json",
+  "previous_checkpoint_sha256": "36a8ac7a52c966085681e1605bc328d82b934d3d100e7536ad4741b6f925590d"
+}

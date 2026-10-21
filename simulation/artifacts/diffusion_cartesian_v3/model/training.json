@@ -1,0 +1,356 @@
+{
+  "kind": "full",
+  "seed": 20261008,
+  "dataset": "simulation/artifacts/diffusion_cartesian_v3/cache",
+  "dataset_sha256": "88112dfe813697f653786932a8a2ccf2aa5d36475566bbfc0253ab30fc963816",
+  "data_identity": {
+    "source": "simulation/artifacts/diffusion_100k_v1/demonstrations.h5",
+    "source_sha256": "d0818df88bee27b9a55c2168340eba5f6ac1f5f4c69181e2439a007861a47ab3",
+    "augmentation": "simulation/artifacts/diffusion_motion_v2/augmentation.h5",
+    "augmentation_sha256": "bfc3cb2c8f4b462e714509efa2594785861fd51c1164147eeab2e805493c8f3d",
+    "robot": {
+      "schema": 1,
+      "robot": "myCobot 280 Pi",
+      "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+      "geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+      "joint_names": [
+        "joint2_to_joint1",
+        "joint3_to_joint2",
+        "joint4_to_joint3",
+        "joint5_to_joint4",
+        "joint6_to_joint5",
+        "joint6output_to_joint6"
+      ],
+      "limits_rad": {
+        "min": [
+          -2.895501229058593,
+          -2.321287905152458,
+          -2.5813419636996136,
+          -2.4958208303518914,
+          -2.66860842629933,
+          -3.1049407392979123
+        ],
+        "max": [
+          2.895501229058593,
+          2.321287905152458,
+          2.5813419636996136,
+          2.4958208303518914,
+          2.7558748888990463,
+          3.1049407392979123
+        ]
+      },
+      "base_frame": "g_base",
+      "tcp": "joint6_flange",
+      "units": "meters/radians/seconds",
+      "goal": "selected joint goal from XYZ + directed flange Z; local Z spin free",
+      "observation": [
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "goal_joint_normalized",
+        "box_x_scaled",
+        "box_y_scaled",
+        "box_z_scaled",
+        "box_half_x_scaled",
+        "box_half_y_scaled",
+        "box_half_z_scaled",
+        "box_present"
+      ],
+      "action": "absolute operating-box-normalized joint positions",
+      "horizon": 16,
+      "observation_dim": 19
+    },
+    "conditioning": {
+      "schema": 3,
+      "observation_dim": 34,
+      "base_observation_dim": 19,
+      "target_input": "Cartesian XYZ + directed flange local-Z unit vector; spin free",
+      "observation": [
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "current_joint_normalized",
+        "target_x_scaled",
+        "target_y_scaled",
+        "target_z_scaled",
+        "target_tool_z_x",
+        "target_tool_z_y",
+        "target_tool_z_z",
+        "box_x_scaled",
+        "box_y_scaled",
+        "box_z_scaled",
+        "box_half_x_scaled",
+        "box_half_y_scaled",
+        "box_half_z_scaled",
+        "box_present",
+        "joint_velocity_rad_s",
+        "joint_velocity_rad_s",
+        "joint_velocity_rad_s",
+        "joint_velocity_rad_s",
+        "joint_velocity_rad_s",
+        "joint_velocity_rad_s",
+        "joint_acceleration_rad_s2",
+        "joint_acceleration_rad_s2",
+        "joint_acceleration_rad_s2",
+        "joint_acceleration_rad_s2",
+        "joint_acceleration_rad_s2",
+        "joint_acceleration_rad_s2",
+        "target_velocity_m_s",
+        "target_velocity_m_s",
+        "target_velocity_m_s"
+      ],
+      "normalization": {
+        "Cartesian_position": 0.3,
+        "obstacle_geometry": 0.3,
+        "joint_velocity": 1.0,
+        "joint_acceleration": 3.0,
+        "target_velocity": 0.5
+      },
+      "base_frame": "g_base",
+      "tcp": "joint6_flange",
+      "tcp_offset_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_velocity": "Cartesian target point in g_base; vector clipped to 0.5 m/s",
+      "goal_joint_input": false
+    },
+    "cache_schema": 1,
+    "label_transform": "float64 shared URDF FK; XYZ/ARM.scale + directed flange-Z",
+    "dataset_sha256": "88112dfe813697f653786932a8a2ccf2aa5d36475566bbfc0253ab30fc963816"
+  },
+  "train_episodes": 95916,
+  "validation_episodes": 11992,
+  "train_windows": 4974037,
+  "validation_windows": 4096,
+  "sampling": "50% original / 50% augmented; uniform parent episodes then uniform frame",
+  "batch_size": 512,
+  "requested_steps": 20000,
+  "learning_rate": 0.0003,
+  "initial_checkpoint_sha256": "6582cbf4e1d2575007cfead8f99ed5f15a7b7021083d0eb200c61b224401bddc",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "objective": "Gaussian noise MSE; Cartesian target FK labels, collision-checked joint actions",
+  "selection": "Lowest fixed-seed EMA validation noise MSE; rollout test set never loaded",
+  "warm_start": "v2 EMA weights; obsolete goal-joint columns 6:12 zeroed",
+  "goal_joint_input": false,
+  "test_isolation": "Only train/validation cache arrays loaded by training; all augmentation parent splits verified",
+  "history": [
+    {
+      "step": 500,
+      "train_noise_mse": 0.009206814012490213,
+      "validation_noise_mse": 0.006617508886847645
+    },
+    {
+      "step": 1000,
+      "train_noise_mse": 0.007697323883883655,
+      "validation_noise_mse": 0.005936486879363656
+    },
+    {
+      "step": 1500,
+      "train_noise_mse": 0.007183890376240015,
+      "validation_noise_mse": 0.005513075215276331
+    },
+    {
+      "step": 2000,
+      "train_noise_mse": 0.00669921875372529,
+      "validation_noise_mse": 0.005157744628377259
+    },
+    {
+      "step": 2500,
+      "train_noise_mse": 0.006422124906443059,
+      "validation_noise_mse": 0.004787459445651621
+    },
+    {
+      "step": 3000,
+      "train_noise_mse": 0.006034050188958645,
+      "validation_noise_mse": 0.004497222660575062
+    },
+    {
+      "step": 3500,
+      "train_noise_mse": 0.005816581265069544,
+      "validation_noise_mse": 0.0043068070081062615
+    },
+    {
+      "step": 4000,
+      "train_noise_mse": 0.0055205117915757005,
+      "validation_noise_mse": 0.004114911746000871
+    },
+    {
+      "step": 4500,
+      "train_noise_mse": 0.0054504665555432435,
+      "validation_noise_mse": 0.004034076089737937
+    },
+    {
+      "step": 5000,
+      "train_noise_mse": 0.005276625669561327,
+      "validation_noise_mse": 0.003936884953873232
+    },
+    {
+      "step": 5500,
+      "train_noise_mse": 0.00503853847971186,
+      "validation_noise_mse": 0.003827125357929617
+    },
+    {
+      "step": 6000,
+      "train_noise_mse": 0.004977028856985271,
+      "validation_noise_mse": 0.0037567673716694117
+    },
+    {
+      "step": 6500,
+      "train_noise_mse": 0.004836273953784257,
+      "validation_noise_mse": 0.003672675200505182
+    },
+    {
+      "step": 7000,
+      "train_noise_mse": 0.004717177325394005,
+      "validation_noise_mse": 0.003582812933018431
+    },
+    {
+      "step": 7500,
+      "train_noise_mse": 0.004600819575600326,
+      "validation_noise_mse": 0.003543282800819725
+    },
+    {
+      "step": 8000,
+      "train_noise_mse": 0.004519887753296643,
+      "validation_noise_mse": 0.003475752135273069
+    },
+    {
+      "step": 8500,
+      "train_noise_mse": 0.004364955571014434,
+      "validation_noise_mse": 0.003430755721637979
+    },
+    {
+      "step": 9000,
+      "train_noise_mse": 0.004298325738403946,
+      "validation_noise_mse": 0.003370691876625642
+    },
+    {
+      "step": 9500,
+      "train_noise_mse": 0.004228562614880502,
+      "validation_noise_mse": 0.0033224756189156324
+    },
+    {
+      "step": 10000,
+      "train_noise_mse": 0.004079205537214875,
+      "validation_noise_mse": 0.0032687631610315293
+    },
+    {
+      "step": 10500,
+      "train_noise_mse": 0.004024300944060087,
+      "validation_noise_mse": 0.003264568222220987
+    },
+    {
+      "step": 11000,
+      "train_noise_mse": 0.003964025097899139,
+      "validation_noise_mse": 0.0032394580193795264
+    },
+    {
+      "step": 11500,
+      "train_noise_mse": 0.003821004311554134,
+      "validation_noise_mse": 0.003195863508153707
+    },
+    {
+      "step": 12000,
+      "train_noise_mse": 0.0038067398075945676,
+      "validation_noise_mse": 0.0031675197824370116
+    },
+    {
+      "step": 12500,
+      "train_noise_mse": 0.003670238816179335,
+      "validation_noise_mse": 0.0031595502223353833
+    },
+    {
+      "step": 13000,
+      "train_noise_mse": 0.0036039479519240558,
+      "validation_noise_mse": 0.003140752320177853
+    },
+    {
+      "step": 13500,
+      "train_noise_mse": 0.0035573424138128757,
+      "validation_noise_mse": 0.0031020541791804135
+    },
+    {
+      "step": 14000,
+      "train_noise_mse": 0.003513428173493594,
+      "validation_noise_mse": 0.0030720977811142802
+    },
+    {
+      "step": 14500,
+      "train_noise_mse": 0.0034580504884943364,
+      "validation_noise_mse": 0.003076525899814442
+    },
+    {
+      "step": 15000,
+      "train_noise_mse": 0.003332144631072879,
+      "validation_noise_mse": 0.0030862438143230975
+    },
+    {
+      "step": 15500,
+      "train_noise_mse": 0.003315784637350589,
+      "validation_noise_mse": 0.003053980501135811
+    },
+    {
+      "step": 16000,
+      "train_noise_mse": 0.003262587232515216,
+      "validation_noise_mse": 0.0030258956539910287
+    },
+    {
+      "step": 16500,
+      "train_noise_mse": 0.0032432261654175816,
+      "validation_noise_mse": 0.003019349474925548
+    },
+    {
+      "step": 17000,
+      "train_noise_mse": 0.00325839269766584,
+      "validation_noise_mse": 0.003015783353475854
+    },
+    {
+      "step": 17500,
+      "train_noise_mse": 0.0031756152790039776,
+      "validation_noise_mse": 0.003014971240190789
+    },
+    {
+      "step": 18000,
+      "train_noise_mse": 0.0032017615754157303,
+      "validation_noise_mse": 0.002994079375639558
+    },
+    {
+      "step": 18500,
+      "train_noise_mse": 0.0031289597770664842,
+      "validation_noise_mse": 0.0029834166634827852
+    },
+    {
+      "step": 19000,
+      "train_noise_mse": 0.003116389389615506,
+      "validation_noise_mse": 0.002975295821670443
+    },
+    {
+      "step": 19500,
+      "train_noise_mse": 0.0031236121105030178,
+      "validation_noise_mse": 0.0029659747378900647
+    },
+    {
+      "step": 20000,
+      "train_noise_mse": 0.003063427424058318,
+      "validation_noise_mse": 0.0029664388566743582
+    }
+  ],
+  "completed_steps": 20000,
+  "completed_epochs": 2,
+  "selected_step": 19500,
+  "best_validation_noise_mse": 0.0029659747378900647,
+  "seconds": 208.1904900420002
+}

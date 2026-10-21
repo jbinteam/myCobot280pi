@@ -1,0 +1,1 @@
+{"q_deg": [-57.73280837789647, 101.32843813421132, 72.75384428991553, 86.6829077112181, -34.405733151781334, 3.132427588541708], "collision": {"valid": false, "conflicts": [{"links": ["joint1", "joint6"], "intersecting": false, "distance_mm": 0.41084541060702673}], "clearance_mm": 1}}

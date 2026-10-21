@@ -1,0 +1,15 @@
+{
+  "converter": "convex_obj_v1",
+  "source_geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+  "files": {
+    "mycobot.urdf": "8668e22fdfd1ad6d7e8ab6226b246e5679a4874085a41366162d506e5f8e8df0",
+    "mesh_0.obj": "abd8f76f2e5c618e6f8ae70aba6cce3314dfb4fb5419848644d1a27bef78010a",
+    "mesh_1.obj": "b0a9d3ce294a96e05e7259d6b133d23dddf1a6fb363913985af9010373949838",
+    "mesh_2.obj": "2deaaaf029c299aa2f0eeab50f80818342bdc02aff565a5176ca1c4bbdf2ae1e",
+    "mesh_3.obj": "edd4ca0c73dcdd31a1436b91db2030cd624961e882931d54d4f11e68fee89f4b",
+    "mesh_4.obj": "ac865a44ac95313d73373a3e1ce7214d4b407a560eda603d117f8631db3c2a32",
+    "mesh_5.obj": "5b637b32314a3feb3061cb5a3036b69b8377e9111efd4ce9826024ae50b146e1",
+    "mesh_6.obj": "20de6de5ab4f7d5e3988bc73871b7f8d048de5fa11c7074ade0af4861af8f38e",
+    "mesh_7.obj": "89de79878752a1f34242b4aff238ff7def7eff04d5ff0ede48f8ca885384bec4"
+  }
+}

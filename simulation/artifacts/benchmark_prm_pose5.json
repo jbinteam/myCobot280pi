@@ -1,0 +1,5727 @@
+{
+  "task": "pose5",
+  "seed": 9001,
+  "cases": [
+    {
+      "name": "nearby-01",
+      "start_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_mm": [
+        110.72114548089796,
+        -58.40633051070797,
+        381.5925383154676
+      ],
+      "orientation_xy_deg": [
+        -9.004835912960706,
+        120.63125812355237
+      ],
+      "kind": "nearby"
+    },
+    {
+      "name": "nearby-02",
+      "start_deg": [
+        -123.09920724054304,
+        -40.7277426011725,
+        85.08796608856706,
+        20.357233982406118,
+        125.95423122196537,
+        -32.2406471634327
+      ],
+      "target_mm": [
+        -17.762102700792237,
+        56.05961012799418,
+        143.45485175406458
+      ],
+      "orientation_xy_deg": [
+        68.3971658957595,
+        136.33746093622
+      ],
+      "kind": "nearby"
+    },
+    {
+      "name": "global-03",
+      "start_deg": [
+        43.410336790294444,
+        -22.426858388399168,
+        87.78705319923623,
+        101.37817124887235,
+        67.38598385367948,
+        -28.004473403043903
+      ],
+      "target_mm": [
+        73.66501459156073,
+        154.382514125657,
+        23.752320282053486
+      ],
+      "orientation_xy_deg": [
+        -24.51898788170152,
+        98.17736841788974
+      ],
+      "kind": "global"
+    },
+    {
+      "name": "global-04",
+      "start_deg": [
+        -31.98860658470782,
+        -61.574155597935466,
+        50.98231390156934,
+        -41.847609513251506,
+        84.88226986231922,
+        63.6298488002374
+      ],
+      "target_mm": [
+        19.677262860020956,
+        58.95523252621046,
+        317.9400989543773
+      ],
+      "orientation_xy_deg": [
+        39.04716944812401,
+        82.59850242181085
+      ],
+      "kind": "global"
+    },
+    {
+      "name": "nearby-05",
+      "start_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_mm": [
+        -97.01666840867576,
+        -66.37200149032698,
+        404.20839823565353
+      ],
+      "orientation_xy_deg": [
+        -17.843349814550947,
+        44.73486582236428
+      ],
+      "kind": "nearby"
+    },
+    {
+      "name": "nearby-06",
+      "start_deg": [
+        63.666680173411,
+        45.76123591653355,
+        -41.02602913558625,
+        -4.691260764584991,
+        58.95728262621235,
+        -22.143044843807616
+      ],
+      "target_mm": [
+        20.036931387114038,
+        -13.950112596451236,
+        398.5529307130156
+      ],
+      "orientation_xy_deg": [
+        -51.215252428047755,
+        -102.2403499330571
+      ],
+      "kind": "nearby"
+    },
+    {
+      "name": "global-07",
+      "start_deg": [
+        -61.09343333429378,
+        74.82443971664759,
+        60.89080618209283,
+        99.49754407055454,
+        -18.37292485119303,
+        -56.160152909142894
+      ],
+      "target_mm": [
+        1.401270030949371,
+        -130.11305264086366,
+        388.1631495061898
+      ],
+      "orientation_xy_deg": [
+        40.72000247491577,
+        94.1118140606095
+      ],
+      "kind": "global"
+    },
+    {
+      "name": "global-08",
+      "start_deg": [
+        89.95236572380045,
+        -14.429773565731395,
+        96.62116059838172,
+        -18.461110170694997,
+        96.82944347339705,
+        -126.14977960842116
+      ],
+      "target_mm": [
+        157.11362906648867,
+        -95.38674382072278,
+        306.15339971549764
+      ],
+      "orientation_xy_deg": [
+        -41.91819196330426,
+        88.29128333618753
+      ],
+      "kind": "global"
+    },
+    {
+      "name": "nearby-09",
+      "start_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_mm": [
+        71.68132338390558,
+        -56.31140047436202,
+        401.73238030956355
+      ],
+      "orientation_xy_deg": [
+        -15.223469112803569,
+        106.4215544337945
+      ],
+      "kind": "nearby"
+    },
+    {
+      "name": "nearby-10",
+      "start_deg": [
+        122.92060151379229,
+        96.5585774574102,
+        11.858935984838434,
+        11.948555438282321,
+        -62.479544243234955,
+        -68.76355516363738
+      ],
+      "target_mm": [
+        221.05373452559385,
+        -99.08330546165614,
+        -27.256768145862356
+      ],
+      "orientation_xy_deg": [
+        -28.06651591160164,
+        77.79132932114092
+      ],
+      "kind": "nearby"
+    },
+    {
+      "name": "global-11",
+      "start_deg": [
+        20.460290821092713,
+        -0.5089165250673677,
+        -97.98710606859572,
+        89.1056419959746,
+        -22.949339560513966,
+        -127.47165581824966
+      ],
+      "target_mm": [
+        -66.70375733159034,
+        -142.21371491689462,
+        316.00962546832346
+      ],
+      "orientation_xy_deg": [
+        -14.326600841555743,
+        -0.8745966558368888
+      ],
+      "kind": "global"
+    },
+    {
+      "name": "global-12",
+      "start_deg": [
+        91.12395109472797,
+        103.8862654630545,
+        30.597142591075766,
+        0.033427155116350526,
+        103.13751693000346,
+        111.33833866302139
+      ],
+      "target_mm": [
+        -77.69174824035052,
+        -2.6030349439227756,
+        365.81368709512157
+      ],
+      "orientation_xy_deg": [
+        9.288524367536079,
+        -18.317682240391854
+      ],
+      "kind": "global"
+    },
+    {
+      "name": "nearby-13",
+      "start_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_mm": [
+        60.67764240636119,
+        -44.9509125676361,
+        404.13728052399597
+      ],
+      "orientation_xy_deg": [
+        -22.34382272935161,
+        102.78526758974014
+      ],
+      "kind": "nearby"
+    },
+    {
+      "name": "nearby-14",
+      "start_deg": [
+        46.838387174679504,
+        23.804890835126447,
+        7.356116752337464,
+        41.75106030806219,
+        8.269835583517033,
+        -119.533907418135
+      ],
+      "target_mm": [
+        -44.051094141750276,
+        -83.95943436983956,
+        414.3079328715943
+      ],
+      "orientation_xy_deg": [
+        -52.21471101430354,
+        21.247088974588504
+      ],
+      "kind": "nearby"
+    },
+    {
+      "name": "global-15",
+      "start_deg": [
+        -8.035354826518676,
+        105.98553612063584,
+        -27.908837016215266,
+        82.79862097184999,
+        32.322205191102675,
+        -22.58087469946513
+      ],
+      "target_mm": [
+        -75.03026573129804,
+        96.52664631789676,
+        339.5477805269024
+      ],
+      "orientation_xy_deg": [
+        -28.039326853399054,
+        -89.66024424383365
+      ],
+      "kind": "global"
+    },
+    {
+      "name": "global-16",
+      "start_deg": [
+        100.20140276928439,
+        71.12869281739806,
+        54.193014605399256,
+        11.08480397374917,
+        -78.94501088368312,
+        -57.151016321660784
+      ],
+      "target_mm": [
+        -187.4731950713488,
+        61.88562763487164,
+        16.09482819590725
+      ],
+      "orientation_xy_deg": [
+        -65.82239826297894,
+        90.85337661720837
+      ],
+      "kind": "global"
+    },
+    {
+      "name": "nearby-17",
+      "start_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_mm": [
+        -25.113274247647357,
+        -47.63469678421052,
+        412.33428217354975
+      ],
+      "orientation_xy_deg": [
+        -20.006739444144767,
+        79.05892951043288
+      ],
+      "kind": "nearby"
+    },
+    {
+      "name": "nearby-18",
+      "start_deg": [
+        -45.754532239709576,
+        -82.82842479961884,
+        -108.57328326452955,
+        -62.65180458101512,
+        -0.45698846611157407,
+        -94.59662681094318
+      ],
+      "target_mm": [
+        -50.92769016447428,
+        -40.7863516106372,
+        102.09071121146731
+      ],
+      "orientation_xy_deg": [
+        -7.697591324206757,
+        1.2019638667507628
+      ],
+      "kind": "nearby"
+    },
+    {
+      "name": "global-19",
+      "start_deg": [
+        39.6406128020515,
+        -52.777712747223546,
+        14.450226664066063,
+        -58.442866042679256,
+        -41.7419231065942,
+        -100.76787529820852
+      ],
+      "target_mm": [
+        -1.9838284599952953,
+        -146.5682442870489,
+        258.2739207130691
+      ],
+      "orientation_xy_deg": [
+        -73.4027183156887,
+        -125.31676795592549
+      ],
+      "kind": "global"
+    },
+    {
+      "name": "global-20",
+      "start_deg": [
+        95.0851410514299,
+        -33.93854507412823,
+        93.79802944602693,
+        -30.83501479986029,
+        64.33804598740538,
+        61.34411339427205
+      ],
+      "target_mm": [
+        -15.295331614053685,
+        167.0562181245022,
+        304.63825216378814
+      ],
+      "orientation_xy_deg": [
+        0.813109140882246,
+        98.52291649828605
+      ],
+      "kind": "global"
+    },
+    {
+      "name": "nearby-21",
+      "start_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_mm": [
+        87.45647083865052,
+        -17.532697240926844,
+        418.2304130732613
+      ],
+      "orientation_xy_deg": [
+        -41.41309933238678,
+        79.46557700480923
+      ],
+      "kind": "nearby"
+    },
+    {
+      "name": "nearby-22",
+      "start_deg": [
+        101.05099325299837,
+        -54.6305013719633,
+        65.23004707343932,
+        -80.3826263174307,
+        -27.17802025964665,
+        55.495199469868005
+      ],
+      "target_mm": [
+        -31.844481361068404,
+        205.553004656142,
+        244.83838957054712
+      ],
+      "orientation_xy_deg": [
+        -17.150109341010108,
+        161.18433507164863
+      ],
+      "kind": "nearby"
+    },
+    {
+      "name": "global-23",
+      "start_deg": [
+        -128.16249754490252,
+        12.106529437856084,
+        52.640113183168395,
+        -98.20617375816114,
+        87.26319143693276,
+        -10.240252558761396
+      ],
+      "target_mm": [
+        98.80349924745325,
+        246.36869698104832,
+        127.74664916619149
+      ],
+      "orientation_xy_deg": [
+        25.57966111761419,
+        89.63755992743926
+      ],
+      "kind": "global"
+    },
+    {
+      "name": "global-24",
+      "start_deg": [
+        -9.477522176457411,
+        69.23933400785411,
+        -82.71400278114653,
+        -44.73642069202805,
+        116.2688885295869,
+        121.74213970194118
+      ],
+      "target_mm": [
+        -92.04973869035166,
+        -117.90743938337563,
+        285.78521226702543
+      ],
+      "orientation_xy_deg": [
+        -55.53457743043252,
+        -95.17928451748584
+      ],
+      "kind": "global"
+    }
+  ],
+  "rows": [
+    {
+      "method": "existing_bounded_dls",
+      "success": 19,
+      "ik_success": 19,
+      "total": 24,
+      "success_rate": 0.7916666666666666,
+      "mean_goal_error_mm": 25.472097548395485,
+      "mean_direction_error_deg": 2.6506068510604748,
+      "mean_ik_ms": 51.42168454167025,
+      "mean_planning_ms": 0.5732371666340441,
+      "mean_success_path_length_rad": 1.7113406213749356,
+      "fallback_reasons": {
+        "stalled": 2,
+        "iteration_limit": 3
+      },
+      "cases": [
+        {
+          "name": "nearby-01",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.9000208238516665,
+          "direction_error_deg": 0.4503642182582222,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 15.908502000002045,
+          "planning_ms": 0.19506599983287742,
+          "path_length_rad": 0.4229466410269971,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            -0.024999230707765236,
+            -0.09572070872265388,
+            -0.1678724692896462,
+            -0.2654120371300224,
+            0.17684851132835874,
+            -2.247831410634066e-18
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "nearby-02",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.8871638292426774,
+          "direction_error_deg": 0.21092554002081335,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 25.84891400010747,
+          "planning_ms": 0.30862199992043315,
+          "path_length_rad": 1.734329807437994,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            -1.9554885512787445,
+            -0.3563973666076336,
+            2.101973275140103,
+            1.0588787419224346,
+            2.514314401964958,
+            -0.5627054459756702
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "global-03",
+          "status": "ik_solution_not_found",
+          "reason": "stalled",
+          "goal_error_mm": 170.67548922951667,
+          "direction_error_deg": 25.93593184258467,
+          "ik_success": false,
+          "success": false,
+          "ik_ms": 105.64634000002115,
+          "planning_ms": 1.145346999692265,
+          "path_length_rad": 3.3788737123210644,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            0.4952580835306939,
+            -2.1273186575722343,
+            2.5813419636996136,
+            2.4958208303518914,
+            2.7558748888990463,
+            -0.4887702661702982
+          ],
+          "fallback_reasons": [
+            "stalled"
+          ],
+          "attempts": []
+        },
+        {
+          "name": "global-04",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.9881703055488961,
+          "direction_error_deg": 0.13960726113907207,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 59.147976999611274,
+          "planning_ms": 0.7007650001469301,
+          "path_length_rad": 3.4952832077342246,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            -2.1767896927067207,
+            -0.760215605111316,
+            1.8032276430731038,
+            -0.16039745103130057,
+            1.4430572079822281,
+            1.1105503641103047
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "nearby-05",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.8954093135364495,
+          "direction_error_deg": 0.3041137958189948,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 19.12413599984575,
+          "planning_ms": 0.23176900003818446,
+          "path_length_rad": 0.730383340732347,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            0.12651799169712385,
+            0.22869957379684366,
+            0.4529998793196848,
+            0.07901372926426804,
+            0.219286268761919,
+            1.739332359524784e-17
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "nearby-06",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.969396561949586,
+          "direction_error_deg": 0.21039742118668012,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 14.847145999738132,
+          "planning_ms": 0.18816500005414127,
+          "path_length_rad": 0.46825203090901246,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            1.1619759646532515,
+            0.4628431634470882,
+            -0.491793681340314,
+            -0.23799541363684956,
+            1.0577884735988867,
+            -0.3864690389411964
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "global-07",
+          "status": "ik_solution_not_found",
+          "reason": "stalled",
+          "goal_error_mm": 202.73838382621864,
+          "direction_error_deg": 13.550974855602238,
+          "ik_success": false,
+          "success": false,
+          "ik_ms": 123.75150800016854,
+          "planning_ms": 1.3741259999733302,
+          "path_length_rad": 3.480272632773653,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            0.6909361636627367,
+            0.5853475985028789,
+            2.5813419636996136,
+            2.4958208303518914,
+            -1.6330655873175233,
+            -0.9801795766880166
+          ],
+          "fallback_reasons": [
+            "stalled"
+          ],
+          "attempts": []
+        },
+        {
+          "name": "global-08",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.9972538068829238,
+          "direction_error_deg": 0.1931224005682238,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 54.75000300020838,
+          "planning_ms": 0.6199720000950038,
+          "path_length_rad": 4.702256633113946,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            -0.4239398402043195,
+            -1.4213550404520021,
+            0.7804023801162586,
+            0.6876768547831635,
+            1.1547422586197966,
+            -2.2017290048321527
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "nearby-09",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.8731127541999566,
+          "direction_error_deg": 0.6732493557197857,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 12.651949999963108,
+          "planning_ms": 0.1571080001667724,
+          "path_length_rad": 0.4675809731419168,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            -0.12310095359946266,
+            -0.027585095155817717,
+            -0.10541575752544338,
+            -0.1561044187576316,
+            0.3757878558334421,
+            -3.488320113808903e-18
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "nearby-10",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.9508906536982791,
+          "direction_error_deg": 0.11395868853924629,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 19.138496999858035,
+          "planning_ms": 0.2351919997636287,
+          "path_length_rad": 0.7275750893497581,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            2.2588691460065684,
+            1.9801561865922068,
+            0.5441460609486918,
+            -0.1750275931487476,
+            -1.3034747778630453,
+            -1.2001504429822205
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "global-11",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.9975361380478006,
+          "direction_error_deg": 0.18095195085421104,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 31.739223999920796,
+          "planning_ms": 0.3687839998747222,
+          "path_length_rad": 2.22489056559262,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            0.7718154015892563,
+            1.306623499921863,
+            -1.57294560644257,
+            1.6708408949657692,
+            0.18566739670331883,
+            -2.224800096997442
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "global-12",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.9979475756459912,
+          "direction_error_deg": 0.07998147115827745,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 72.9195530002471,
+          "planning_ms": 0.808346000212623,
+          "path_length_rad": 6.128047754052481,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            -1.4684948932770825,
+            -0.7593806558318801,
+            0.9091114064163952,
+            1.2857553829452508,
+            -0.33059553713072287,
+            1.943220593370227
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "nearby-13",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.9906704534842563,
+          "direction_error_deg": 0.18922904961422135,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 17.87238899987642,
+          "planning_ms": 0.22092600011092145,
+          "path_length_rad": 0.527583156933466,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            0.11319207865695198,
+            0.1469580053901684,
+            -0.28038481163241846,
+            -0.08142226669049538,
+            0.2761811376700286,
+            -1.8535653662388508e-17
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "nearby-14",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.9277956508405634,
+          "direction_error_deg": 0.4591453161294064,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 16.343145000064396,
+          "planning_ms": 0.1992339998651005,
+          "path_length_rad": 0.6173617229714794,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            0.6462812472577681,
+            0.265817603778326,
+            0.14582681729831795,
+            0.31518917882744285,
+            0.5171256132283736,
+            -2.08626025222053
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "global-15",
+          "status": "ik_solution_not_found",
+          "reason": "iteration_limit",
+          "goal_error_mm": 2.1969295542014238,
+          "direction_error_deg": 0.19588109072134408,
+          "ik_success": false,
+          "success": false,
+          "ik_ms": 140.9132009998757,
+          "planning_ms": 1.6645499999867752,
+          "path_length_rad": 4.35197523331407,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            -2.056548342216534,
+            -0.0016335488911272328,
+            -0.23620461778739785,
+            1.8491342437223421,
+            -1.5654247116685882,
+            -0.39411061148595017
+          ],
+          "fallback_reasons": [
+            "iteration_limit"
+          ],
+          "attempts": []
+        },
+        {
+          "name": "global-16",
+          "status": "ik_solution_not_found",
+          "reason": "iteration_limit",
+          "goal_error_mm": 147.09168507678285,
+          "direction_error_deg": 9.885405789641396,
+          "ik_success": false,
+          "success": false,
+          "ik_ms": 188.63524700009293,
+          "planning_ms": 1.6670159998284362,
+          "path_length_rad": 6.431414068140196,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            2.895501229058593,
+            2.321287905152458,
+            2.2298700192451584,
+            -0.00223676023782526,
+            -1.5307497460041992,
+            -0.997473405673996
+          ],
+          "fallback_reasons": [
+            "iteration_limit"
+          ],
+          "attempts": []
+        },
+        {
+          "name": "nearby-17",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.9075519970244692,
+          "direction_error_deg": 0.1617673246083998,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 18.488057000013214,
+          "planning_ms": 0.22681999962514965,
+          "path_length_rad": 0.753808042743871,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            -0.0017511393011515005,
+            0.06978635554408308,
+            0.4238079709953761,
+            -0.30493186655770044,
+            0.3492282328478012,
+            4.5880848069449704e-17
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "nearby-18",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.9417858377668806,
+          "direction_error_deg": 0.35962275272198824,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 13.225766000232397,
+          "planning_ms": 0.16667899990352453,
+          "path_length_rad": 0.5232954393966115,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            -1.226045416877198,
+            -1.36634383696349,
+            -1.8649981650490712,
+            -1.35864901089844,
+            0.059267871134244386,
+            -1.651022599131302
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "global-19",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.9013796529463652,
+          "direction_error_deg": 0.08015581785475405,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 47.754862000147114,
+          "planning_ms": 0.5335449995982344,
+          "path_length_rad": 3.7135068069832857,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            1.274299818055478,
+            1.0658218884055446,
+            0.48391633942555273,
+            -1.7424307954291325,
+            0.5256149376465261,
+            -1.7587312041928036
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "global-20",
+          "status": "ik_solution_not_found",
+          "reason": "iteration_limit",
+          "goal_error_mm": 70.72642051656966,
+          "direction_error_deg": 9.056640149979952,
+          "ik_success": false,
+          "success": false,
+          "ik_ms": 144.2577100001472,
+          "planning_ms": 1.6593510003986012,
+          "path_length_rad": 6.933805339306488,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            2.2910724381256475,
+            -0.49094526961941615,
+            0.0003752072723170917,
+            -2.2162494859290813,
+            -0.8980176946838261,
+            1.0706567554468016
+          ],
+          "fallback_reasons": [
+            "iteration_limit"
+          ],
+          "attempts": []
+        },
+        {
+          "name": "nearby-21",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.8636004681898564,
+          "direction_error_deg": 0.5364796290335965,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 16.159866000180045,
+          "planning_ms": 0.19910299988623592,
+          "path_length_rad": 0.690245476268346,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            0.36189958062855376,
+            -0.26833586826387157,
+            0.12321823723726996,
+            0.2899723622799143,
+            0.3566173282940366,
+            -1.6665209364058698e-17
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "nearby-22",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.9882680886936176,
+          "direction_error_deg": 0.08296862770496427,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 16.680574999554665,
+          "planning_ms": 0.20559900031003053,
+          "path_length_rad": 0.5109255503566285,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            2.1310383286857983,
+            -1.1436029518964455,
+            1.0079431605055442,
+            -1.3398354372882229,
+            -0.43237676951948667,
+            0.9685739498002084
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "global-23",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.96551914600512,
+          "direction_error_deg": 0.16669690541674076,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 30.36878600005366,
+          "planning_ms": 0.3588350000427454,
+          "path_length_rad": 2.2004895197985674,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            -2.019155693014746,
+            1.3648410146496752,
+            0.7091341335520235,
+            -0.6848686780846964,
+            1.5656005030771705,
+            -0.17872612338616048
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        },
+        {
+          "name": "global-24",
+          "status": "success",
+          "reason": "target_reached",
+          "goal_error_mm": 0.9579599006471256,
+          "direction_error_deg": 0.3969931705742023,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 27.947075000156474,
+          "planning_ms": 0.3227719998903922,
+          "path_length_rad": 1.8767100475802314,
+          "scaled_path_cost": null,
+          "endpoint_rad": [
+            0.7798121214710202,
+            1.5202937409444561,
+            -0.806187219106421,
+            -0.9549216140820402,
+            1.3838359043867787,
+            2.1248011762217818
+          ],
+          "fallback_reasons": [],
+          "attempts": []
+        }
+      ]
+    },
+    {
+      "method": "numerical_multiseed_direct",
+      "success": 24,
+      "ik_success": 24,
+      "total": 24,
+      "success_rate": 1.0,
+      "mean_goal_error_mm": 0.9431292846470983,
+      "mean_direction_error_deg": 0.28562237623914105,
+      "mean_ik_ms": 395.3247710833428,
+      "mean_planning_ms": 7.144831791644417,
+      "mean_success_path_length_rad": 1.7214484261369674,
+      "fallback_reasons": {
+        "roadmap_dls:stalled": 12,
+        "random_dls:iteration_limit": 9,
+        "current_dls:stalled": 2,
+        "random_dls:stalled": 5,
+        "roadmap_dls:iteration_limit": 6,
+        "current_dls:iteration_limit": 3
+      },
+      "cases": [
+        {
+          "name": "nearby-01",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9000208238516665,
+          "direction_error_deg": 0.4503642182582222,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 306.4501500002734,
+          "planning_ms": 2.205837000019528,
+          "path_length_rad": 0.37374794577671655,
+          "scaled_path_cost": 0.0734243326071179,
+          "endpoint_rad": [
+            -0.024999230707765236,
+            -0.09572070872265388,
+            -0.1678724692896462,
+            -0.2654120371300224,
+            0.17684851132835874,
+            -2.247831410634066e-18
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9000208238516665,
+              "orientation_error_deg": 0.4503642182582222,
+              "iterations": 27,
+              "refinement_ms": 15.550407000318955,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 31.0834630799897,
+              "orientation_error_deg": 5.5682192215577055,
+              "iterations": 133,
+              "refinement_ms": 77.44222399969658,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9899879404010705,
+              "orientation_error_deg": 0.09351561455382812,
+              "iterations": 146,
+              "refinement_ms": 83.61871099987184,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9039465060950439,
+              "orientation_error_deg": 0.087296165204814,
+              "iterations": 48,
+              "refinement_ms": 27.946097000040027,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9395216393528314,
+              "orientation_error_deg": 0.08925091047359748,
+              "iterations": 172,
+              "refinement_ms": 98.86427599985836,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-02",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.8871638292426626,
+          "direction_error_deg": 0.21092554002079295,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 552.7775740001744,
+          "planning_ms": 4.649564000374085,
+          "path_length_rad": 1.0669233910786828,
+          "scaled_path_cost": 0.21089982118438286,
+          "endpoint_rad": [
+            -1.9554885512787445,
+            -0.3563973666076336,
+            2.101973275140103,
+            1.0588787419224346,
+            2.514314401964958,
+            -0.5627054459756702
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled",
+            "random_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8871638292426626,
+              "orientation_error_deg": 0.21092554002079295,
+              "iterations": 44,
+              "refinement_ms": 25.853455999822472,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9838909426474289,
+              "orientation_error_deg": 0.3291339650960008,
+              "iterations": 20,
+              "refinement_ms": 11.536546000115777,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 38.82822314786016,
+              "orientation_error_deg": 0.8826767048240557,
+              "iterations": 145,
+              "refinement_ms": 86.05391600030998,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 38.911701360797636,
+              "orientation_error_deg": 0.9060307637873511,
+              "iterations": 143,
+              "refinement_ms": 84.96591199991599,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9247196277253257,
+              "orientation_error_deg": 0.14163082818456865,
+              "iterations": 40,
+              "refinement_ms": 23.155928000051063,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 119.57737266645941,
+              "orientation_error_deg": 12.00558000066683,
+              "iterations": 240,
+              "refinement_ms": 147.08606000021973,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 21.54524176375957,
+              "orientation_error_deg": 0.23771831184590483,
+              "iterations": 240,
+              "refinement_ms": 146.51110000022527,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9925751952715659,
+              "orientation_error_deg": 0.49408569817274534,
+              "iterations": 39,
+              "refinement_ms": 23.283315999833576,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-03",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.8877713381226897,
+          "direction_error_deg": 0.18607248312177233,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 742.3314119996576,
+          "planning_ms": 14.587538999876415,
+          "path_length_rad": 3.675216320076404,
+          "scaled_path_cost": 0.6756114513255329,
+          "endpoint_rad": [
+            -2.2770824736166326,
+            1.0749168479452926,
+            1.6740772752137825,
+            0.5336502214457616,
+            0.4316527882768398,
+            -0.7033818074695869
+          ],
+          "fallback_reasons": [
+            "current_dls:stalled",
+            "roadmap_dls:stalled",
+            "random_dls:stalled",
+            "random_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 170.67548922951667,
+              "orientation_error_deg": 25.93593184258467,
+              "iterations": 165,
+              "refinement_ms": 105.14884299982441,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9631645592386009,
+              "orientation_error_deg": 0.47548599917367385,
+              "iterations": 50,
+              "refinement_ms": 30.087275999903795,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 92.84045664824657,
+              "orientation_error_deg": 10.796425434444611,
+              "iterations": 106,
+              "refinement_ms": 68.85545300019658,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 2.8080216839128402,
+              "orientation_error_deg": 0.22957253435229252,
+              "iterations": 189,
+              "refinement_ms": 114.38060399996175,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.7581985058018442,
+              "orientation_error_deg": 0.9666035326235615,
+              "iterations": 34,
+              "refinement_ms": 19.891608999841992,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 2.8080216847102566,
+              "orientation_error_deg": 0.22957253336403619,
+              "iterations": 233,
+              "refinement_ms": 144.41033299999617,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 125.99368166122252,
+              "orientation_error_deg": 34.0418716395482,
+              "iterations": 240,
+              "refinement_ms": 143.49291899998207,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8877713381226897,
+              "orientation_error_deg": 0.18607248312177233,
+              "iterations": 102,
+              "refinement_ms": 63.10122200011392,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8692262755632666,
+              "orientation_error_deg": 0.06883551740633734,
+              "iterations": 79,
+              "refinement_ms": 48.17525999987993,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-04",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9881703055488961,
+          "direction_error_deg": 0.13960726113907207,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 301.2396060003084,
+          "planning_ms": 7.921171999896615,
+          "path_length_rad": 1.9695324516493375,
+          "scaled_path_cost": 0.3564971429694216,
+          "endpoint_rad": [
+            -2.1767896927067207,
+            -0.760215605111316,
+            1.8032276430731038,
+            -0.16039745103130057,
+            1.4430572079822281,
+            1.1105503641103047
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9881703055488961,
+              "orientation_error_deg": 0.13960726113907207,
+              "iterations": 101,
+              "refinement_ms": 59.03970300005312,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9821721360800332,
+              "orientation_error_deg": 0.5435587094354883,
+              "iterations": 25,
+              "refinement_ms": 14.36025199973301,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 4.489228409435935,
+              "orientation_error_deg": 0.4510376176810936,
+              "iterations": 240,
+              "refinement_ms": 134.3486609998763,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9886285791316234,
+              "orientation_error_deg": 0.139733806721538,
+              "iterations": 85,
+              "refinement_ms": 49.7141890000421,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9770312753716879,
+              "orientation_error_deg": 0.14232818611233447,
+              "iterations": 72,
+              "refinement_ms": 40.848604000075284,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-05",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.895409313536422,
+          "direction_error_deg": 0.30411379581899184,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 75.06549899972015,
+          "planning_ms": 2.8164010000182316,
+          "path_length_rad": 0.5725808458386921,
+          "scaled_path_cost": 0.11174947690512585,
+          "endpoint_rad": [
+            0.12651799169712385,
+            0.2286995737968437,
+            0.4529998793196848,
+            0.07901372926426804,
+            0.219286268761919,
+            1.739332359524784e-17
+          ],
+          "fallback_reasons": [],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.895409313536422,
+              "orientation_error_deg": 0.30411379581899184,
+              "iterations": 33,
+              "refinement_ms": 18.94889000004696,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9253388673354839,
+              "orientation_error_deg": 0.3622387580356467,
+              "iterations": 26,
+              "refinement_ms": 14.864288999888231,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9015635358517171,
+              "orientation_error_deg": 0.12085402413591124,
+              "iterations": 34,
+              "refinement_ms": 19.75819000017509,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9305260060227466,
+              "orientation_error_deg": 0.3431317338356385,
+              "iterations": 33,
+              "refinement_ms": 19.222334999994928,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-06",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9959347766312762,
+          "direction_error_deg": 0.18932185160446527,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 105.54499199997736,
+          "planning_ms": 2.3443259997293353,
+          "path_length_rad": 0.44498784960958965,
+          "scaled_path_cost": 0.08995750745160064,
+          "endpoint_rad": [
+            1.1671479530614735,
+            0.4703307712848076,
+            -0.5159058137446781,
+            -0.21970385398425463,
+            1.0540347113593669,
+            -0.5519714951515199
+          ],
+          "fallback_reasons": [],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9693965619495961,
+              "orientation_error_deg": 0.2103974211866817,
+              "iterations": 26,
+              "refinement_ms": 14.888047999647824,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9952897160300325,
+              "orientation_error_deg": 0.20715215301647355,
+              "iterations": 46,
+              "refinement_ms": 26.01180299961925,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9959480943947897,
+              "orientation_error_deg": 0.20833946328144504,
+              "iterations": 55,
+              "refinement_ms": 31.40987100005077,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9959347766312762,
+              "orientation_error_deg": 0.18932185160446527,
+              "iterations": 53,
+              "refinement_ms": 30.898101000275346,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-07",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9961507703227445,
+          "direction_error_deg": 0.9826699775074152,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 224.5981659998506,
+          "planning_ms": 12.380650000068272,
+          "path_length_rad": 3.0988283902042775,
+          "scaled_path_cost": 0.6189229579995377,
+          "endpoint_rad": [
+            -1.2430432452825722,
+            -0.7177100217642453,
+            0.6431999949072663,
+            0.01639668815551068,
+            0.5468254154076371,
+            -2.240670919418335
+          ],
+          "fallback_reasons": [
+            "current_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 202.73838382621864,
+              "orientation_error_deg": 13.550974855602247,
+              "iterations": 199,
+              "refinement_ms": 123.5011610001493,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9882943831064985,
+              "orientation_error_deg": 0.4121221204984964,
+              "iterations": 52,
+              "refinement_ms": 30.367506999937177,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9961507703227445,
+              "orientation_error_deg": 0.9826699775074152,
+              "iterations": 22,
+              "refinement_ms": 12.761442000282841,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9822508876250814,
+              "orientation_error_deg": 0.3253721561872072,
+              "iterations": 55,
+              "refinement_ms": 32.06871200018213,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.999866526927395,
+              "orientation_error_deg": 0.10351392656737465,
+              "iterations": 39,
+              "refinement_ms": 23.03777599991008,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-08",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.997253806882934,
+          "direction_error_deg": 0.19312240056822202,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 275.9901020003781,
+          "planning_ms": 10.817142000178137,
+          "path_length_rad": 2.73322489820675,
+          "scaled_path_cost": 0.5132929816924686,
+          "endpoint_rad": [
+            -0.4239398402043195,
+            -1.4213550404520021,
+            0.7804023801162586,
+            0.6876768547831635,
+            1.1547422586197966,
+            -2.2017290048321527
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.997253806882934,
+              "orientation_error_deg": 0.19312240056822202,
+              "iterations": 90,
+              "refinement_ms": 54.74428600018655,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9794945619479876,
+              "orientation_error_deg": 0.4423776698010856,
+              "iterations": 29,
+              "refinement_ms": 16.50047800012544,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 29.57551745707854,
+              "orientation_error_deg": 8.934199433341405,
+              "iterations": 240,
+              "refinement_ms": 134.40168800025276,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9538977912924017,
+              "orientation_error_deg": 0.2598934528692012,
+              "iterations": 70,
+              "refinement_ms": 41.39062700005525,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9507981839976647,
+              "orientation_error_deg": 0.5448287599712128,
+              "iterations": 46,
+              "refinement_ms": 26.14633799976218,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-09",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.8731127541999566,
+          "direction_error_deg": 0.6732493557197857,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 194.58078400020895,
+          "planning_ms": 2.348190000247996,
+          "path_length_rad": 0.43887625401025004,
+          "scaled_path_cost": 0.0817392975533804,
+          "endpoint_rad": [
+            -0.12310095359946266,
+            -0.02758509515581772,
+            -0.10541575752544338,
+            -0.1561044187576316,
+            0.3757878558334421,
+            -3.488320113808903e-18
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8731127541999566,
+              "orientation_error_deg": 0.6732493557197857,
+              "iterations": 22,
+              "refinement_ms": 12.760134000018297,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9300105086267653,
+              "orientation_error_deg": 0.21384982032731,
+              "iterations": 49,
+              "refinement_ms": 29.07490899997356,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 6.695898979176426,
+              "orientation_error_deg": 0.8758668535323741,
+              "iterations": 158,
+              "refinement_ms": 89.39718800002083,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9849045881533147,
+              "orientation_error_deg": 0.09359126881497999,
+              "iterations": 64,
+              "refinement_ms": 36.971426000036445,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9509222242288052,
+              "orientation_error_deg": 0.2361959374909333,
+              "iterations": 40,
+              "refinement_ms": 23.59549600032551,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-10",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9508906536982735,
+          "direction_error_deg": 0.11395868853923481,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 810.0839210001141,
+          "planning_ms": 3.044437999960792,
+          "path_length_rad": 0.6371973208031553,
+          "scaled_path_cost": 0.12700638175732812,
+          "endpoint_rad": [
+            2.2588691460065684,
+            1.9801561865922068,
+            0.5441460609486918,
+            -0.1750275931487476,
+            -1.3034747778630453,
+            -1.2001504429822205
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled",
+            "random_dls:iteration_limit",
+            "random_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9508906536982735,
+              "orientation_error_deg": 0.11395868853923481,
+              "iterations": 33,
+              "refinement_ms": 19.11193700016156,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 5.607290807536982,
+              "orientation_error_deg": 0.3944345718825371,
+              "iterations": 235,
+              "refinement_ms": 138.09358500020608,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 8.796070531298204,
+              "orientation_error_deg": 0.742086616738841,
+              "iterations": 121,
+              "refinement_ms": 68.77668000015547,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 8.796070447584388,
+              "orientation_error_deg": 0.7420867172771564,
+              "iterations": 127,
+              "refinement_ms": 71.72788000025321,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9114729793255061,
+              "orientation_error_deg": 0.30041597713576085,
+              "iterations": 34,
+              "refinement_ms": 19.602739000220026,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 5.607289360403689,
+              "orientation_error_deg": 0.39443665631052016,
+              "iterations": 240,
+              "refinement_ms": 144.45344000023397,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 8.796070450364642,
+              "orientation_error_deg": 0.7420867139381118,
+              "iterations": 143,
+              "refinement_ms": 82.79091700023855,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 212.63656514251386,
+              "orientation_error_deg": 39.086222742823594,
+              "iterations": 209,
+              "refinement_ms": 142.17975000019578,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 211.36486588489134,
+              "orientation_error_deg": 17.02422726969519,
+              "iterations": 193,
+              "refinement_ms": 118.66741599988018,
+              "stop_reason": "stalled"
+            }
+          ]
+        },
+        {
+          "name": "global-11",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9975361380477933,
+          "direction_error_deg": 0.18095195085420918,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 88.24383699993632,
+          "planning_ms": 6.396748000042862,
+          "path_length_rad": 1.5094368644825196,
+          "scaled_path_cost": 0.3135949623207405,
+          "endpoint_rad": [
+            0.7718154015892563,
+            1.306623499921863,
+            -1.57294560644257,
+            1.6708408949657692,
+            0.18566739670331883,
+            -2.224800096997442
+          ],
+          "fallback_reasons": [],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9975361380477933,
+              "orientation_error_deg": 0.18095195085420918,
+              "iterations": 53,
+              "refinement_ms": 31.93949899969084,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8796102579016003,
+              "orientation_error_deg": 0.633008907546454,
+              "iterations": 23,
+              "refinement_ms": 13.334414999917499,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9130541059997783,
+              "orientation_error_deg": 0.20022624283078105,
+              "iterations": 30,
+              "refinement_ms": 17.286378999870067,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9817083123907916,
+              "orientation_error_deg": 0.040896830582728576,
+              "iterations": 40,
+              "refinement_ms": 23.322013999859337,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-12",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.997947575645996,
+          "direction_error_deg": 0.07998147115828218,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 149.7175149997929,
+          "planning_ms": 18.32952499989915,
+          "path_length_rad": 4.723033649365157,
+          "scaled_path_cost": 0.9010616478171073,
+          "endpoint_rad": [
+            -1.4684948932770825,
+            -0.7593806558318801,
+            0.9091114064163952,
+            1.2857553829452508,
+            -0.33059553713072287,
+            1.943220593370227
+          ],
+          "fallback_reasons": [],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.997947575645996,
+              "orientation_error_deg": 0.07998147115828218,
+              "iterations": 116,
+              "refinement_ms": 72.64147699970636,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.952579896581754,
+              "orientation_error_deg": 0.4006402432927624,
+              "iterations": 35,
+              "refinement_ms": 20.59893799969359,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9777732358567557,
+              "orientation_error_deg": 0.09186686820902779,
+              "iterations": 44,
+              "refinement_ms": 25.51351700003579,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9415388423944833,
+              "orientation_error_deg": 0.12340905517583271,
+              "iterations": 49,
+              "refinement_ms": 28.582585999629373,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-13",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9906704534842576,
+          "direction_error_deg": 0.1892290496142213,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 127.10923199983881,
+          "planning_ms": 2.3268049999387586,
+          "path_length_rad": 0.44264020482872385,
+          "scaled_path_cost": 0.08480512278501044,
+          "endpoint_rad": [
+            0.11319207865695198,
+            0.1469580053901684,
+            -0.28038481163241846,
+            -0.08142226669049538,
+            0.2761811376700286,
+            -1.8535653662388508e-17
+          ],
+          "fallback_reasons": [],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9906704534842576,
+              "orientation_error_deg": 0.1892290496142213,
+              "iterations": 31,
+              "refinement_ms": 17.785926000215113,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9824742621351611,
+              "orientation_error_deg": 0.12950634791179033,
+              "iterations": 51,
+              "refinement_ms": 30.16758000012487,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9718039222395684,
+              "orientation_error_deg": 0.08326392863192095,
+              "iterations": 55,
+              "refinement_ms": 31.984888999886607,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9637892090019965,
+              "orientation_error_deg": 0.08172802217184895,
+              "iterations": 76,
+              "refinement_ms": 44.76844099963273,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-14",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9277956508405634,
+          "direction_error_deg": 0.4591453161294064,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 292.9578399998718,
+          "planning_ms": 3.0182250002326327,
+          "path_length_rad": 0.60163897474967,
+          "scaled_path_cost": 0.11623179456348193,
+          "endpoint_rad": [
+            0.6462812472577681,
+            0.265817603778326,
+            0.14582681729831795,
+            0.31518917882744285,
+            0.5171256132283736,
+            -2.08626025222053
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9277956508405634,
+              "orientation_error_deg": 0.4591453161294064,
+              "iterations": 28,
+              "refinement_ms": 16.128180000123393,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.737637816854934,
+              "orientation_error_deg": 0.8575487829687712,
+              "iterations": 25,
+              "refinement_ms": 14.346274000217818,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.996743128759994,
+              "orientation_error_deg": 0.15896441761329494,
+              "iterations": 36,
+              "refinement_ms": 20.834893000028387,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 10.601755609614901,
+              "orientation_error_deg": 1.7895534008627014,
+              "iterations": 167,
+              "refinement_ms": 98.62832399994659,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 84.41308065606911,
+              "orientation_error_deg": 17.32327823410059,
+              "iterations": 173,
+              "refinement_ms": 101.8295910002962,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9671528547706972,
+              "orientation_error_deg": 0.14687337180112547,
+              "iterations": 64,
+              "refinement_ms": 37.85781699980362,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-15",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.940001883774482,
+          "direction_error_deg": 0.15436198250483504,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 560.2205199998025,
+          "planning_ms": 14.602183000079094,
+          "path_length_rad": 3.677247705653756,
+          "scaled_path_cost": 0.6730712589848417,
+          "endpoint_rad": [
+            2.86752027653456,
+            0.3519651773017478,
+            -1.6705270549102507,
+            1.3243166084746019,
+            -0.2126438119262201,
+            -0.8562209419033362
+          ],
+          "fallback_reasons": [
+            "current_dls:iteration_limit",
+            "roadmap_dls:iteration_limit",
+            "random_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 2.1969295542014238,
+              "orientation_error_deg": 0.19588109072134408,
+              "iterations": 240,
+              "refinement_ms": 140.02953399995022,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8585437506908657,
+              "orientation_error_deg": 0.34413674634657254,
+              "iterations": 27,
+              "refinement_ms": 15.408184000079928,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 2.206166128229644,
+              "orientation_error_deg": 0.1964648590374447,
+              "iterations": 240,
+              "refinement_ms": 134.17254900014086,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9293039944093288,
+              "orientation_error_deg": 0.40629106161688716,
+              "iterations": 36,
+              "refinement_ms": 21.413230000234762,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.940001883774482,
+              "orientation_error_deg": 0.15436198250483504,
+              "iterations": 37,
+              "refinement_ms": 21.621391999815387,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 2.196861145528355,
+              "orientation_error_deg": 0.1958774926339107,
+              "iterations": 240,
+              "refinement_ms": 140.49047400021664,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9051798490414004,
+              "orientation_error_deg": 0.1435715619820065,
+              "iterations": 135,
+              "refinement_ms": 83.23236500018538,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-16",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9759713170391701,
+          "direction_error_deg": 0.32901725354831923,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 763.9976170003138,
+          "planning_ms": 15.262210999935633,
+          "path_length_rad": 3.8660686834598343,
+          "scaled_path_cost": 0.7007308043190775,
+          "endpoint_rad": [
+            -0.41053136044549143,
+            1.5865062176263478,
+            0.4931154982583574,
+            1.0299889223911733,
+            1.5822044086525726,
+            -0.29189136624336237
+          ],
+          "fallback_reasons": [
+            "current_dls:iteration_limit",
+            "roadmap_dls:stalled",
+            "random_dls:iteration_limit",
+            "random_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 147.09168507678285,
+              "orientation_error_deg": 9.885405789641394,
+              "iterations": 240,
+              "refinement_ms": 187.36723399979383,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 6.125473757497222,
+              "orientation_error_deg": 0.3039181764804702,
+              "iterations": 188,
+              "refinement_ms": 109.9012650001896,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9759713170391701,
+              "orientation_error_deg": 0.32901725354831923,
+              "iterations": 38,
+              "refinement_ms": 22.018047999608825,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9809396025355753,
+              "orientation_error_deg": 0.1817611823125446,
+              "iterations": 31,
+              "refinement_ms": 17.771370999980718,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9488204753768517,
+              "orientation_error_deg": 0.3797311202122993,
+              "iterations": 35,
+              "refinement_ms": 20.320348000041122,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 1.1604328563624158,
+              "orientation_error_deg": 0.45634313316975583,
+              "iterations": 240,
+              "refinement_ms": 143.4665159999895,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 160.92423412357624,
+              "orientation_error_deg": 29.14724815841789,
+              "iterations": 141,
+              "refinement_ms": 90.34614899974258,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 230.69503779887592,
+              "orientation_error_deg": 30.35296383303787,
+              "iterations": 166,
+              "refinement_ms": 106.00089399986246,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9842560206789299,
+              "orientation_error_deg": 0.19602339857459047,
+              "iterations": 100,
+              "refinement_ms": 62.021794999964186,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-17",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9075519970244692,
+          "direction_error_deg": 0.1617673246083998,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 67.90404100001979,
+          "planning_ms": 3.021326999714802,
+          "path_length_rad": 0.632004905082671,
+          "scaled_path_cost": 0.1218257225445171,
+          "endpoint_rad": [
+            -0.0017511393011515005,
+            0.06978635554408308,
+            0.4238079709953761,
+            -0.30493186655770044,
+            0.3492282328478012,
+            4.5880848069449704e-17
+          ],
+          "fallback_reasons": [],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9075519970244692,
+              "orientation_error_deg": 0.1617673246083998,
+              "iterations": 32,
+              "refinement_ms": 18.283074000009947,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9309373946848927,
+              "orientation_error_deg": 0.4848510164134354,
+              "iterations": 22,
+              "refinement_ms": 12.6553180002702,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9931058200603478,
+              "orientation_error_deg": 0.2813893205501442,
+              "iterations": 26,
+              "refinement_ms": 14.752864999991289,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9502039450492183,
+              "orientation_error_deg": 0.44216051600228923,
+              "iterations": 34,
+              "refinement_ms": 19.83851400018466,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-18",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9417858377668793,
+          "direction_error_deg": 0.35962275272198363,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 1008.5502070000985,
+          "planning_ms": 2.579785999841988,
+          "path_length_rad": 0.5145460807592556,
+          "scaled_path_cost": 0.09354172721863027,
+          "endpoint_rad": [
+            -1.226045416877198,
+            -1.36634383696349,
+            -1.8649981650490715,
+            -1.35864901089844,
+            0.059267871134244386,
+            -1.651022599131302
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled",
+            "roadmap_dls:iteration_limit",
+            "random_dls:iteration_limit",
+            "random_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9417858377668793,
+              "orientation_error_deg": 0.35962275272198363,
+              "iterations": 23,
+              "refinement_ms": 13.364029000058508,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8828039825917732,
+              "orientation_error_deg": 0.15666747109621895,
+              "iterations": 25,
+              "refinement_ms": 14.41242400005649,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 51.94883180465371,
+              "orientation_error_deg": 1.9581715988292556,
+              "iterations": 211,
+              "refinement_ms": 123.85107799991601,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 0.5845078715505438,
+              "orientation_error_deg": 14.311501826939455,
+              "iterations": 240,
+              "refinement_ms": 141.1116489998676,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 41.72192180547675,
+              "orientation_error_deg": 26.877483588014293,
+              "iterations": 240,
+              "refinement_ms": 140.60628300012468,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 121.3729475280165,
+              "orientation_error_deg": 8.405926567952301,
+              "iterations": 240,
+              "refinement_ms": 145.7481470001767,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 53.94415645516811,
+              "orientation_error_deg": 22.697540411216217,
+              "iterations": 240,
+              "refinement_ms": 146.70913899999505,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 121.70561415960616,
+              "orientation_error_deg": 24.752644062845196,
+              "iterations": 240,
+              "refinement_ms": 151.32525799981522,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 79.6650860896572,
+              "orientation_error_deg": 11.134644582584075,
+              "iterations": 205,
+              "refinement_ms": 126.6565979999541,
+              "stop_reason": "stalled"
+            }
+          ]
+        },
+        {
+          "name": "global-19",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9013796529463652,
+          "direction_error_deg": 0.08015581785475405,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 678.6658830001215,
+          "planning_ms": 10.205627999766875,
+          "path_length_rad": 2.536874214355837,
+          "scaled_path_cost": 0.5193293996691125,
+          "endpoint_rad": [
+            1.274299818055478,
+            1.0658218884055446,
+            0.48391633942555273,
+            -1.7424307954291325,
+            0.5256149376465261,
+            -1.7587312041928036
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled",
+            "random_dls:stalled",
+            "random_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9013796529463652,
+              "orientation_error_deg": 0.08015581785475405,
+              "iterations": 77,
+              "refinement_ms": 47.71413399976154,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9265728950680034,
+              "orientation_error_deg": 0.2546189892438879,
+              "iterations": 26,
+              "refinement_ms": 14.835509000022284,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 50.91531768824728,
+              "orientation_error_deg": 2.5326039909073494,
+              "iterations": 119,
+              "refinement_ms": 67.50509999983478,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 50.91531740084297,
+              "orientation_error_deg": 2.5326045763368925,
+              "iterations": 127,
+              "refinement_ms": 72.0907760000955,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 47.78791434404099,
+              "orientation_error_deg": 3.6494001363484254,
+              "iterations": 120,
+              "refinement_ms": 68.42272799985949,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9949914196828618,
+              "orientation_error_deg": 0.21874206555338607,
+              "iterations": 92,
+              "refinement_ms": 55.534136000005674,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 27.835949167597974,
+              "orientation_error_deg": 6.313447909969663,
+              "iterations": 163,
+              "refinement_ms": 96.72322999995231,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 27.835949180442405,
+              "orientation_error_deg": 6.313447904231744,
+              "iterations": 180,
+              "refinement_ms": 108.16630599993005,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 70.1477659624513,
+              "orientation_error_deg": 18.35512282802866,
+              "iterations": 240,
+              "refinement_ms": 142.9137099999025,
+              "stop_reason": "iteration_limit"
+            }
+          ]
+        },
+        {
+          "name": "global-20",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9072363493871708,
+          "direction_error_deg": 0.23416020571749405,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 734.585670999877,
+          "planning_ms": 14.929214999938267,
+          "path_length_rad": 3.7708709414917045,
+          "scaled_path_cost": 0.6762689021110365,
+          "endpoint_rad": [
+            -1.5886104384382866,
+            0.18468850050199953,
+            0.6765384595406403,
+            0.6983067139860382,
+            1.7158774286154337,
+            1.5825337292036186
+          ],
+          "fallback_reasons": [
+            "current_dls:iteration_limit",
+            "roadmap_dls:iteration_limit",
+            "random_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 70.72642051656966,
+              "orientation_error_deg": 9.056640149979952,
+              "iterations": 240,
+              "refinement_ms": 143.43872300014482,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 1.6384978432017985,
+              "orientation_error_deg": 0.33398138990560355,
+              "iterations": 240,
+              "refinement_ms": 135.0871059999008,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 70.82266972074262,
+              "orientation_error_deg": 8.979844935366625,
+              "iterations": 240,
+              "refinement_ms": 141.32206600015706,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9787030231406639,
+              "orientation_error_deg": 0.27404796925608227,
+              "iterations": 60,
+              "refinement_ms": 34.653782999612304,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9072363493871708,
+              "orientation_error_deg": 0.23416020571749405,
+              "iterations": 48,
+              "refinement_ms": 28.656851000050665,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 6.152605653480217,
+              "orientation_error_deg": 7.915869417892194,
+              "iterations": 240,
+              "refinement_ms": 139.34630900030243,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9961127664667512,
+              "orientation_error_deg": 0.2733256270570713,
+              "iterations": 109,
+              "refinement_ms": 66.54643800038684,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9989600340274152,
+              "orientation_error_deg": 0.27146993928847035,
+              "iterations": 70,
+              "refinement_ms": 40.97985199996401,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-21",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.8636004681898564,
+          "direction_error_deg": 0.5364796290335965,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 92.43474499999138,
+          "planning_ms": 2.98388100009106,
+          "path_length_rad": 0.6552999834958639,
+          "scaled_path_cost": 0.12454897336269115,
+          "endpoint_rad": [
+            0.36189958062855376,
+            -0.26833586826387157,
+            0.12321823723726996,
+            0.2899723622799143,
+            0.3566173282940366,
+            -1.6665209364058698e-17
+          ],
+          "fallback_reasons": [],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8636004681898564,
+              "orientation_error_deg": 0.5364796290335965,
+              "iterations": 28,
+              "refinement_ms": 16.11283399961394,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9106715309062217,
+              "orientation_error_deg": 0.11590838444459864,
+              "iterations": 33,
+              "refinement_ms": 18.828680999831704,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9676066232064912,
+              "orientation_error_deg": 0.08427647614376461,
+              "iterations": 56,
+              "refinement_ms": 33.06478700005755,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.93495020953814,
+              "orientation_error_deg": 0.13460980849441928,
+              "iterations": 38,
+              "refinement_ms": 22.083107999606,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-22",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9882680886936176,
+          "direction_error_deg": 0.08296862770496427,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 164.463534999868,
+          "planning_ms": 2.360912999847642,
+          "path_length_rad": 0.44032597498991416,
+          "scaled_path_cost": 0.08099582972329913,
+          "endpoint_rad": [
+            2.1310383286857983,
+            -1.1436029518964455,
+            1.0079431605055442,
+            -1.3398354372882229,
+            -0.43237676951948667,
+            0.9685739498002084
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9882680886936176,
+              "orientation_error_deg": 0.08296862770496427,
+              "iterations": 29,
+              "refinement_ms": 16.545826000310626,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 4.536162529141257,
+              "orientation_error_deg": 5.04507372645871,
+              "iterations": 122,
+              "refinement_ms": 71.77209600013157,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9665877198467837,
+              "orientation_error_deg": 0.1536327860343963,
+              "iterations": 43,
+              "refinement_ms": 25.44744000033461,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9454185523382488,
+              "orientation_error_deg": 0.1885486692222606,
+              "iterations": 39,
+              "refinement_ms": 23.255450999840832,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.868319958270979,
+              "orientation_error_deg": 0.08760502675237902,
+              "iterations": 42,
+              "refinement_ms": 24.63713299994197,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-23",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.96551914600512,
+          "direction_error_deg": 0.16669690541674076,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 791.3724350000848,
+          "planning_ms": 6.595502999971359,
+          "path_length_rad": 1.575740033654208,
+          "scaled_path_cost": 0.32767199365458455,
+          "endpoint_rad": [
+            -2.019155693014746,
+            1.3648410146496752,
+            0.7091341335520235,
+            -0.6848686780846964,
+            1.5656005030771705,
+            -0.17872612338616048
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled",
+            "random_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.96551914600512,
+              "orientation_error_deg": 0.16669690541674076,
+              "iterations": 51,
+              "refinement_ms": 30.30594000028941,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 31.72249641331825,
+              "orientation_error_deg": 11.306934160874793,
+              "iterations": 188,
+              "refinement_ms": 106.1792990003596,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 31.72249645430117,
+              "orientation_error_deg": 11.306934149224789,
+              "iterations": 189,
+              "refinement_ms": 106.4535660002548,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9480319150742111,
+              "orientation_error_deg": 0.13818412916759307,
+              "iterations": 47,
+              "refinement_ms": 28.11073300017597,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 31.72249530024135,
+              "orientation_error_deg": 11.306934477283122,
+              "iterations": 218,
+              "refinement_ms": 125.11643000016193,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 33.11433242398434,
+              "orientation_error_deg": 12.226891444728775,
+              "iterations": 240,
+              "refinement_ms": 141.78815500008568,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 210.42497268572967,
+              "orientation_error_deg": 77.67829161246726,
+              "iterations": 240,
+              "refinement_ms": 143.08165100010228,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9237398362700603,
+              "orientation_error_deg": 0.09297898315085797,
+              "iterations": 74,
+              "refinement_ms": 44.138307999674,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9795942748520936,
+              "orientation_error_deg": 0.190629012489184,
+              "iterations": 98,
+              "refinement_ms": 61.433968000073946,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-24",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.957959900647098,
+          "direction_error_deg": 0.3969931705742047,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 378.9092219999475,
+          "planning_ms": 5.748753999796463,
+          "path_length_rad": 1.3579183436642446,
+          "scaled_path_cost": 0.24854242576668237,
+          "endpoint_rad": [
+            0.7798121214710202,
+            1.5202937409444564,
+            -0.806187219106421,
+            -0.9549216140820402,
+            1.3838359043867787,
+            2.1248011762217818
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled",
+            "roadmap_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.957959900647098,
+              "orientation_error_deg": 0.3969931705742047,
+              "iterations": 46,
+              "refinement_ms": 27.338195000083942,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 12.213369342294515,
+              "orientation_error_deg": 3.5238151499879597,
+              "iterations": 220,
+              "refinement_ms": 124.63749900007315,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9206192215950995,
+              "orientation_error_deg": 0.2939883181647206,
+              "iterations": 32,
+              "refinement_ms": 18.426251000164484,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 59.86688494642107,
+              "orientation_error_deg": 3.0122159701698554,
+              "iterations": 240,
+              "refinement_ms": 136.09441800008426,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9514092303383875,
+              "orientation_error_deg": 0.032449053110957686,
+              "iterations": 40,
+              "refinement_ms": 22.96506499988027,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9255714888027258,
+              "orientation_error_deg": 0.6703474727137867,
+              "iterations": 78,
+              "refinement_ms": 46.14276800020889,
+              "stop_reason": "target_reached"
+            }
+          ]
+        }
+      ],
+      "config": {
+        "task": "pose5",
+        "nn": "none",
+        "refine": true,
+        "numerical_fallback": true,
+        "random_seeds": 4,
+        "roadmap_seeds": 4,
+        "max_candidates": 4,
+        "seed": 9001,
+        "steps": 240,
+        "speed_rad_s": 1.2,
+        "tolerance_mm": 1.0,
+        "damping": 0.04,
+        "orientation_tolerance_deg": 1.0,
+        "stall_window": 30,
+        "min_progress_mm": 0.01
+      }
+    },
+    {
+      "method": "numerical_multiseed_prm",
+      "success": 24,
+      "ik_success": 24,
+      "total": 24,
+      "success_rate": 1.0,
+      "mean_goal_error_mm": 0.9431292846470983,
+      "mean_direction_error_deg": 0.28562237623914105,
+      "mean_ik_ms": 395.21531141663974,
+      "mean_planning_ms": 7.104862541685482,
+      "mean_success_path_length_rad": 1.7214484261369674,
+      "fallback_reasons": {
+        "roadmap_dls:stalled": 12,
+        "random_dls:iteration_limit": 9,
+        "current_dls:stalled": 2,
+        "random_dls:stalled": 5,
+        "roadmap_dls:iteration_limit": 6,
+        "current_dls:iteration_limit": 3
+      },
+      "cases": [
+        {
+          "name": "nearby-01",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9000208238516665,
+          "direction_error_deg": 0.4503642182582222,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 304.747941000187,
+          "planning_ms": 2.1229019998827425,
+          "path_length_rad": 0.37374794577671655,
+          "scaled_path_cost": 0.0734243326071179,
+          "endpoint_rad": [
+            -0.024999230707765236,
+            -0.09572070872265388,
+            -0.1678724692896462,
+            -0.2654120371300224,
+            0.17684851132835874,
+            -2.247831410634066e-18
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9000208238516665,
+              "orientation_error_deg": 0.4503642182582222,
+              "iterations": 27,
+              "refinement_ms": 15.696133999881567,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 31.0834630799897,
+              "orientation_error_deg": 5.5682192215577055,
+              "iterations": 133,
+              "refinement_ms": 77.14931300006356,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9899879404010705,
+              "orientation_error_deg": 0.09351561455382812,
+              "iterations": 146,
+              "refinement_ms": 82.86666799995146,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9039465060950439,
+              "orientation_error_deg": 0.087296165204814,
+              "iterations": 48,
+              "refinement_ms": 27.80250000023443,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9395216393528314,
+              "orientation_error_deg": 0.08925091047359748,
+              "iterations": 172,
+              "refinement_ms": 98.29379399980098,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-02",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.8871638292426626,
+          "direction_error_deg": 0.21092554002079295,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 549.8900789998515,
+          "planning_ms": 4.591343999891251,
+          "path_length_rad": 1.0669233910786828,
+          "scaled_path_cost": 0.21089982118438286,
+          "endpoint_rad": [
+            -1.9554885512787445,
+            -0.3563973666076336,
+            2.101973275140103,
+            1.0588787419224346,
+            2.514314401964958,
+            -0.5627054459756702
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled",
+            "random_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8871638292426626,
+              "orientation_error_deg": 0.21092554002079295,
+              "iterations": 44,
+              "refinement_ms": 25.86452300010933,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9838909426474289,
+              "orientation_error_deg": 0.3291339650960008,
+              "iterations": 20,
+              "refinement_ms": 11.479387000235874,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 38.82822314786016,
+              "orientation_error_deg": 0.8826767048240557,
+              "iterations": 145,
+              "refinement_ms": 85.80628700019588,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 38.911701360797636,
+              "orientation_error_deg": 0.9060307637873511,
+              "iterations": 143,
+              "refinement_ms": 84.52215600027557,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9247196277253257,
+              "orientation_error_deg": 0.14163082818456865,
+              "iterations": 40,
+              "refinement_ms": 23.3031640000263,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 119.57737266645941,
+              "orientation_error_deg": 12.00558000066683,
+              "iterations": 240,
+              "refinement_ms": 145.7291990000158,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 21.54524176375957,
+              "orientation_error_deg": 0.23771831184590483,
+              "iterations": 240,
+              "refinement_ms": 145.75422699999763,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9925751952715659,
+              "orientation_error_deg": 0.49408569817274534,
+              "iterations": 39,
+              "refinement_ms": 23.109658000066702,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-03",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.8877713381226897,
+          "direction_error_deg": 0.18607248312177233,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 739.5982769999137,
+          "planning_ms": 14.57703500000207,
+          "path_length_rad": 3.675216320076404,
+          "scaled_path_cost": 0.6756114513255329,
+          "endpoint_rad": [
+            -2.2770824736166326,
+            1.0749168479452926,
+            1.6740772752137825,
+            0.5336502214457616,
+            0.4316527882768398,
+            -0.7033818074695869
+          ],
+          "fallback_reasons": [
+            "current_dls:stalled",
+            "roadmap_dls:stalled",
+            "random_dls:stalled",
+            "random_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 170.67548922951667,
+              "orientation_error_deg": 25.93593184258467,
+              "iterations": 165,
+              "refinement_ms": 104.42731099965386,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9631645592386009,
+              "orientation_error_deg": 0.47548599917367385,
+              "iterations": 50,
+              "refinement_ms": 30.155957999795646,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 92.84045664824657,
+              "orientation_error_deg": 10.796425434444611,
+              "iterations": 106,
+              "refinement_ms": 68.38251399994988,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 2.8080216839128402,
+              "orientation_error_deg": 0.22957253435229252,
+              "iterations": 189,
+              "refinement_ms": 113.59419099972001,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.7581985058018442,
+              "orientation_error_deg": 0.9666035326235615,
+              "iterations": 34,
+              "refinement_ms": 20.008537000194337,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 2.8080216847102566,
+              "orientation_error_deg": 0.22957253336403619,
+              "iterations": 233,
+              "refinement_ms": 143.1059780002215,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 125.99368166122252,
+              "orientation_error_deg": 34.0418716395482,
+              "iterations": 240,
+              "refinement_ms": 143.19886100020085,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8877713381226897,
+              "orientation_error_deg": 0.18607248312177233,
+              "iterations": 102,
+              "refinement_ms": 63.67509500023516,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8692262755632666,
+              "orientation_error_deg": 0.06883551740633734,
+              "iterations": 79,
+              "refinement_ms": 48.16123199998401,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-04",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9881703055488961,
+          "direction_error_deg": 0.13960726113907207,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 302.2739969997019,
+          "planning_ms": 7.917524000276899,
+          "path_length_rad": 1.9695324516493375,
+          "scaled_path_cost": 0.3564971429694216,
+          "endpoint_rad": [
+            -2.1767896927067207,
+            -0.760215605111316,
+            1.8032276430731038,
+            -0.16039745103130057,
+            1.4430572079822281,
+            1.1105503641103047
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9881703055488961,
+              "orientation_error_deg": 0.13960726113907207,
+              "iterations": 101,
+              "refinement_ms": 59.428173000014795,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9821721360800332,
+              "orientation_error_deg": 0.5435587094354883,
+              "iterations": 25,
+              "refinement_ms": 14.515691999804403,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 4.489228409435935,
+              "orientation_error_deg": 0.4510376176810936,
+              "iterations": 240,
+              "refinement_ms": 134.41194200004247,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9886285791316234,
+              "orientation_error_deg": 0.139733806721538,
+              "iterations": 85,
+              "refinement_ms": 49.89782599977843,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9770312753716879,
+              "orientation_error_deg": 0.14232818611233447,
+              "iterations": 72,
+              "refinement_ms": 40.98585599967919,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-05",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.895409313536422,
+          "direction_error_deg": 0.30411379581899184,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 75.45127200000934,
+          "planning_ms": 2.812594000261015,
+          "path_length_rad": 0.5725808458386921,
+          "scaled_path_cost": 0.11174947690512585,
+          "endpoint_rad": [
+            0.12651799169712385,
+            0.2286995737968437,
+            0.4529998793196848,
+            0.07901372926426804,
+            0.219286268761919,
+            1.739332359524784e-17
+          ],
+          "fallback_reasons": [],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.895409313536422,
+              "orientation_error_deg": 0.30411379581899184,
+              "iterations": 33,
+              "refinement_ms": 19.14533399985885,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9253388673354839,
+              "orientation_error_deg": 0.3622387580356467,
+              "iterations": 26,
+              "refinement_ms": 14.796015999763767,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9015635358517171,
+              "orientation_error_deg": 0.12085402413591124,
+              "iterations": 34,
+              "refinement_ms": 19.98138899989499,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9305260060227466,
+              "orientation_error_deg": 0.3431317338356385,
+              "iterations": 33,
+              "refinement_ms": 19.192843999917386,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-06",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9959347766312762,
+          "direction_error_deg": 0.18932185160446527,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 105.37441399992531,
+          "planning_ms": 2.334374000383832,
+          "path_length_rad": 0.44498784960958965,
+          "scaled_path_cost": 0.08995750745160064,
+          "endpoint_rad": [
+            1.1671479530614735,
+            0.4703307712848076,
+            -0.5159058137446781,
+            -0.21970385398425463,
+            1.0540347113593669,
+            -0.5519714951515199
+          ],
+          "fallback_reasons": [],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9693965619495961,
+              "orientation_error_deg": 0.2103974211866817,
+              "iterations": 26,
+              "refinement_ms": 14.930484000160504,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9952897160300325,
+              "orientation_error_deg": 0.20715215301647355,
+              "iterations": 46,
+              "refinement_ms": 26.005589999840595,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9959480943947897,
+              "orientation_error_deg": 0.20833946328144504,
+              "iterations": 55,
+              "refinement_ms": 31.425714999841148,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9959347766312762,
+              "orientation_error_deg": 0.18932185160446527,
+              "iterations": 53,
+              "refinement_ms": 30.68619200030298,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-07",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9961507703227445,
+          "direction_error_deg": 0.9826699775074152,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 224.8215810000147,
+          "planning_ms": 12.206432999846584,
+          "path_length_rad": 3.0988283902042775,
+          "scaled_path_cost": 0.6189229579995377,
+          "endpoint_rad": [
+            -1.2430432452825722,
+            -0.7177100217642453,
+            0.6431999949072663,
+            0.01639668815551068,
+            0.5468254154076371,
+            -2.240670919418335
+          ],
+          "fallback_reasons": [
+            "current_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 202.73838382621864,
+              "orientation_error_deg": 13.550974855602247,
+              "iterations": 199,
+              "refinement_ms": 123.82088200001817,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9882943831064985,
+              "orientation_error_deg": 0.4121221204984964,
+              "iterations": 52,
+              "refinement_ms": 30.30498499992973,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9961507703227445,
+              "orientation_error_deg": 0.9826699775074152,
+              "iterations": 22,
+              "refinement_ms": 12.77788099969257,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9822508876250814,
+              "orientation_error_deg": 0.3253721561872072,
+              "iterations": 55,
+              "refinement_ms": 32.00578099995255,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.999866526927395,
+              "orientation_error_deg": 0.10351392656737465,
+              "iterations": 39,
+              "refinement_ms": 23.02166900017255,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-08",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.997253806882934,
+          "direction_error_deg": 0.19312240056822202,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 276.283634000265,
+          "planning_ms": 10.82207199988261,
+          "path_length_rad": 2.73322489820675,
+          "scaled_path_cost": 0.5132929816924686,
+          "endpoint_rad": [
+            -0.4239398402043195,
+            -1.4213550404520021,
+            0.7804023801162586,
+            0.6876768547831635,
+            1.1547422586197966,
+            -2.2017290048321527
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.997253806882934,
+              "orientation_error_deg": 0.19312240056822202,
+              "iterations": 90,
+              "refinement_ms": 54.54131300029985,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9794945619479876,
+              "orientation_error_deg": 0.4423776698010856,
+              "iterations": 29,
+              "refinement_ms": 16.44349299976966,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 29.57551745707854,
+              "orientation_error_deg": 8.934199433341405,
+              "iterations": 240,
+              "refinement_ms": 134.44646799962356,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9538977912924017,
+              "orientation_error_deg": 0.2598934528692012,
+              "iterations": 70,
+              "refinement_ms": 41.46128999991561,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9507981839976647,
+              "orientation_error_deg": 0.5448287599712128,
+              "iterations": 46,
+              "refinement_ms": 26.40367200001492,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-09",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.8731127541999566,
+          "direction_error_deg": 0.6732493557197857,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 195.51185900036216,
+          "planning_ms": 2.3377219999929366,
+          "path_length_rad": 0.43887625401025004,
+          "scaled_path_cost": 0.0817392975533804,
+          "endpoint_rad": [
+            -0.12310095359946266,
+            -0.02758509515581772,
+            -0.10541575752544338,
+            -0.1561044187576316,
+            0.3757878558334421,
+            -3.488320113808903e-18
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8731127541999566,
+              "orientation_error_deg": 0.6732493557197857,
+              "iterations": 22,
+              "refinement_ms": 12.641088999771455,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9300105086267653,
+              "orientation_error_deg": 0.21384982032731,
+              "iterations": 49,
+              "refinement_ms": 29.453298000134964,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 6.695898979176426,
+              "orientation_error_deg": 0.8758668535323741,
+              "iterations": 158,
+              "refinement_ms": 89.55645300011383,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9849045881533147,
+              "orientation_error_deg": 0.09359126881497999,
+              "iterations": 64,
+              "refinement_ms": 37.33983700021781,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9509222242288052,
+              "orientation_error_deg": 0.2361959374909333,
+              "iterations": 40,
+              "refinement_ms": 23.727398000119138,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-10",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9508906536982735,
+          "direction_error_deg": 0.11395868853923481,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 808.5572949999005,
+          "planning_ms": 3.0344190004143456,
+          "path_length_rad": 0.6371973208031553,
+          "scaled_path_cost": 0.12700638175732812,
+          "endpoint_rad": [
+            2.2588691460065684,
+            1.9801561865922068,
+            0.5441460609486918,
+            -0.1750275931487476,
+            -1.3034747778630453,
+            -1.2001504429822205
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled",
+            "random_dls:iteration_limit",
+            "random_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9508906536982735,
+              "orientation_error_deg": 0.11395868853923481,
+              "iterations": 33,
+              "refinement_ms": 19.106242999896494,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 5.607290807536982,
+              "orientation_error_deg": 0.3944345718825371,
+              "iterations": 235,
+              "refinement_ms": 138.51336100015033,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 8.796070531298204,
+              "orientation_error_deg": 0.742086616738841,
+              "iterations": 121,
+              "refinement_ms": 68.5127410001769,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 8.796070447584388,
+              "orientation_error_deg": 0.7420867172771564,
+              "iterations": 127,
+              "refinement_ms": 72.10779400020328,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9114729793255061,
+              "orientation_error_deg": 0.30041597713576085,
+              "iterations": 34,
+              "refinement_ms": 19.467452999833768,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 5.607289360403689,
+              "orientation_error_deg": 0.39443665631052016,
+              "iterations": 240,
+              "refinement_ms": 143.56126399979985,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 8.796070450364642,
+              "orientation_error_deg": 0.7420867139381118,
+              "iterations": 143,
+              "refinement_ms": 81.65346699979636,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 212.63656514251386,
+              "orientation_error_deg": 39.086222742823594,
+              "iterations": 209,
+              "refinement_ms": 142.52731899978244,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 211.36486588489134,
+              "orientation_error_deg": 17.02422726969519,
+              "iterations": 193,
+              "refinement_ms": 118.40895499972248,
+              "stop_reason": "stalled"
+            }
+          ]
+        },
+        {
+          "name": "global-11",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9975361380477933,
+          "direction_error_deg": 0.18095195085420918,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 87.8603999999541,
+          "planning_ms": 6.3628999996581115,
+          "path_length_rad": 1.5094368644825196,
+          "scaled_path_cost": 0.3135949623207405,
+          "endpoint_rad": [
+            0.7718154015892563,
+            1.306623499921863,
+            -1.57294560644257,
+            1.6708408949657692,
+            0.18566739670331883,
+            -2.224800096997442
+          ],
+          "fallback_reasons": [],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9975361380477933,
+              "orientation_error_deg": 0.18095195085420918,
+              "iterations": 53,
+              "refinement_ms": 31.8919379997169,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8796102579016003,
+              "orientation_error_deg": 0.633008907546454,
+              "iterations": 23,
+              "refinement_ms": 13.229086000137613,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9130541059997783,
+              "orientation_error_deg": 0.20022624283078105,
+              "iterations": 30,
+              "refinement_ms": 17.27276100018571,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9817083123907916,
+              "orientation_error_deg": 0.040896830582728576,
+              "iterations": 40,
+              "refinement_ms": 23.134715000196593,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-12",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.997947575645996,
+          "direction_error_deg": 0.07998147115828218,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 148.92041199982486,
+          "planning_ms": 18.32191099992997,
+          "path_length_rad": 4.723033649365157,
+          "scaled_path_cost": 0.9010616478171073,
+          "endpoint_rad": [
+            -1.4684948932770825,
+            -0.7593806558318801,
+            0.9091114064163952,
+            1.2857553829452508,
+            -0.33059553713072287,
+            1.943220593370227
+          ],
+          "fallback_reasons": [],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.997947575645996,
+              "orientation_error_deg": 0.07998147115828218,
+              "iterations": 116,
+              "refinement_ms": 72.2325169999749,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.952579896581754,
+              "orientation_error_deg": 0.4006402432927624,
+              "iterations": 35,
+              "refinement_ms": 20.33860299980006,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9777732358567557,
+              "orientation_error_deg": 0.09186686820902779,
+              "iterations": 44,
+              "refinement_ms": 25.405557000340195,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9415388423944833,
+              "orientation_error_deg": 0.12340905517583271,
+              "iterations": 49,
+              "refinement_ms": 28.579472999808786,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-13",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9906704534842576,
+          "direction_error_deg": 0.1892290496142213,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 126.10722199997326,
+          "planning_ms": 2.3256969998328714,
+          "path_length_rad": 0.44264020482872385,
+          "scaled_path_cost": 0.08480512278501044,
+          "endpoint_rad": [
+            0.11319207865695198,
+            0.1469580053901684,
+            -0.28038481163241846,
+            -0.08142226669049538,
+            0.2761811376700286,
+            -1.8535653662388508e-17
+          ],
+          "fallback_reasons": [],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9906704534842576,
+              "orientation_error_deg": 0.1892290496142213,
+              "iterations": 31,
+              "refinement_ms": 17.580224000084854,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9824742621351611,
+              "orientation_error_deg": 0.12950634791179033,
+              "iterations": 51,
+              "refinement_ms": 29.86675700003616,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9718039222395684,
+              "orientation_error_deg": 0.08326392863192095,
+              "iterations": 55,
+              "refinement_ms": 31.916057000216824,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9637892090019965,
+              "orientation_error_deg": 0.08172802217184895,
+              "iterations": 76,
+              "refinement_ms": 44.41277000023547,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-14",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9277956508405634,
+          "direction_error_deg": 0.4591453161294064,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 292.7043439999579,
+          "planning_ms": 2.987712000049214,
+          "path_length_rad": 0.60163897474967,
+          "scaled_path_cost": 0.11623179456348193,
+          "endpoint_rad": [
+            0.6462812472577681,
+            0.265817603778326,
+            0.14582681729831795,
+            0.31518917882744285,
+            0.5171256132283736,
+            -2.08626025222053
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9277956508405634,
+              "orientation_error_deg": 0.4591453161294064,
+              "iterations": 28,
+              "refinement_ms": 16.13535199976468,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.737637816854934,
+              "orientation_error_deg": 0.8575487829687712,
+              "iterations": 25,
+              "refinement_ms": 14.439000000038504,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.996743128759994,
+              "orientation_error_deg": 0.15896441761329494,
+              "iterations": 36,
+              "refinement_ms": 20.937364000019443,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 10.601755609614901,
+              "orientation_error_deg": 1.7895534008627014,
+              "iterations": 167,
+              "refinement_ms": 98.26904999999897,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 84.41308065606911,
+              "orientation_error_deg": 17.32327823410059,
+              "iterations": 173,
+              "refinement_ms": 101.72357300007207,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9671528547706972,
+              "orientation_error_deg": 0.14687337180112547,
+              "iterations": 64,
+              "refinement_ms": 37.935672999992676,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-15",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.940001883774482,
+          "direction_error_deg": 0.15436198250483504,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 560.6123589996059,
+          "planning_ms": 14.522469999974419,
+          "path_length_rad": 3.677247705653756,
+          "scaled_path_cost": 0.6730712589848417,
+          "endpoint_rad": [
+            2.86752027653456,
+            0.3519651773017478,
+            -1.6705270549102507,
+            1.3243166084746019,
+            -0.2126438119262201,
+            -0.8562209419033362
+          ],
+          "fallback_reasons": [
+            "current_dls:iteration_limit",
+            "roadmap_dls:iteration_limit",
+            "random_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 2.1969295542014238,
+              "orientation_error_deg": 0.19588109072134408,
+              "iterations": 240,
+              "refinement_ms": 139.27402499984964,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8585437506908657,
+              "orientation_error_deg": 0.34413674634657254,
+              "iterations": 27,
+              "refinement_ms": 15.465875000245433,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 2.206166128229644,
+              "orientation_error_deg": 0.1964648590374447,
+              "iterations": 240,
+              "refinement_ms": 134.4720629999756,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9293039944093288,
+              "orientation_error_deg": 0.40629106161688716,
+              "iterations": 36,
+              "refinement_ms": 21.440102999804367,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.940001883774482,
+              "orientation_error_deg": 0.15436198250483504,
+              "iterations": 37,
+              "refinement_ms": 21.42921499989825,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 2.196861145528355,
+              "orientation_error_deg": 0.1958774926339107,
+              "iterations": 240,
+              "refinement_ms": 141.11114400020597,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9051798490414004,
+              "orientation_error_deg": 0.1435715619820065,
+              "iterations": 135,
+              "refinement_ms": 83.43863500022053,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-16",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9759713170391701,
+          "direction_error_deg": 0.32901725354831923,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 761.978062000253,
+          "planning_ms": 15.237491000334558,
+          "path_length_rad": 3.8660686834598343,
+          "scaled_path_cost": 0.7007308043190775,
+          "endpoint_rad": [
+            -0.41053136044549143,
+            1.5865062176263478,
+            0.4931154982583574,
+            1.0299889223911733,
+            1.5822044086525726,
+            -0.29189136624336237
+          ],
+          "fallback_reasons": [
+            "current_dls:iteration_limit",
+            "roadmap_dls:stalled",
+            "random_dls:iteration_limit",
+            "random_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 147.09168507678285,
+              "orientation_error_deg": 9.885405789641394,
+              "iterations": 240,
+              "refinement_ms": 185.91491200004384,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 6.125473757497222,
+              "orientation_error_deg": 0.3039181764804702,
+              "iterations": 188,
+              "refinement_ms": 109.97001499981707,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9759713170391701,
+              "orientation_error_deg": 0.32901725354831923,
+              "iterations": 38,
+              "refinement_ms": 21.93345399973623,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9809396025355753,
+              "orientation_error_deg": 0.1817611823125446,
+              "iterations": 31,
+              "refinement_ms": 17.59743599996,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9488204753768517,
+              "orientation_error_deg": 0.3797311202122993,
+              "iterations": 35,
+              "refinement_ms": 20.290635000037582,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 1.1604328563624158,
+              "orientation_error_deg": 0.45634313316975583,
+              "iterations": 240,
+              "refinement_ms": 143.3588840000084,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 160.92423412357624,
+              "orientation_error_deg": 29.14724815841789,
+              "iterations": 141,
+              "refinement_ms": 90.53413199990246,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 230.69503779887592,
+              "orientation_error_deg": 30.35296383303787,
+              "iterations": 166,
+              "refinement_ms": 105.67823599967596,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9842560206789299,
+              "orientation_error_deg": 0.19602339857459047,
+              "iterations": 100,
+              "refinement_ms": 61.89659399979064,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-17",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9075519970244692,
+          "direction_error_deg": 0.1617673246083998,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 67.75233999996999,
+          "planning_ms": 2.9909980003139935,
+          "path_length_rad": 0.632004905082671,
+          "scaled_path_cost": 0.1218257225445171,
+          "endpoint_rad": [
+            -0.0017511393011515005,
+            0.06978635554408308,
+            0.4238079709953761,
+            -0.30493186655770044,
+            0.3492282328478012,
+            4.5880848069449704e-17
+          ],
+          "fallback_reasons": [],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9075519970244692,
+              "orientation_error_deg": 0.1617673246083998,
+              "iterations": 32,
+              "refinement_ms": 18.211859000075492,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9309373946848927,
+              "orientation_error_deg": 0.4848510164134354,
+              "iterations": 22,
+              "refinement_ms": 12.660188000154449,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9931058200603478,
+              "orientation_error_deg": 0.2813893205501442,
+              "iterations": 26,
+              "refinement_ms": 14.848715999960405,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9502039450492183,
+              "orientation_error_deg": 0.44216051600228923,
+              "iterations": 34,
+              "refinement_ms": 19.71483499983151,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-18",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9417858377668793,
+          "direction_error_deg": 0.35962275272198363,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 1011.7648719997305,
+          "planning_ms": 2.600749000066571,
+          "path_length_rad": 0.5145460807592556,
+          "scaled_path_cost": 0.09354172721863027,
+          "endpoint_rad": [
+            -1.226045416877198,
+            -1.36634383696349,
+            -1.8649981650490715,
+            -1.35864901089844,
+            0.059267871134244386,
+            -1.651022599131302
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled",
+            "roadmap_dls:iteration_limit",
+            "random_dls:iteration_limit",
+            "random_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9417858377668793,
+              "orientation_error_deg": 0.35962275272198363,
+              "iterations": 23,
+              "refinement_ms": 13.239242000054219,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8828039825917732,
+              "orientation_error_deg": 0.15666747109621895,
+              "iterations": 25,
+              "refinement_ms": 14.285932999882789,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 51.94883180465371,
+              "orientation_error_deg": 1.9581715988292556,
+              "iterations": 211,
+              "refinement_ms": 124.22169799992844,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 0.5845078715505438,
+              "orientation_error_deg": 14.311501826939455,
+              "iterations": 240,
+              "refinement_ms": 141.6417469999942,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 41.72192180547675,
+              "orientation_error_deg": 26.877483588014293,
+              "iterations": 240,
+              "refinement_ms": 141.43081500014887,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 121.3729475280165,
+              "orientation_error_deg": 8.405926567952301,
+              "iterations": 240,
+              "refinement_ms": 146.10479100019802,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 53.94415645516811,
+              "orientation_error_deg": 22.697540411216217,
+              "iterations": 240,
+              "refinement_ms": 146.94302700036133,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 121.70561415960616,
+              "orientation_error_deg": 24.752644062845196,
+              "iterations": 240,
+              "refinement_ms": 152.8330289997939,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 79.6650860896572,
+              "orientation_error_deg": 11.134644582584075,
+              "iterations": 205,
+              "refinement_ms": 126.17907599997125,
+              "stop_reason": "stalled"
+            }
+          ]
+        },
+        {
+          "name": "global-19",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9013796529463652,
+          "direction_error_deg": 0.08015581785475405,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 676.1823420001747,
+          "planning_ms": 10.12003999994704,
+          "path_length_rad": 2.536874214355837,
+          "scaled_path_cost": 0.5193293996691125,
+          "endpoint_rad": [
+            1.274299818055478,
+            1.0658218884055446,
+            0.48391633942555273,
+            -1.7424307954291325,
+            0.5256149376465261,
+            -1.7587312041928036
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled",
+            "random_dls:stalled",
+            "random_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9013796529463652,
+              "orientation_error_deg": 0.08015581785475405,
+              "iterations": 77,
+              "refinement_ms": 47.387296999659156,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9265728950680034,
+              "orientation_error_deg": 0.2546189892438879,
+              "iterations": 26,
+              "refinement_ms": 14.738110000052984,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 50.91531768824728,
+              "orientation_error_deg": 2.5326039909073494,
+              "iterations": 119,
+              "refinement_ms": 67.3599629999444,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 50.91531740084297,
+              "orientation_error_deg": 2.5326045763368925,
+              "iterations": 127,
+              "refinement_ms": 71.9090249999681,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 47.78791434404099,
+              "orientation_error_deg": 3.6494001363484254,
+              "iterations": 120,
+              "refinement_ms": 68.01934800023446,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9949914196828618,
+              "orientation_error_deg": 0.21874206555338607,
+              "iterations": 92,
+              "refinement_ms": 55.05656600007569,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 27.835949167597974,
+              "orientation_error_deg": 6.313447909969663,
+              "iterations": 163,
+              "refinement_ms": 96.18236100004651,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 27.835949180442405,
+              "orientation_error_deg": 6.313447904231744,
+              "iterations": 180,
+              "refinement_ms": 108.00779800001692,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 70.1477659624513,
+              "orientation_error_deg": 18.35512282802866,
+              "iterations": 240,
+              "refinement_ms": 142.79932499994175,
+              "stop_reason": "iteration_limit"
+            }
+          ]
+        },
+        {
+          "name": "global-20",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9072363493871708,
+          "direction_error_deg": 0.23416020571749405,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 737.4181939999289,
+          "planning_ms": 14.617840000028082,
+          "path_length_rad": 3.7708709414917045,
+          "scaled_path_cost": 0.6762689021110365,
+          "endpoint_rad": [
+            -1.5886104384382866,
+            0.18468850050199953,
+            0.6765384595406403,
+            0.6983067139860382,
+            1.7158774286154337,
+            1.5825337292036186
+          ],
+          "fallback_reasons": [
+            "current_dls:iteration_limit",
+            "roadmap_dls:iteration_limit",
+            "random_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 70.72642051656966,
+              "orientation_error_deg": 9.056640149979952,
+              "iterations": 240,
+              "refinement_ms": 143.03363499993793,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 1.6384978432017985,
+              "orientation_error_deg": 0.33398138990560355,
+              "iterations": 240,
+              "refinement_ms": 135.03445100013778,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 70.82266972074262,
+              "orientation_error_deg": 8.979844935366625,
+              "iterations": 240,
+              "refinement_ms": 141.06771699971432,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9787030231406639,
+              "orientation_error_deg": 0.27404796925608227,
+              "iterations": 60,
+              "refinement_ms": 34.930537000036566,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9072363493871708,
+              "orientation_error_deg": 0.23416020571749405,
+              "iterations": 48,
+              "refinement_ms": 28.407616000095004,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 6.152605653480217,
+              "orientation_error_deg": 7.915869417892194,
+              "iterations": 240,
+              "refinement_ms": 142.8520910003499,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9961127664667512,
+              "orientation_error_deg": 0.2733256270570713,
+              "iterations": 109,
+              "refinement_ms": 66.92551000014646,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9989600340274152,
+              "orientation_error_deg": 0.27146993928847035,
+              "iterations": 70,
+              "refinement_ms": 40.79402700017454,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-21",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.8636004681898564,
+          "direction_error_deg": 0.5364796290335965,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 92.48558300032528,
+          "planning_ms": 3.015221999703499,
+          "path_length_rad": 0.6552999834958639,
+          "scaled_path_cost": 0.12454897336269115,
+          "endpoint_rad": [
+            0.36189958062855376,
+            -0.26833586826387157,
+            0.12321823723726996,
+            0.2899723622799143,
+            0.3566173282940366,
+            -1.6665209364058698e-17
+          ],
+          "fallback_reasons": [],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.8636004681898564,
+              "orientation_error_deg": 0.5364796290335965,
+              "iterations": 28,
+              "refinement_ms": 16.123289999995905,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9106715309062217,
+              "orientation_error_deg": 0.11590838444459864,
+              "iterations": 33,
+              "refinement_ms": 18.807734999882086,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9676066232064912,
+              "orientation_error_deg": 0.08427647614376461,
+              "iterations": 56,
+              "refinement_ms": 32.96627399959107,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.93495020953814,
+              "orientation_error_deg": 0.13460980849441928,
+              "iterations": 38,
+              "refinement_ms": 22.25392600030318,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "nearby-22",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.9882680886936176,
+          "direction_error_deg": 0.08296862770496427,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 165.26702800001658,
+          "planning_ms": 2.363204999710433,
+          "path_length_rad": 0.44032597498991416,
+          "scaled_path_cost": 0.08099582972329913,
+          "endpoint_rad": [
+            2.1310383286857983,
+            -1.1436029518964455,
+            1.0079431605055442,
+            -1.3398354372882229,
+            -0.43237676951948667,
+            0.9685739498002084
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9882680886936176,
+              "orientation_error_deg": 0.08296862770496427,
+              "iterations": 29,
+              "refinement_ms": 16.826162000143086,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 4.536162529141257,
+              "orientation_error_deg": 5.04507372645871,
+              "iterations": 122,
+              "refinement_ms": 72.2720069998104,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9665877198467837,
+              "orientation_error_deg": 0.1536327860343963,
+              "iterations": 43,
+              "refinement_ms": 25.617403000069316,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9454185523382488,
+              "orientation_error_deg": 0.1885486692222606,
+              "iterations": 39,
+              "refinement_ms": 23.20510000026843,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.868319958270979,
+              "orientation_error_deg": 0.08760502675237902,
+              "iterations": 42,
+              "refinement_ms": 24.538712999856216,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-23",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.96551914600512,
+          "direction_error_deg": 0.16669690541674076,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 793.654979999701,
+          "planning_ms": 6.574217999968823,
+          "path_length_rad": 1.575740033654208,
+          "scaled_path_cost": 0.32767199365458455,
+          "endpoint_rad": [
+            -2.019155693014746,
+            1.3648410146496752,
+            0.7091341335520235,
+            -0.6848686780846964,
+            1.5656005030771705,
+            -0.17872612338616048
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled",
+            "random_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.96551914600512,
+              "orientation_error_deg": 0.16669690541674076,
+              "iterations": 51,
+              "refinement_ms": 30.32729599999584,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 31.72249641331825,
+              "orientation_error_deg": 11.306934160874793,
+              "iterations": 188,
+              "refinement_ms": 106.43769600028463,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 31.72249645430117,
+              "orientation_error_deg": 11.306934149224789,
+              "iterations": 189,
+              "refinement_ms": 107.17874200008737,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9480319150742111,
+              "orientation_error_deg": 0.13818412916759307,
+              "iterations": 47,
+              "refinement_ms": 28.201708000324288,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 31.72249530024135,
+              "orientation_error_deg": 11.306934477283122,
+              "iterations": 218,
+              "refinement_ms": 125.34454600017852,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 33.11433242398434,
+              "orientation_error_deg": 12.226891444728775,
+              "iterations": 240,
+              "refinement_ms": 141.71322800029884,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 210.42497268572967,
+              "orientation_error_deg": 77.67829161246726,
+              "iterations": 240,
+              "refinement_ms": 143.5351489999448,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9237398362700603,
+              "orientation_error_deg": 0.09297898315085797,
+              "iterations": 74,
+              "refinement_ms": 44.447007999679045,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9795942748520936,
+              "orientation_error_deg": 0.190629012489184,
+              "iterations": 98,
+              "refinement_ms": 61.61250300010579,
+              "stop_reason": "target_reached"
+            }
+          ]
+        },
+        {
+          "name": "global-24",
+          "status": "success",
+          "reason": "direct_connection",
+          "goal_error_mm": 0.957959900647098,
+          "direction_error_deg": 0.3969931705742047,
+          "ik_success": true,
+          "success": true,
+          "ik_ms": 379.94898699980695,
+          "planning_ms": 5.719829000099708,
+          "path_length_rad": 1.3579183436642446,
+          "scaled_path_cost": 0.24854242576668237,
+          "endpoint_rad": [
+            0.7798121214710202,
+            1.5202937409444564,
+            -0.806187219106421,
+            -0.9549216140820402,
+            1.3838359043867787,
+            2.1248011762217818
+          ],
+          "fallback_reasons": [
+            "roadmap_dls:stalled",
+            "roadmap_dls:iteration_limit"
+          ],
+          "attempts": [
+            {
+              "source": "current_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.957959900647098,
+              "orientation_error_deg": 0.3969931705742047,
+              "iterations": 46,
+              "refinement_ms": 27.66769900017607,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 12.213369342294515,
+              "orientation_error_deg": 3.5238151499879597,
+              "iterations": 220,
+              "refinement_ms": 124.54805600009422,
+              "stop_reason": "stalled"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9206192215950995,
+              "orientation_error_deg": 0.2939883181647206,
+              "iterations": 32,
+              "refinement_ms": 18.392872999811516,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": false,
+              "error_mm": 59.86688494642107,
+              "orientation_error_deg": 3.0122159701698554,
+              "iterations": 240,
+              "refinement_ms": 136.7352160000337,
+              "stop_reason": "iteration_limit"
+            },
+            {
+              "source": "roadmap_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9514092303383875,
+              "orientation_error_deg": 0.032449053110957686,
+              "iterations": 40,
+              "refinement_ms": 23.091024000223115,
+              "stop_reason": "target_reached"
+            },
+            {
+              "source": "random_dls",
+              "valid_configuration": true,
+              "accepted": true,
+              "error_mm": 0.9255714888027258,
+              "orientation_error_deg": 0.6703474727137867,
+              "iterations": 78,
+              "refinement_ms": 46.10135600023568,
+              "stop_reason": "target_reached"
+            }
+          ]
+        }
+      ],
+      "config": {
+        "task": "pose5",
+        "nn": "none",
+        "refine": true,
+        "numerical_fallback": true,
+        "random_seeds": 4,
+        "roadmap_seeds": 4,
+        "max_candidates": 4,
+        "seed": 9001,
+        "steps": 240,
+        "speed_rad_s": 1.2,
+        "tolerance_mm": 1.0,
+        "damping": 0.04,
+        "orientation_tolerance_deg": 1.0,
+        "stall_window": 30,
+        "min_progress_mm": 0.01
+      }
+    }
+  ],
+  "roadmap": {
+    "nodes": 400,
+    "edges": 3030,
+    "added": 400,
+    "reused_fk_samples": 200,
+    "sampling_attempts": 200,
+    "build_ms": 54.23068400023112
+  },
+  "prm_config": {
+    "samples": 400,
+    "neighbors": 12,
+    "max_step_rad": 0.08,
+    "seed": 9001,
+    "sampling_attempt_factor": 20
+  },
+  "metadata": {
+    "schema": 1,
+    "robot": "myCobot 280 Pi",
+    "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+    "geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+    "joint_names": [
+      "joint2_to_joint1",
+      "joint3_to_joint2",
+      "joint4_to_joint3",
+      "joint5_to_joint4",
+      "joint6_to_joint5",
+      "joint6output_to_joint6"
+    ],
+    "joint_types": [
+      "bounded_revolute",
+      "bounded_revolute",
+      "bounded_revolute",
+      "bounded_revolute",
+      "bounded_revolute",
+      "bounded_revolute"
+    ],
+    "limits_rad": {
+      "min": [
+        -2.895501229058593,
+        -2.321287905152458,
+        -2.5813419636996136,
+        -2.4958208303518914,
+        -2.66860842629933,
+        -3.1049407392979123
+      ],
+      "max": [
+        2.895501229058593,
+        2.321287905152458,
+        2.5813419636996136,
+        2.4958208303518914,
+        2.7558748888990463,
+        3.1049407392979123
+      ]
+    },
+    "units": {
+      "joints": "radians",
+      "position": "meters"
+    },
+    "base_frame": "g_base",
+    "base_transform": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "tcp": "joint6_flange",
+    "tool_offset_m": [
+      0,
+      0,
+      0
+    ],
+    "validation": "joint_limits_only",
+    "assumptions": {
+      "checker": null,
+      "environment": "unspecified"
+    },
+    "metric": "Euclidean displacement / operating joint range"
+  },
+  "models_sha256": "c38f9291a2c0aee2a463c6138510de6ef60e262de62e1bcccfb89fc751979890",
+  "runtime": {
+    "python": "3.12.3",
+    "numpy": "2.5.3",
+    "platform": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39"
+  },
+  "synthetic_routing": {
+    "assumptions": {
+      "schema": 1,
+      "robot": "myCobot 280 Pi",
+      "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+      "geometry_sha256": "7e74aa43c8680b4ec1b8a9c462ace156a4cf1b67a9201eb96806619a0856911c",
+      "joint_names": [
+        "joint2_to_joint1",
+        "joint3_to_joint2",
+        "joint4_to_joint3",
+        "joint5_to_joint4",
+        "joint6_to_joint5",
+        "joint6output_to_joint6"
+      ],
+      "joint_types": [
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute",
+        "bounded_revolute"
+      ],
+      "limits_rad": {
+        "min": [
+          -2.895501229058593,
+          -2.321287905152458,
+          -2.5813419636996136,
+          -2.4958208303518914,
+          -2.66860842629933,
+          -3.1049407392979123
+        ],
+        "max": [
+          2.895501229058593,
+          2.321287905152458,
+          2.5813419636996136,
+          2.4958208303518914,
+          2.7558748888990463,
+          3.1049407392979123
+        ]
+      },
+      "units": {
+        "joints": "radians",
+        "position": "meters"
+      },
+      "base_frame": "g_base",
+      "base_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tcp": "joint6_flange",
+      "tool_offset_m": [
+        0,
+        0,
+        0
+      ],
+      "validation": "joint_limits_and_callback",
+      "assumptions": {
+        "checker": "synthetic_disk_v1",
+        "environment": "q1_q2_radius_0.35"
+      },
+      "metric": "Euclidean displacement / operating joint range"
+    },
+    "goal_error_mm": 0.0,
+    "roadmap": {
+      "nodes": 400,
+      "edges": 2964,
+      "added": 400,
+      "reused_fk_samples": 0,
+      "sampling_attempts": 406,
+      "build_ms": 731.6445080000449
+    },
+    "cases": [
+      {
+        "method": "direct_only",
+        "status": "roadmap_connection_not_found",
+        "reason": "start_not_connected",
+        "validation": "joint_limits_and_callback",
+        "waypoints_rad": [],
+        "waypoints_deg": [],
+        "fk_transforms_m": [],
+        "path_cost": 0.0,
+        "path_length_rad": 0.0,
+        "planning_ms": 0.39128699972934555
+      },
+      {
+        "method": "prm",
+        "status": "success",
+        "reason": "roadmap_path",
+        "validation": "joint_limits_and_callback",
+        "waypoints_rad": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.04363323129985819,
+            0.0
+          ],
+          [
+            0.42293103695783474,
+            0.7229005876356069,
+            -0.7538496684090128,
+            0.6188998562058243,
+            -1.3309231162739539,
+            1.2436938792568184
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.04363323129985819,
+            0.0
+          ]
+        ],
+        "waypoints_deg": [
+          [
+            -57.29577951308232,
+            0.0,
+            0.0,
+            0.0,
+            2.4999999999999973,
+            0.0
+          ],
+          [
+            24.23216344277537,
+            41.41915267904738,
+            -43.19240438717302,
+            35.460349701847264,
+            -76.25627741889689,
+            71.2584102876687
+          ],
+          [
+            57.29577951308232,
+            0.0,
+            0.0,
+            0.0,
+            2.4999999999999973,
+            0.0
+          ]
+        ],
+        "fk_transforms_m": [
+          [
+            [
+              -0.8171024353053453,
+              9.733389417720557e-07,
+              0.576492506644385,
+              -0.027247170932379997
+            ],
+            [
+              -0.5764925066335268,
+              4.986021959154351e-06,
+              -0.8171024352983733,
+              -0.07163448816136041
+            ],
+            [
+              -3.6697219171095294e-06,
+              -0.9999999999870959,
+              -3.5129680789647533e-06,
+              0.4181397736151198
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.2734845257578134,
+              0.7681282876293374,
+              0.578951766483742,
+              -0.04839361248370368
+            ],
+            [
+              0.03938854354558031,
+              0.5924501260553808,
+              -0.8046436421014715,
+              -0.14012361866616252
+            ],
+            [
+              -0.9610695899925151,
+              0.24286165172909605,
+              0.13177048725353224,
+              0.3842022126548623
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.8642377464534385,
+              -4.938828859061981e-06,
+              0.5030836089366159,
+              0.07647587974546899
+            ],
+            [
+              -0.5030836089474741,
+              -1.1898626700741058e-06,
+              0.8642377464604106,
+              0.005034683218931205
+            ],
+            [
+              -3.6697219171095294e-06,
+              -0.9999999999870959,
+              -3.5129680789647533e-06,
+              0.4181397736151198
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "path_cost": 0.8935721738679451,
+        "path_length_rad": 4.92318700352115,
+        "planning_ms": 6.801608999921882
+      }
+    ],
+    "disconnected_wall_status": "path_not_found",
+    "interpretation": "Known FK endpoint, synthetic q1/q2 constraints only; not physical collision validation."
+  },
+  "timing": "CPU wall time, NumPy NN load excluded. Offline roadmap construction excluded from query timings; grow time recorded separately. Cache loading is not benchmarked. OPENBLAS_NUM_THREADS=1.",
+  "interpretation": "Real cases: limit-only space is convex, so graph detours add no feasibility. Roadmap seeds may improve endpoint IK. Numerical and NN multiseed variants share current/random/roadmap fallback seeds; NN adds four learned seeds (extra budget). Direct/PRM pairs have identical goal generation; compare them to isolate graph routing. Use attempts, success and timing to judge NN value, not only success on this small development set."
+}

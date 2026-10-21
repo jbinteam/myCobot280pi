@@ -1,0 +1,302 @@
+{
+  "urdf_sha256": "f9c2d1bd637bc99ed802aa2a3c65ddb10659ac83f87a3b20d62295c99bea2441",
+  "training_seed": 42,
+  "validation_seed": 43,
+  "task": "XYZ position, six-joint myCobot 280 Pi, no tool offset",
+  "source_ideas": "/home/jb/codex/projects/nn_ik/rrr_neural_ik/architectures",
+  "device": "cuda",
+  "torch_version": "2.11.0+cu128",
+  "train_samples": 24000,
+  "validation_samples": 2048,
+  "seconds": 19.32217311859131,
+  "training": {
+    "direct": {
+      "steps": 1200,
+      "best_validation_loss": 0.03600549325346947,
+      "history": [
+        {
+          "step": 1,
+          "train_loss": 1.1187623739242554,
+          "validation_loss": 0.8731259703636169
+        },
+        {
+          "step": 201,
+          "train_loss": 0.1148911714553833,
+          "validation_loss": 0.11616620421409607
+        },
+        {
+          "step": 401,
+          "train_loss": 0.07193151116371155,
+          "validation_loss": 0.06875018775463104
+        },
+        {
+          "step": 601,
+          "train_loss": 0.04927457869052887,
+          "validation_loss": 0.045957550406455994
+        },
+        {
+          "step": 801,
+          "train_loss": 0.03564581274986267,
+          "validation_loss": 0.04168277233839035
+        },
+        {
+          "step": 1001,
+          "train_loss": 0.04006977006793022,
+          "validation_loss": 0.03846960887312889
+        },
+        {
+          "step": 1200,
+          "train_loss": 0.027691122144460678,
+          "validation_loss": 0.03600549325346947
+        }
+      ],
+      "architecture": [
+        3,
+        128,
+        128,
+        6
+      ]
+    },
+    "conditional": {
+      "steps": 1200,
+      "best_validation_loss": 0.02175678312778473,
+      "history": [
+        {
+          "step": 1,
+          "train_loss": 0.05049600452184677,
+          "validation_loss": 0.041599202901124954
+        },
+        {
+          "step": 201,
+          "train_loss": 0.03121362440288067,
+          "validation_loss": 0.03194274753332138
+        },
+        {
+          "step": 401,
+          "train_loss": 0.027840357273817062,
+          "validation_loss": 0.028105225414037704
+        },
+        {
+          "step": 601,
+          "train_loss": 0.024816786870360374,
+          "validation_loss": 0.024992242455482483
+        },
+        {
+          "step": 801,
+          "train_loss": 0.024653732776641846,
+          "validation_loss": 0.023919042199850082
+        },
+        {
+          "step": 1001,
+          "train_loss": 0.02255900762975216,
+          "validation_loss": 0.022561173886060715
+        },
+        {
+          "step": 1200,
+          "train_loss": 0.020891746506094933,
+          "validation_loss": 0.02175678312778473
+        }
+      ],
+      "architecture": [
+        9,
+        128,
+        128,
+        6
+      ]
+    },
+    "differential": {
+      "steps": 1200,
+      "best_validation_loss": 0.08143563568592072,
+      "history": [
+        {
+          "step": 1,
+          "train_loss": 0.15879249572753906,
+          "validation_loss": 0.14950355887413025
+        },
+        {
+          "step": 201,
+          "train_loss": 0.12907415628433228,
+          "validation_loss": 0.12772594392299652
+        },
+        {
+          "step": 401,
+          "train_loss": 0.10729380697011948,
+          "validation_loss": 0.10956904292106628
+        },
+        {
+          "step": 601,
+          "train_loss": 0.09341969341039658,
+          "validation_loss": 0.09578876197338104
+        },
+        {
+          "step": 801,
+          "train_loss": 0.08830743283033371,
+          "validation_loss": 0.08932151645421982
+        },
+        {
+          "step": 1001,
+          "train_loss": 0.08074766397476196,
+          "validation_loss": 0.08482152223587036
+        },
+        {
+          "step": 1200,
+          "train_loss": 0.07639279216527939,
+          "validation_loss": 0.08143563568592072
+        }
+      ],
+      "architecture": [
+        9,
+        128,
+        128,
+        6
+      ]
+    },
+    "null": {
+      "steps": 400,
+      "best_validation_loss": 0.00012645847164094448,
+      "history": [
+        {
+          "step": 1,
+          "train_loss": 0.10278187692165375,
+          "validation_loss": 0.07909286022186279
+        },
+        {
+          "step": 201,
+          "train_loss": 0.0001503200619481504,
+          "validation_loss": 0.00015508270007558167
+        },
+        {
+          "step": 400,
+          "train_loss": 0.00012404972221702337,
+          "validation_loss": 0.00012645847164094448
+        }
+      ],
+      "architecture": [
+        6,
+        128,
+        128,
+        6
+      ]
+    },
+    "seed": {
+      "steps": 2400,
+      "best_validation_loss": 0.03267349302768707,
+      "history": [
+        {
+          "step": 1,
+          "train_loss": 0.22523170709609985,
+          "validation_loss": 0.209476500749588
+        },
+        {
+          "step": 201,
+          "train_loss": 0.07357282191514969,
+          "validation_loss": 0.06850722432136536
+        },
+        {
+          "step": 401,
+          "train_loss": 0.06253063678741455,
+          "validation_loss": 0.05982671678066254
+        },
+        {
+          "step": 601,
+          "train_loss": 0.052368685603141785,
+          "validation_loss": 0.05081702023744583
+        },
+        {
+          "step": 801,
+          "train_loss": 0.048689648509025574,
+          "validation_loss": 0.046070851385593414
+        },
+        {
+          "step": 1001,
+          "train_loss": 0.042320746928453445,
+          "validation_loss": 0.04053666442632675
+        },
+        {
+          "step": 1201,
+          "train_loss": 0.042835477739572525,
+          "validation_loss": 0.03724028915166855
+        },
+        {
+          "step": 1401,
+          "train_loss": 0.03620627522468567,
+          "validation_loss": 0.03579431772232056
+        },
+        {
+          "step": 1601,
+          "train_loss": 0.0366758368909359,
+          "validation_loss": 0.03485802561044693
+        },
+        {
+          "step": 1801,
+          "train_loss": 0.03228228539228439,
+          "validation_loss": 0.03392210602760315
+        },
+        {
+          "step": 2001,
+          "train_loss": 0.03498370945453644,
+          "validation_loss": 0.033489130437374115
+        },
+        {
+          "step": 2201,
+          "train_loss": 0.0370134674012661,
+          "validation_loss": 0.03301713615655899
+        },
+        {
+          "step": 2400,
+          "train_loss": 0.03154385834932327,
+          "validation_loss": 0.03267349302768707
+        }
+      ],
+      "architecture": [
+        9,
+        128,
+        128,
+        24
+      ]
+    }
+  },
+  "limits_rad": {
+    "min": [
+      -2.895501229058593,
+      -2.321287905152458,
+      -2.5813419636996136,
+      -2.4958208303518914,
+      -2.66860842629933,
+      -3.1049407392979123
+    ],
+    "max": [
+      2.895501229058593,
+      2.321287905152458,
+      2.5813419636996136,
+      2.4958208303518914,
+      2.7558748888990463,
+      3.1049407392979123
+    ]
+  },
+  "joint_limit_profile": {
+    "model": "myCobot 280 Pi",
+    "source": "read-only get_joint_min_angle/get_joint_max_angle from connected Atom firmware",
+    "firmware": 6.5,
+    "queried_at": "2026-09-30T22:42:10+0700",
+    "hardware_min_deg": [
+      -168.0,
+      -135.0,
+      -150.0,
+      -145.0,
+      -165.0,
+      -180.0
+    ],
+    "hardware_max_deg": [
+      168.0,
+      135.0,
+      150.0,
+      145.0,
+      165.0,
+      180.0
+    ],
+    "operating_margin_deg": 2.0,
+    "manufacturer_reference": "https://docs.elephantrobotics.com/docs/mycobot-pi-en/2-serialproduct/2.1-280/2.1.2.1%20Introduction%20of%20product%20parameters.html"
+  },
+  "position_scale_m": 0.3
+}

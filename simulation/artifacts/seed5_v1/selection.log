@@ -1,0 +1,18 @@
+Candidate selection 1/512
+Candidate selection 33/512
+Candidate selection 65/512
+Candidate selection 97/512
+Candidate selection 129/512
+Candidate selection 161/512
+Candidate selection 193/512
+Candidate selection 225/512
+Candidate selection 257/512
+Candidate selection 289/512
+Candidate selection 321/512
+Candidate selection 353/512
+Candidate selection 385/512
+Candidate selection 417/512
+Candidate selection 449/512
+Candidate selection 481/512
+Candidate selection 512/512
+{"selected": "simulation/artifacts/seed5_v1/candidates/w384-s72-large", "summary": {"simulation/artifacts/seed5_v1/candidates/w256-s42": {"valid_success": 510, "tasks": 512, "mean_refinement_iterations": 47.712890625, "mean_refinement_ms": 33.007016046854076, "mean_inference_ms": 0.09636562696169193, "raw_validation": {"held_out_tasks": 2048, "raw_valid_success": 0, "tolerance_mm": 1.0, "angle_tolerance_deg": 1.0, "mean_best_position_error_mm": 29.43710659268177, "mean_best_direction_error_deg": 9.15237365043985, "mean_inference_ms": 0.06411413427298562, "refinement": "not included in raw validation", "limitation": "One reproducible training seed; benchmark before relying on quality"}}, "simulation/artifacts/seed5_v1/candidates/w384-s52": {"valid_success": 510, "tasks": 512, "mean_refinement_iterations": 103.869140625, "mean_refinement_ms": 77.7019355449431, "mean_inference_ms": 0.1342388398510863, "raw_validation": {"held_out_tasks": 2048, "raw_valid_success": 1, "tolerance_mm": 1.0, "angle_tolerance_deg": 1.0, "mean_best_position_error_mm": 23.033073958785554, "mean_best_direction_error_deg": 7.768749090390783, "mean_inference_ms": 0.0855014116145636, "refinement": "not included in raw validation", "limitation": "One reproducible training seed; benchmark before relying on quality"}}, "simulation/artifacts/seed5_v1/candidates/w384-s62-witness": {"valid_success": 511, "tasks": 512, "mean_refinement_iterations": 121.685546875, "mean_refinement_ms": 89.83286906836963, "mean_inference_ms": 0.13336050390222454, "raw_validation": {"held_out_tasks": 2048, "raw_valid_success": 0, "tolerance_mm": 1.0, "angle_tolerance_deg": 1.0, "mean_best_position_error_mm": 20.66213326205819, "mean_best_direction_error_deg": 6.966455587310797, "mean_inference_ms": 0.09647647606891852, "refinement": "not included in raw validation", "limitation": "One reproducible training seed; benchmark before relying on quality"}}, "simulation/artifacts/seed5_v1/candidates/w384-s72-large": {"valid_success": 512, "tasks": 512, "mean_refinement_iterations": 114.986328125, "mean_refinement_ms": 82.19405682226011, "mean_inference_ms": 0.1327089316376373, "raw_validation": {"held_out_tasks": 2048, "raw_valid_success": 1, "tolerance_mm": 1.0, "angle_tolerance_deg": 1.0, "mean_best_position_error_mm": 18.518343785135954, "mean_best_direction_error_deg": 5.903156277237438, "mean_inference_ms": 0.0932729663145615, "refinement": "not included in raw validation", "limitation": "One reproducible training seed; benchmark before relying on quality"}}}}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "robots": [
+    {
+      "host": "192.168.77.225",
+      "port": 9000,
+      "firmware": 6.5,
+      "encoder_direction_evidence": [
+        {
+          "angle_deg": 20.65,
+          "encoder": 1813,
+          "direction": -1
+        },
+        {
+          "angle_deg": -35.24,
+          "encoder": 2449,
+          "direction": -1
+        },
+        {
+          "angle_deg": -90.08,
+          "encoder": 1023,
+          "direction": 1
+        },
+        {
+          "angle_deg": 39.28,
+          "encoder": 1601,
+          "direction": -1
+        },
+        {
+          "angle_deg": 9.58,
+          "encoder": 1939,
+          "direction": -1
+        },
+        {
+          "angle_deg": 151.87,
+          "encoder": 320,
+          "direction": -1
+        }
+      ]
+    }
+  ]
+}

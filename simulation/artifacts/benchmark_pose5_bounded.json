@@ -1,0 +1,1793 @@
+{
+  "suites": [
+    {
+      "seed": 9001,
+      "count": 24,
+      "rows": [
+        {
+          "method": "dls",
+          "success": 16,
+          "total": 24,
+          "mean_error_mm": 17.560107946956933,
+          "mean_orientation_error_deg": 8.444511137981236,
+          "mean_iterations": 110.625,
+          "mean_elapsed_ms": 33.92567608352692,
+          "mean_travel_deg": 189.28466526263932,
+          "outcomes": [
+            {
+              "converged": true,
+              "final_error_mm": 0.9000208238516672,
+              "final_orientation_error_deg": 0.45036421825821604,
+              "iterations": 27,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8618756668186333,
+              "final_orientation_error_deg": 0.26492780965177043,
+              "iterations": 46,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9673729385247526,
+              "final_orientation_error_deg": 0.20358452597425378,
+              "iterations": 146,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 27.120605559953212,
+              "final_orientation_error_deg": 32.79139872568675,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9779287105706401,
+              "final_orientation_error_deg": 0.3160285422456142,
+              "iterations": 35,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9693965619495809,
+              "final_orientation_error_deg": 0.21039742118668012,
+              "iterations": 26,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 157.52970031315314,
+              "final_orientation_error_deg": 63.94624674345304,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 125.63648599351428,
+              "final_orientation_error_deg": 80.32397719198508,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8731127541999435,
+              "final_orientation_error_deg": 0.6732493557197813,
+              "iterations": 22,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8993106437010554,
+              "final_orientation_error_deg": 0.10685460177218062,
+              "iterations": 36,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 40.526785301505804,
+              "final_orientation_error_deg": 17.17809002853368,
+              "iterations": 191,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9297476416313949,
+              "final_orientation_error_deg": 0.05771564307220699,
+              "iterations": 150,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9906704534842149,
+              "final_orientation_error_deg": 0.1892290496142204,
+              "iterations": 31,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8824589347425725,
+              "final_orientation_error_deg": 0.435761079349327,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 2.196368555906849,
+              "final_orientation_error_deg": 0.19585195731931115,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 1.1606404838188296,
+              "final_orientation_error_deg": 0.4560352871697002,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9075519970245619,
+              "final_orientation_error_deg": 0.16176732460839863,
+              "iterations": 32,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.94178583776689,
+              "final_orientation_error_deg": 0.35962275272199606,
+              "iterations": 23,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 50.91531736084827,
+              "final_orientation_error_deg": 2.532604657804384,
+              "iterations": 199,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 1.6384494297912628,
+              "final_orientation_error_deg": 0.33400695764887467,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8610698866587538,
+              "final_orientation_error_deg": 0.5367292415634595,
+              "iterations": 28,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8587958934827948,
+              "final_orientation_error_deg": 0.07469048564615895,
+              "iterations": 30,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9163944540198389,
+              "final_orientation_error_deg": 0.19153110361529582,
+              "iterations": 58,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9807445300474269,
+              "final_orientation_error_deg": 0.6776026069492851,
+              "iterations": 106,
+              "backtracks": 0
+            }
+          ]
+        },
+        {
+          "method": "bounded_dls",
+          "success": 19,
+          "total": 24,
+          "mean_error_mm": 25.472097548395485,
+          "mean_orientation_error_deg": 2.6506068510604748,
+          "mean_iterations": 82.25,
+          "mean_elapsed_ms": 54.67373295747772,
+          "mean_travel_deg": 136.29666323880903,
+          "outcomes": [
+            {
+              "converged": true,
+              "final_error_mm": 0.9000208238516665,
+              "final_orientation_error_deg": 0.4503642182582222,
+              "iterations": 27,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8871638292426774,
+              "final_orientation_error_deg": 0.21092554002081335,
+              "iterations": 44,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 170.67548922951667,
+              "final_orientation_error_deg": 25.93593184258467,
+              "iterations": 165,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9881703055488961,
+              "final_orientation_error_deg": 0.13960726113907207,
+              "iterations": 101,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8954093135364495,
+              "final_orientation_error_deg": 0.3041137958189948,
+              "iterations": 33,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.969396561949586,
+              "final_orientation_error_deg": 0.21039742118668012,
+              "iterations": 26,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 202.73838382621864,
+              "final_orientation_error_deg": 13.550974855602238,
+              "iterations": 199,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9972538068829238,
+              "final_orientation_error_deg": 0.1931224005682238,
+              "iterations": 90,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8731127541999566,
+              "final_orientation_error_deg": 0.6732493557197857,
+              "iterations": 22,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9508906536982791,
+              "final_orientation_error_deg": 0.11395868853924629,
+              "iterations": 33,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9975361380478006,
+              "final_orientation_error_deg": 0.18095195085421104,
+              "iterations": 53,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9979475756459912,
+              "final_orientation_error_deg": 0.07998147115827745,
+              "iterations": 116,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9906704534842563,
+              "final_orientation_error_deg": 0.18922904961422135,
+              "iterations": 31,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9277956508405634,
+              "final_orientation_error_deg": 0.4591453161294064,
+              "iterations": 28,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 2.1969295542014238,
+              "final_orientation_error_deg": 0.19588109072134408,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 147.09168507678285,
+              "final_orientation_error_deg": 9.885405789641396,
+              "iterations": 240,
+              "backtracks": 130
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9075519970244692,
+              "final_orientation_error_deg": 0.1617673246083998,
+              "iterations": 32,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9417858377668806,
+              "final_orientation_error_deg": 0.35962275272198824,
+              "iterations": 23,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9013796529463652,
+              "final_orientation_error_deg": 0.08015581785475405,
+              "iterations": 77,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 70.72642051656966,
+              "final_orientation_error_deg": 9.056640149979952,
+              "iterations": 240,
+              "backtracks": 19
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8636004681898564,
+              "final_orientation_error_deg": 0.5364796290335965,
+              "iterations": 28,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9882680886936176,
+              "final_orientation_error_deg": 0.08296862770496427,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.96551914600512,
+              "final_orientation_error_deg": 0.16669690541674076,
+              "iterations": 51,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9579599006471256,
+              "final_orientation_error_deg": 0.3969931705742023,
+              "iterations": 46,
+              "backtracks": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 20260930,
+      "count": 96,
+      "rows": [
+        {
+          "method": "dls",
+          "success": 63,
+          "total": 96,
+          "mean_error_mm": 20.35206365089236,
+          "mean_orientation_error_deg": 10.633412542162676,
+          "mean_iterations": 106.79166666666667,
+          "mean_elapsed_ms": 30.245114343946017,
+          "mean_travel_deg": 173.30921895013378,
+          "outcomes": [
+            {
+              "converged": true,
+              "final_error_mm": 0.8745989224801147,
+              "final_orientation_error_deg": 0.3266220983164267,
+              "iterations": 27,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8833371632350884,
+              "final_orientation_error_deg": 0.15564414428429807,
+              "iterations": 22,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9698526673388019,
+              "final_orientation_error_deg": 0.6150772954270176,
+              "iterations": 27,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 82.43742173097021,
+              "final_orientation_error_deg": 3.106148413745435,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8802943276218864,
+              "final_orientation_error_deg": 0.17222927030168977,
+              "iterations": 28,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9357565197311795,
+              "final_orientation_error_deg": 0.7835586105874429,
+              "iterations": 18,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 9.98717536469419,
+              "final_orientation_error_deg": 13.088734182760776,
+              "iterations": 174,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 40.45704781733983,
+              "final_orientation_error_deg": 51.884176284713504,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8607103019049042,
+              "final_orientation_error_deg": 0.601343705430578,
+              "iterations": 31,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9581639094691726,
+              "final_orientation_error_deg": 0.06809928541801613,
+              "iterations": 33,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 3.3906693285894414,
+              "final_orientation_error_deg": 0.8897792417122562,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 61.93373206854157,
+              "final_orientation_error_deg": 2.3226878339176884,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9127335925759729,
+              "final_orientation_error_deg": 0.18831868306529534,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8614148627376876,
+              "final_orientation_error_deg": 0.47978059464706363,
+              "iterations": 27,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 85.61410537083111,
+              "final_orientation_error_deg": 107.22806565795226,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9423889601388035,
+              "final_orientation_error_deg": 0.11285805841851171,
+              "iterations": 77,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9745774851409329,
+              "final_orientation_error_deg": 0.06179957473782966,
+              "iterations": 55,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9617311749794385,
+              "final_orientation_error_deg": 0.32820856257097497,
+              "iterations": 25,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 140.79720488160385,
+              "final_orientation_error_deg": 9.00898187830322,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 186.0969166542721,
+              "final_orientation_error_deg": 77.34009919215727,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9278602775324027,
+              "final_orientation_error_deg": 0.19090330694489666,
+              "iterations": 23,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8535013189810878,
+              "final_orientation_error_deg": 0.3825464958182652,
+              "iterations": 23,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 24.184088741011987,
+              "final_orientation_error_deg": 6.08943236816425,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9732527609521225,
+              "final_orientation_error_deg": 0.1370548365230953,
+              "iterations": 104,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9615127776129927,
+              "final_orientation_error_deg": 0.24111913498187748,
+              "iterations": 28,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9323746794208765,
+              "final_orientation_error_deg": 0.28686760234840775,
+              "iterations": 34,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 67.50252284007244,
+              "final_orientation_error_deg": 87.97860032413325,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 9.27268260590327,
+              "final_orientation_error_deg": 1.5778538323575124,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8983855447804051,
+              "final_orientation_error_deg": 0.27769033137919796,
+              "iterations": 31,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9133382259988533,
+              "final_orientation_error_deg": 0.8684097354056364,
+              "iterations": 23,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 10.785464509986516,
+              "final_orientation_error_deg": 3.391061354683399,
+              "iterations": 192,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 79.9558915839582,
+              "final_orientation_error_deg": 23.376416513817723,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9853041429587704,
+              "final_orientation_error_deg": 0.19160247764504518,
+              "iterations": 28,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9320702850492926,
+              "final_orientation_error_deg": 0.6435008211249501,
+              "iterations": 24,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 66.17971175477649,
+              "final_orientation_error_deg": 19.432658123423938,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 30.990161750886287,
+              "final_orientation_error_deg": 3.3526693708601303,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9070880977683781,
+              "final_orientation_error_deg": 0.5185593334303134,
+              "iterations": 23,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9757375780840004,
+              "final_orientation_error_deg": 0.10466075569418858,
+              "iterations": 33,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9779495228052424,
+              "final_orientation_error_deg": 0.15665912239385874,
+              "iterations": 81,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8762785219051061,
+              "final_orientation_error_deg": 0.2354781047342141,
+              "iterations": 154,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8757189656768597,
+              "final_orientation_error_deg": 0.4213812582464896,
+              "iterations": 34,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9537549684429799,
+              "final_orientation_error_deg": 0.26149887890254614,
+              "iterations": 26,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 73.57149480348086,
+              "final_orientation_error_deg": 92.37486204547953,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9907822004514059,
+              "final_orientation_error_deg": 0.32812919769020704,
+              "iterations": 75,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.3868401591243688,
+              "final_orientation_error_deg": 0.8922993589900227,
+              "iterations": 18,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9027436407200579,
+              "final_orientation_error_deg": 0.41441168555532926,
+              "iterations": 26,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 163.94648569834712,
+              "final_orientation_error_deg": 43.29415390599726,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 4.329472013792119,
+              "final_orientation_error_deg": 5.475053529340375,
+              "iterations": 232,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.7725675903959055,
+              "final_orientation_error_deg": 0.856606248291244,
+              "iterations": 21,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.969594590585883,
+              "final_orientation_error_deg": 0.11074505240317026,
+              "iterations": 38,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 21.99076053474832,
+              "final_orientation_error_deg": 24.398124178216342,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9772442969026996,
+              "final_orientation_error_deg": 0.3089300072221211,
+              "iterations": 72,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.979779557506485,
+              "final_orientation_error_deg": 0.3919576605281727,
+              "iterations": 26,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9851063807008993,
+              "final_orientation_error_deg": 0.597074600189495,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9661295538939825,
+              "final_orientation_error_deg": 0.2037109596962379,
+              "iterations": 50,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 33.99484787074302,
+              "final_orientation_error_deg": 24.041177494757612,
+              "iterations": 199,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9249020021959098,
+              "final_orientation_error_deg": 0.3524984123369267,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9616428238928569,
+              "final_orientation_error_deg": 0.6855499274605189,
+              "iterations": 21,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 2.290490669379851,
+              "final_orientation_error_deg": 0.5345972540368136,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 53.17350638921012,
+              "final_orientation_error_deg": 5.005654652643275,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9507861253929268,
+              "final_orientation_error_deg": 0.3080720287586851,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9242691957853969,
+              "final_orientation_error_deg": 0.3803950890510494,
+              "iterations": 25,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8682567442436948,
+              "final_orientation_error_deg": 0.47008656276330624,
+              "iterations": 39,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9050173339970153,
+              "final_orientation_error_deg": 0.27957141152150794,
+              "iterations": 80,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9346638042026011,
+              "final_orientation_error_deg": 0.4169902258275939,
+              "iterations": 23,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8732810215629463,
+              "final_orientation_error_deg": 0.508097456595456,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 5.887133713765689,
+              "final_orientation_error_deg": 0.5396456179161011,
+              "iterations": 225,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 43.86042097187399,
+              "final_orientation_error_deg": 39.98790067554158,
+              "iterations": 207,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9900764435165466,
+              "final_orientation_error_deg": 0.07767284182089597,
+              "iterations": 50,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8582004031048943,
+              "final_orientation_error_deg": 0.4733190471874818,
+              "iterations": 21,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.937116672321101,
+              "final_orientation_error_deg": 0.4086143509834483,
+              "iterations": 55,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 37.53290312152406,
+              "final_orientation_error_deg": 9.06166112772291,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9876256718301807,
+              "final_orientation_error_deg": 0.6412884354983636,
+              "iterations": 26,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8822627800490817,
+              "final_orientation_error_deg": 0.03339030884050417,
+              "iterations": 31,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9734845146124835,
+              "final_orientation_error_deg": 0.156474375275398,
+              "iterations": 172,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 41.43365366961067,
+              "final_orientation_error_deg": 53.70204673865472,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9962302850501045,
+              "final_orientation_error_deg": 0.32034749903119697,
+              "iterations": 28,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9567015150557611,
+              "final_orientation_error_deg": 0.5544333150128715,
+              "iterations": 28,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9598419373405848,
+              "final_orientation_error_deg": 0.19036449747305398,
+              "iterations": 96,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 83.11601488542009,
+              "final_orientation_error_deg": 13.197589897509777,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.5446860829916893,
+              "final_orientation_error_deg": 0.9878944416518424,
+              "iterations": 19,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8897220375594574,
+              "final_orientation_error_deg": 0.7237959972496809,
+              "iterations": 26,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9723674459197539,
+              "final_orientation_error_deg": 0.3606627421023105,
+              "iterations": 52,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 77.2275894027788,
+              "final_orientation_error_deg": 55.16797951889864,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9515634629845008,
+              "final_orientation_error_deg": 0.27930024574414314,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8527139678661356,
+              "final_orientation_error_deg": 0.3965604814497068,
+              "iterations": 25,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 125.64966748748182,
+              "final_orientation_error_deg": 117.42537063642696,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 27.800499625388298,
+              "final_orientation_error_deg": 4.072991119871096,
+              "iterations": 223,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.955562940598777,
+              "final_orientation_error_deg": 0.08855116119883406,
+              "iterations": 36,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8826090631755952,
+              "final_orientation_error_deg": 0.25667319394733173,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 15.58220611571267,
+              "final_orientation_error_deg": 5.981174069241136,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 103.04742258639408,
+              "final_orientation_error_deg": 30.91395832555118,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.4707213221254171,
+              "final_orientation_error_deg": 0.9330450480266086,
+              "iterations": 13,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8542793312183798,
+              "final_orientation_error_deg": 0.3335834108645524,
+              "iterations": 22,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9366936613535394,
+              "final_orientation_error_deg": 0.23331130604908643,
+              "iterations": 104,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 82.69298980702523,
+              "final_orientation_error_deg": 61.80041802404239,
+              "iterations": 240,
+              "backtracks": 0
+            }
+          ]
+        },
+        {
+          "method": "bounded_dls",
+          "success": 64,
+          "total": 96,
+          "mean_error_mm": 27.45259527682106,
+          "mean_orientation_error_deg": 3.287249837386174,
+          "mean_iterations": 91.6875,
+          "mean_elapsed_ms": 55.920854020769184,
+          "mean_travel_deg": 135.4455985793572,
+          "outcomes": [
+            {
+              "converged": true,
+              "final_error_mm": 0.8716321489127661,
+              "final_orientation_error_deg": 0.32553237969442006,
+              "iterations": 27,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8833371632350616,
+              "final_orientation_error_deg": 0.15564414428429457,
+              "iterations": 22,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9417025007596969,
+              "final_orientation_error_deg": 0.6094181607384348,
+              "iterations": 27,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 59.89406620676144,
+              "final_orientation_error_deg": 9.721198244873564,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.880294327621902,
+              "final_orientation_error_deg": 0.17222927030169555,
+              "iterations": 28,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9357565197311923,
+              "final_orientation_error_deg": 0.7835586105874248,
+              "iterations": 18,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 13.669459433623972,
+              "final_orientation_error_deg": 3.3494947725656705,
+              "iterations": 162,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 76.66360964063954,
+              "final_orientation_error_deg": 19.58972347011152,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9435225260858533,
+              "final_orientation_error_deg": 0.38512725486618343,
+              "iterations": 30,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9133812900327988,
+              "final_orientation_error_deg": 0.06997220582763683,
+              "iterations": 32,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 3.3906685184880296,
+              "final_orientation_error_deg": 0.88977955449242,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 59.31700604035444,
+              "final_orientation_error_deg": 3.3999065730374856,
+              "iterations": 201,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9127335925759339,
+              "final_orientation_error_deg": 0.1883186830652918,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8614148627376857,
+              "final_orientation_error_deg": 0.4797805946470523,
+              "iterations": 27,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 219.3491318255971,
+              "final_orientation_error_deg": 12.96979026230207,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8674828820660841,
+              "final_orientation_error_deg": 0.03739334900127592,
+              "iterations": 60,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9745774851408742,
+              "final_orientation_error_deg": 0.06179957473782713,
+              "iterations": 55,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9617311749794297,
+              "final_orientation_error_deg": 0.3282085625709818,
+              "iterations": 25,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 115.26651427234084,
+              "final_orientation_error_deg": 12.161640480348236,
+              "iterations": 180,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 159.0464856277322,
+              "final_orientation_error_deg": 4.695449124137804,
+              "iterations": 126,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9278602775324174,
+              "final_orientation_error_deg": 0.19090330694490057,
+              "iterations": 23,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8535013189810974,
+              "final_orientation_error_deg": 0.38254649581826766,
+              "iterations": 23,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9593989056497837,
+              "final_orientation_error_deg": 0.26320699526934854,
+              "iterations": 97,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 42.48198972706172,
+              "final_orientation_error_deg": 7.7751883133746,
+              "iterations": 180,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9615127776130213,
+              "final_orientation_error_deg": 0.24111913498188384,
+              "iterations": 28,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9563418818888076,
+              "final_orientation_error_deg": 0.28649843299584377,
+              "iterations": 32,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 23.98163748588798,
+              "final_orientation_error_deg": 0.9955915194261854,
+              "iterations": 237,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 5.151207725113783,
+              "final_orientation_error_deg": 0.9230483228056267,
+              "iterations": 228,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8782696218401542,
+              "final_orientation_error_deg": 0.26982727041215315,
+              "iterations": 31,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9133382259988561,
+              "final_orientation_error_deg": 0.8684097354056305,
+              "iterations": 23,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 10.785463758694355,
+              "final_orientation_error_deg": 3.3910615967931568,
+              "iterations": 184,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 92.60605593705036,
+              "final_orientation_error_deg": 14.05310203492189,
+              "iterations": 169,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9853041429587852,
+              "final_orientation_error_deg": 0.19160247764504756,
+              "iterations": 28,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9320702850492927,
+              "final_orientation_error_deg": 0.6435008211249572,
+              "iterations": 24,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 50.936542251383926,
+              "final_orientation_error_deg": 9.678503121112207,
+              "iterations": 196,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 117.84126001042304,
+              "final_orientation_error_deg": 14.34208706097255,
+              "iterations": 240,
+              "backtracks": 8
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9070880977683781,
+              "final_orientation_error_deg": 0.5185593334303167,
+              "iterations": 23,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9757375780840007,
+              "final_orientation_error_deg": 0.10466075569419221,
+              "iterations": 33,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9173297799636625,
+              "final_orientation_error_deg": 0.12196870190052594,
+              "iterations": 95,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8956879979018005,
+              "final_orientation_error_deg": 0.13387615613022227,
+              "iterations": 128,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9365015995386972,
+              "final_orientation_error_deg": 0.43735732414905315,
+              "iterations": 33,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9537549684429166,
+              "final_orientation_error_deg": 0.2614988789025565,
+              "iterations": 26,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 311.9256581799156,
+              "final_orientation_error_deg": 5.9812038781264425,
+              "iterations": 195,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9975147202939958,
+              "final_orientation_error_deg": 0.08280071793942573,
+              "iterations": 74,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.38684015912440944,
+              "final_orientation_error_deg": 0.8922993589900217,
+              "iterations": 18,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9027436407200569,
+              "final_orientation_error_deg": 0.4144116855553293,
+              "iterations": 26,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 175.56134606297638,
+              "final_orientation_error_deg": 8.675864225191722,
+              "iterations": 167,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 1.8651708443877735,
+              "final_orientation_error_deg": 5.265879362800994,
+              "iterations": 200,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.7725675903959169,
+              "final_orientation_error_deg": 0.8566062482912414,
+              "iterations": 21,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9936930316283126,
+              "final_orientation_error_deg": 0.12106090825406791,
+              "iterations": 37,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 19.09064621447864,
+              "final_orientation_error_deg": 0.8416803828409751,
+              "iterations": 158,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9957021642253803,
+              "final_orientation_error_deg": 0.28681711108733604,
+              "iterations": 80,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9046256892200956,
+              "final_orientation_error_deg": 0.40345830253531717,
+              "iterations": 26,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9570139223551324,
+              "final_orientation_error_deg": 0.337683450332083,
+              "iterations": 35,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9886082243889889,
+              "final_orientation_error_deg": 0.31555825603133625,
+              "iterations": 41,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 29.997537035968783,
+              "final_orientation_error_deg": 4.639371020523346,
+              "iterations": 188,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8642702736930411,
+              "final_orientation_error_deg": 0.3289700372174937,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9616428238928149,
+              "final_orientation_error_deg": 0.6855499274605211,
+              "iterations": 21,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 2.074581814620899,
+              "final_orientation_error_deg": 0.5369399793560344,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 39.25431645351379,
+              "final_orientation_error_deg": 4.978220880829144,
+              "iterations": 225,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9507861253929268,
+              "final_orientation_error_deg": 0.3080720287586882,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9269215891322012,
+              "final_orientation_error_deg": 0.36776704600568094,
+              "iterations": 25,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9465225334059444,
+              "final_orientation_error_deg": 0.40097152829015903,
+              "iterations": 38,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9772502351229893,
+              "final_orientation_error_deg": 0.8035369181206633,
+              "iterations": 57,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9346638042025633,
+              "final_orientation_error_deg": 0.41699022582759926,
+              "iterations": 23,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8732810215630091,
+              "final_orientation_error_deg": 0.5080974565954667,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8952986494757513,
+              "final_orientation_error_deg": 0.2288982094076875,
+              "iterations": 96,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 81.9451463955358,
+              "final_orientation_error_deg": 15.28194496991792,
+              "iterations": 134,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9900764435165468,
+              "final_orientation_error_deg": 0.07767284182089745,
+              "iterations": 50,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8582004031048442,
+              "final_orientation_error_deg": 0.4733190471874951,
+              "iterations": 21,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.7867156280780826,
+              "final_orientation_error_deg": 0.872956914564374,
+              "iterations": 46,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 36.78103800774347,
+              "final_orientation_error_deg": 9.330946618747975,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9636365034384508,
+              "final_orientation_error_deg": 0.6219365051158059,
+              "iterations": 26,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8723568492052896,
+              "final_orientation_error_deg": 0.03321087813687609,
+              "iterations": 31,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 127.62980253167392,
+              "final_orientation_error_deg": 3.1086282629083457,
+              "iterations": 175,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 172.06070416371682,
+              "final_orientation_error_deg": 8.28605886918024,
+              "iterations": 140,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9962302850501045,
+              "final_orientation_error_deg": 0.32034749903119375,
+              "iterations": 28,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9579778471207465,
+              "final_orientation_error_deg": 0.6077857722341501,
+              "iterations": 27,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.910479392854195,
+              "final_orientation_error_deg": 0.0754287643994669,
+              "iterations": 85,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9727372616449742,
+              "final_orientation_error_deg": 0.14464548402636945,
+              "iterations": 57,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.5446860829916893,
+              "final_orientation_error_deg": 0.9878944416518394,
+              "iterations": 19,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8880106615570004,
+              "final_orientation_error_deg": 0.7165800286432988,
+              "iterations": 26,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9708121361381827,
+              "final_orientation_error_deg": 0.05971600749220992,
+              "iterations": 70,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 114.0205984773257,
+              "final_orientation_error_deg": 14.85777898866461,
+              "iterations": 188,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9515634629846088,
+              "final_orientation_error_deg": 0.27930024574413465,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8527139678661356,
+              "final_orientation_error_deg": 0.39656048144971306,
+              "iterations": 25,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 142.63077394095384,
+              "final_orientation_error_deg": 27.692686320938115,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 5.6459929412018495,
+              "final_orientation_error_deg": 1.3915054886329974,
+              "iterations": 152,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.9187559928104071,
+              "final_orientation_error_deg": 0.07196314043845957,
+              "iterations": 37,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8808166283378684,
+              "final_orientation_error_deg": 0.2556973680833379,
+              "iterations": 29,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 3.768289957136719,
+              "final_orientation_error_deg": 0.6552029315585851,
+              "iterations": 240,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 176.9897936360088,
+              "final_orientation_error_deg": 27.293250169625626,
+              "iterations": 147,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.4707213221254171,
+              "final_orientation_error_deg": 0.933045048026607,
+              "iterations": 13,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8542793312184409,
+              "final_orientation_error_deg": 0.333583410864557,
+              "iterations": 22,
+              "backtracks": 0
+            },
+            {
+              "converged": true,
+              "final_error_mm": 0.8926068841480734,
+              "final_orientation_error_deg": 0.0891156665988267,
+              "iterations": 97,
+              "backtracks": 0
+            },
+            {
+              "converged": false,
+              "final_error_mm": 86.16206424099482,
+              "final_orientation_error_deg": 35.20043001461745,
+              "iterations": 240,
+              "backtracks": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "steps": 240,
+  "dt": 0.05,
+  "speed_rad_s": 1.2,
+  "tolerance_mm": 1.0,
+  "orientation_tolerance_deg": 1.0,
+  "damping": 0.04,
+  "limitations": "Synthetic reachable targets, one arm geometry, no collision checking or physical validation. Original set used in development; fresh set is a single-seed holdout.",
+  "limits_rad": {
+    "min": [
+      -2.895501229058593,
+      -2.321287905152458,
+      -2.5813419636996136,
+      -2.4958208303518914,
+      -2.66860842629933,
+      -3.1049407392979123
+    ],
+    "max": [
+      2.895501229058593,
+      2.321287905152458,
+      2.5813419636996136,
+      2.4958208303518914,
+      2.7558748888990463,
+      3.1049407392979123
+    ]
+  },
+  "joint_limit_profile": {
+    "model": "myCobot 280 Pi",
+    "source": "read-only get_joint_min_angle/get_joint_max_angle from connected Atom firmware",
+    "firmware": 6.5,
+    "queried_at": "2026-09-30T22:42:10+0700",
+    "hardware_min_deg": [
+      -168.0,
+      -135.0,
+      -150.0,
+      -145.0,
+      -165.0,
+      -180.0
+    ],
+    "hardware_max_deg": [
+      168.0,
+      135.0,
+      150.0,
+      145.0,
+      165.0,
+      180.0
+    ],
+    "operating_margin_deg": 2.0,
+    "manufacturer_reference": "https://docs.elephantrobotics.com/docs/mycobot-pi-en/2-serialproduct/2.1-280/2.1.2.1%20Introduction%20of%20product%20parameters.html"
+  }
+}

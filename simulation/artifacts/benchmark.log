@@ -1,0 +1,8 @@
+Pseudoinverse IK: 22/24; mean error 17.71 mm
+Damped least squares: 23/24; mean error 8.72 mm
+Direct NN IK: 0/24; mean error 37.58 mm
+Conditional NN IK: 0/24; mean error 157.49 mm
+Learned differential IK: 0/24; mean error 184.84 mm
+Classical null-space: 23/24; mean error 8.52 mm
+Neural null-space: 23/24; mean error 8.55 mm
+NN seed + DLS: 24/24; mean error 0.92 mm
